@@ -1,3 +1,62 @@
-# ShipSimGame
+<div align="center">
+  <a href="https://github.com/r59q/ShipSimGame">
+    <!--<img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+  </a>
 
-This is a project that explores the test-driven development process for unity projects in order to create a ship simulation game.
+  <h3 align="center">ShipSimGame</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</div>
+
+## About the game
+
+More to come...
+
+## About the project
+
+This is a project that explores the test-driven development process and gitflow for unity projects in order to create a ship simulation game.
+
+Currently the master branch is empty, because the project is still in early development. Look in development branch
+
+## Getting started
+This is a walkthrough of how to get the project up and running on your own machine.
+### Prerequisites
+
+[Unity](https://unity3d.com/get-unity/download "Unity's download page")  (Built on 2022.1.0a12 Alpha)
+
+### Installation
+1. Clone project
+2. Open using [Unity](https://unity3d.com/get-unity/download "Unity's download page") or [Unity Hub](https://unity3d.com/get-unity/download "Unity's download page")
+
+## Test-driven development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development "Wikipedia article"))
+
+TDD is the development style that dictates that tests are written before the code for them are. 
+
+## Authors
+
+A. Malthe Henriksen (https://github.com/r59q)
+
+### Contributions
+
+<sub>Othneil Drew (https://github.com/othneildrew/Best-README-Template) - Joinked his readme</sub>
+
+## Contributing
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
