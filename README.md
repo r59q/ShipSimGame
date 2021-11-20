@@ -6,16 +6,16 @@
   <h3 align="center">ShipSimGame</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An exploration of TDD in games development.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/r59q/ShipSimGame/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <!-- <a href=" [LINKHERE] ">View Demo</a> -->
+    <!-- · -->
+    <a href="https://github.com/r59q/ShipSimGame/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/r59q/ShipSimGame/issues">Request Feature</a>
   </p>
 </div>
 
