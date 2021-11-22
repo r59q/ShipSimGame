@@ -31,7 +31,7 @@ Currently the master branch is empty, because the project is still in early deve
 
 ## Current goals
 
-The primary goal right now is building a solid foundation to work with. The first thing is the boat interface IBoat.cs. This needs to perfect before proceeding
+The primary goal right now is building a solid foundation to work with. The first thing is the boat interface `IBoat.cs`. This needs to perfect before proceeding
 
 To do this I am working on a motorboat implementation, that will be used as a testbed for future boats.
 
