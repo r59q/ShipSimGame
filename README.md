@@ -4,7 +4,7 @@
   </a>
 
   <h1 align="center">ShipSimGame</h1>
-
+  <h3 align="center">A Unity Game</h3>
   <p align="center">
     An exploration of TDD in games development.
     <br />
