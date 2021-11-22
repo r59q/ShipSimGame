@@ -26,7 +26,7 @@ More to come...
 
 ## About the project
 
-<strong>Look away!</strong> It's not even remotely interesting yet. Currently it is just a collection of simple tests and a couple of not-yet implemented interfaces.
+<strong>Look away!</strong> It's not interesting yet. Currently it is just a collection of simple tests and a couple of not-yet implemented interfaces.
 
 This is a project that explores the test-driven development process and gitflow for unity projects in order to create a ship simulation game.
 
