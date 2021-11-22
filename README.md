@@ -10,6 +10,7 @@
     <br />
     <a href="https://github.com/r59q/ShipSimGame/wiki"><strong>Explore the docs »</strong></a>
     <br />
+    <a href="https://github.com/r59q/ShipSimGame/projects"><strong>Check out projects »</strong></a>
     <br />
     <!-- <a href=" [LINKHERE] ">View Demo</a> -->
     <!-- · -->
