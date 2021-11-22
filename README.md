@@ -26,6 +26,8 @@ More to come...
 
 ## About the project
 
+Look away! It's not even remotely interesting yet. Currently it is just a collection of simple tests and a couple of not-yet implemented interfaces.
+
 This is a project that explores the test-driven development process and gitflow for unity projects in order to create a ship simulation game.
 
 Currently the master branch is empty, because the project is still in early development. Look in development branch
