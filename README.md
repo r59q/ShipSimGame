@@ -17,6 +17,8 @@
     <a href="https://github.com/r59q/ShipSimGame/issues">Report Bug</a>
     ·
     <a href="https://github.com/r59q/ShipSimGame/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/r59q/ShipSimGame/issues">Solve an issue</a>
   </p>
 </div>
 
