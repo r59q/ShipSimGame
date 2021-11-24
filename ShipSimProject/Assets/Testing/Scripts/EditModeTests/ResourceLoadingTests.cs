@@ -10,7 +10,7 @@ public class ResourceLoadingTests
     [Test]
     public void ResourceLoadingAccessibleByStatic()
     {
-        Assert.That(ResourceLoader.Load.boatMeshes.testBoat, Is.Not.Null);
+        Assert.That(ResourceLoader.Load.shipMeshes.testShip, Is.Not.Null);
     }
 
     [Test]
@@ -24,7 +24,7 @@ public class ResourceLoadingTests
     {
         LoadableAssets assets = ScriptableObject.CreateInstance<LoadableAssets>();
         Assert.That(assets, Is.Not.Null);
-        Assert.That(assets.boatMeshes.testBoat, Is.Null);
+        Assert.That(assets.shipMeshes.testShip, Is.Null);
     }
 
 }

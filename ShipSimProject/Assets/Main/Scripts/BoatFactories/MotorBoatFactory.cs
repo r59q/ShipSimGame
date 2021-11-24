@@ -13,7 +13,7 @@ public class MotorBoatFactory : IShipFactory
 
     public Mesh CreateMesh()
     {
-        return ResourceLoader.Load.boatMeshes.testBoat;
+        return ResourceLoader.Load.shipMeshes.testShip;
     }
 
     public ICurve CreateAccelerationCurve()
