@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: LoadableAssets
   m_EditorClassIdentifier: 
   boatMeshes:
-    testBoat: {fileID: 0}
+    testBoat: {fileID: -5495902117074765545, guid: e210e18d800e7d64798a0f1d93be42db, type: 3}
   materials:
-    testMat: {fileID: 0}
+    testMat: {fileID: 2100000, guid: d931c0a30cdab9546896ff09602857b4, type: 2}
