@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boat : MonoBehaviour, IBoat
+public class Ship : MonoBehaviour, IShip
 {
 
     private Rigidbody rb;
@@ -11,39 +11,39 @@ public class Boat : MonoBehaviour, IBoat
     List<IDetectableEntity> detectedEntitiesList;
 
     /// <summary>
-    /// Builds a boat on the GameObject this script is bound to.
+    /// Builds a ship on the GameObject this script is bound to.
     /// </summary>
-    /// <param name="boatFactory">The BoatFactory object to build the boat from</param>
-    public void Build(IBoatFactory boatFactory)
+    /// <param name="shipFactory">The ShipFactory object to build the ship from</param>
+    public void Build(IShipFactory shipFactory)
     {
         // Create and render mesh
         MeshFilter mf = gameObject.AddComponent<MeshFilter>();
         MeshRenderer mr = gameObject.AddComponent<MeshRenderer>();
-        mf.mesh = boatFactory.CreateMesh();
+        mf.mesh = shipFactory.CreateMesh();
 
         // Add rigid body.
         rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false; // Avoid the boat falling through the 'ground'
+        rb.useGravity = false; // Avoid the ship falling through the 'ground'
 
         // Create detected entities list
         detectedEntitiesList = new List<IDetectableEntity>();
 
-        // Build properties from boat factory.
-        AccelerationCurve = boatFactory.CreateAccelerationCurve(); 
-        TurningSpeedCurve = boatFactory.CreateTurningSpeedCurve();
-        OptimalTurnSpeed = boatFactory.CreateOptimalTurnSpeed();
-        mr.sharedMaterial = boatFactory.CreateMaterial();
+        // Build properties from ship factory.
+        AccelerationCurve = shipFactory.CreateAccelerationCurve(); 
+        TurningSpeedCurve = shipFactory.CreateTurningSpeedCurve();
+        OptimalTurnSpeed = shipFactory.CreateOptimalTurnSpeed();
+        mr.sharedMaterial = shipFactory.CreateMaterial();
         
         // Add the 'visual' sphere of the boat. I.e the detection collider
         SphereCollider detectCol = gameObject.AddComponent<SphereCollider>();
         detectCol.isTrigger = true;
-        detectCol.radius = boatFactory.CreateDetectionRange();
+        detectCol.radius = shipFactory.CreateDetectionRange();
     }
 
    
 
     /// <summary>
-    /// Sets the propulsion state. Decide whether or not the boat should have propulsion.
+    /// Sets the propulsion state. Decide whether or not the ship should have propulsion.
     /// Use this to turn off engine or lower the sails.
     /// </summary>
     /// <param name="state">Propulsion state.</param>

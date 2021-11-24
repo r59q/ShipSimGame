@@ -4,33 +4,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class BoatInstrumentTest
+public class ShipInstrumentTests
 {
 
-    IBoat boatInterface;
-    GameObject boat;
+    IShip shipInterface;
+    GameObject ship;
 
     # region SetUp and TearDown
     [UnitySetUp]
     public IEnumerator SetUp()
     {
-        boat = new GameObject("Boat");
-        boat.AddComponent<Boat>().Build(new MotorBoatFactory());
-        boatInterface = boat.GetComponent<IBoat>();
+        ship = new GameObject("Ship");
+        ship.AddComponent<Ship>().Build(new MotorShipFactory());
+        shipInterface = ship.GetComponent<IShip>();
         yield return new EnterPlayMode();
     }
     [UnityTearDown]
     public IEnumerator TearDown()
     {
 
-        GameObject.Destroy(boat);
-        boat = null;
-        boatInterface = null;
+        GameObject.Destroy(ship);
+        ship = null;
+        shipInterface = null;
 
         GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
         foreach (var ob in allObjects)
         {
-            if (ob.GetComponent<Boat>() != null)
+            if (ob.GetComponent<Ship>() != null)
             {
                 GameObject.Destroy(ob);
             }
@@ -48,9 +48,9 @@ public class BoatInstrumentTest
     public IEnumerator CompassValueTests([ValueSource("boatCompassValues")] int val)
     {
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, val, 0));
-        boat.transform.rotation = targetRotation;
+        ship.transform.rotation = targetRotation;
 
-        float compassReading = boatInterface.CompassDirection;
+        float compassReading = shipInterface.CompassDirection;
         int degrees = Mathf.FloorToInt(compassReading);
         Assert.That(degrees, Is.EqualTo(val));
 
@@ -61,27 +61,26 @@ public class BoatInstrumentTest
     [UnityTest]
     public IEnumerator ShouldHaveCompass()
     {
-        Assert.That(boatInterface.CompassDirection, Is.Not.Null);
+        Assert.That(shipInterface.CompassDirection, Is.Not.Null);
 
         yield return null;
     }
 
-    #region Boat detection test
-    static int[] boatDetectionTestValues = new int[]
+    #region Ship detection test
+    static int[] shipDetectionTestValues = new int[]
     {
         0, 1, 2, 10, 15
     };
     [UnityTest]
-    public IEnumerator BoatsInVisualFieldTest([ValueSource("boatDetectionTestValues")] int val)
+    public IEnumerator BoatsInVisualFieldTest([ValueSource("shipDetectionTestValues")] int val)
     {
         for (int i = 0; i < val; i++)
         {
-            GameObject gboat = new GameObject("Added boat - " + i);
-            gboat.AddComponent<Boat>().Build(new MotorBoatFactory());
-            IBoat iboat = gboat.GetComponent<IBoat>();
+            GameObject gShip = new GameObject("Added Ship - " + i);
+            gShip.AddComponent<Ship>().Build(new MotorShipFactory());
         }
         yield return new WaitForSeconds(0.5f);
-        Assert.That(boatInterface.DetectedEntities.Length, Is.EqualTo(val));
+        Assert.That(shipInterface.DetectedEntities.Length, Is.EqualTo(val));
         yield return null;
     }
     #endregion

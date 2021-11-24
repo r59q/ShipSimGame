@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PrototypingMotorBoat : Boat
+public class PrototypingMotorShip : Ship
 {
 
-    public float sped;
+    public float speed;
 
     private void Start()
     {
@@ -14,6 +14,6 @@ public class PrototypingMotorBoat : Boat
     protected override void Update()
     {
         base.Update();
-        sped = Rigidbody.velocity.magnitude;
+        speed = Rigidbody.velocity.magnitude;
     }
 }

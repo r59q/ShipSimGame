@@ -4,34 +4,34 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class BoatAssemblingTest
+public class ShipAssemblingTest
 {
 
-    public GameObject motorBoat;
+    public GameObject motorShip;
 
     [UnitySetUp]
     public IEnumerator SetUp()
     {
-        motorBoat = new GameObject("Test Boat");
-        motorBoat.AddComponent<Boat>();
-        IBoat boatComponent = motorBoat.GetComponent<IBoat>();
-        boatComponent.Build(new MotorBoatFactory());
+        motorShip = new GameObject("Test Ship");
+        motorShip.AddComponent<Ship>();
+        IShip shipComponent = motorShip.GetComponent<IShip>();
+        shipComponent.Build(new MotorShipFactory());
         yield return new EnterPlayMode();
     }
 
     [UnityTest]
-    public IEnumerator HasBoatComponent()
+    public IEnumerator HasShipComponent()
     {
-        Assert.That(motorBoat, Is.Not.Null);
-        Assert.That(motorBoat.GetComponent<Boat>(),Is.Not.Null);
+        Assert.That(motorShip, Is.Not.Null);
+        Assert.That(motorShip.GetComponent<Ship>(),Is.Not.Null);
         yield return null;
     }
 
     [UnityTest]
     public IEnumerator HasMeshRendererAndMesh()
     {
-        MeshRenderer mr = motorBoat.GetComponent<MeshRenderer>();
-        MeshFilter mf = motorBoat.GetComponent<MeshFilter>();
+        MeshRenderer mr = motorShip.GetComponent<MeshRenderer>();
+        MeshFilter mf = motorShip.GetComponent<MeshFilter>();
         Assert.That(mr, Is.Not.Null);
         Assert.That(mf.mesh, Is.Not.Null);
         Assert.That(mf.mesh.vertexCount, Is.Not.EqualTo(0));
@@ -41,30 +41,30 @@ public class BoatAssemblingTest
     [UnityTest]
     public IEnumerator ShouldHaveMaterial()
     {
-        MeshRenderer mr = motorBoat.GetComponent<MeshRenderer>();
+        MeshRenderer mr = motorShip.GetComponent<MeshRenderer>();
         Assert.That(mr.materials.Length, Is.Not.EqualTo(0));
         Material mat = mr.sharedMaterial;
-        Assert.That(mat.name, Is.EqualTo(new MotorBoatFactory().CreateMaterial().name + " (Instance)"));
+        Assert.That(mat.name, Is.EqualTo(new MotorShipFactory().CreateMaterial().name + " (Instance)"));
         yield return null;
     }
 
     [UnityTest]
     public IEnumerator ShouldHaveDetectionRange()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip shipInterface = motorShip.GetComponent<IShip>();
 
-        Assert.That(boatInterface.DetectionRange, Is.Not.EqualTo(0));
+        Assert.That(shipInterface.DetectionRange, Is.Not.EqualTo(0));
 
         yield return null;
     }
     [UnityTest]
     public IEnumerator ShouldHaveDetectionSphereWithRadiusOfDetectionRange()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip shipInterface = motorShip.GetComponent<IShip>();
 
-        SphereCollider collider = boatInterface.DetectionCollider;
+        SphereCollider collider = shipInterface.DetectionCollider;
 
-        float detectionRange = boatInterface.DetectionRange;
+        float detectionRange = shipInterface.DetectionRange;
 
         Assert.That(collider, Is.Not.Null);
         Assert.That(collider.radius, Is.EqualTo(detectionRange));
@@ -74,11 +74,11 @@ public class BoatAssemblingTest
     [UnityTest]
     public IEnumerator DetectionSphereShouldBeTrigger()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip shipInterface = motorShip.GetComponent<IShip>();
 
-        SphereCollider collider = boatInterface.DetectionCollider;
+        SphereCollider collider = shipInterface.DetectionCollider;
 
-        float detectionRange = boatInterface.DetectionRange;
+        float detectionRange = shipInterface.DetectionRange;
 
         Assert.That(collider, Is.Not.Null);
         Assert.That(collider.isTrigger, Is.EqualTo(true));
@@ -89,8 +89,8 @@ public class BoatAssemblingTest
     [UnityTearDown]
     public IEnumerator TearDown()
     {
-        GameObject.Destroy(motorBoat);
-        motorBoat = null;
+        GameObject.Destroy(motorShip);
+        motorShip = null;
         yield return new ExitPlayMode();
     }
 }

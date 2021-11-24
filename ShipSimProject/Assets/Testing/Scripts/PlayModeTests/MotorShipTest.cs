@@ -4,20 +4,20 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class MotorBoatTests
+public class MotorShipTest
 {
     GameManager gm;
 
-    GameObject boatObject;
-    IBoat boatInterface;
+    GameObject shipObject;
+    IShip shipInterface;
 
     #region set up and tear down
     [UnitySetUp]
     public IEnumerator SetUp()
     {
         gm = new GameObject("GM").AddComponent<GameManager>();
-        boatObject = gm.BuildBoat(new MotorBoatFactory(), Vector3.zero);
-        boatInterface = boatObject.GetComponent<IBoat>();
+        shipObject = gm.BuildShip(new MotorShipFactory(), Vector3.zero);
+        shipInterface = shipObject.GetComponent<IShip>();
         yield return null;
     
     }
@@ -25,15 +25,15 @@ public class MotorBoatTests
     public IEnumerator TearDown()
     {
         GameObject.Destroy(gm);
-        GameObject.Destroy(boatObject);
-        boatObject = null;
+        GameObject.Destroy(shipObject);
+        shipObject = null;
         gm = null;
         yield return null;
     }
     #endregion
 
     #region Speed value tests
-    static KeyValuePair<float, float>[] boatSpeedValues = new KeyValuePair<float, float>[]
+    static KeyValuePair<float, float>[] shipSpeedValues = new KeyValuePair<float, float>[]
     {
         new KeyValuePair<float, float>(0,0),
         new KeyValuePair<float, float>(1,13.88f),
@@ -41,16 +41,16 @@ public class MotorBoatTests
     };
 
     [UnityTest]
-    public IEnumerator MovementSpeedTest([ValueSource("boatSpeedValues")] KeyValuePair<float, float> values)
+    public IEnumerator MovementSpeedTest([ValueSource("shipSpeedValues")] KeyValuePair<float, float> values)
     {
-        Assert.IsTrue(boatInterface.SetPropulsion(true));
-        Assert.IsTrue(boatInterface.SetPropulsionMultiplier(1f));
-        Vector3 startPos = boatObject.transform.position;
+        Assert.IsTrue(shipInterface.SetPropulsion(true));
+        Assert.IsTrue(shipInterface.SetPropulsionMultiplier(1f));
+        Vector3 startPos = shipObject.transform.position;
         float time = values.Key;
         float maxDist = values.Value;
 
         yield return new WaitForSeconds(time);
-        Vector3 endPos = boatObject.transform.position;
+        Vector3 endPos = shipObject.transform.position;
 
         float dist = Vector3.Distance(startPos, endPos);
         Assert.That(dist, Is.LessThanOrEqualTo(maxDist+0.001f));
@@ -62,18 +62,18 @@ public class MotorBoatTests
     [UnityTest]
     public IEnumerator SpeedShouldNotExceedExpectedMaximumSpeed()
     {
-        boatInterface.SetPropulsion(true);
-        boatInterface.SetPropulsionMultiplier(1f);
+        shipInterface.SetPropulsion(true);
+        shipInterface.SetPropulsionMultiplier(1f);
         yield return new WaitForSeconds(20);
-        Assert.That(boatInterface.Speed, Is.LessThanOrEqualTo(Boat.MStoKnots(13.353f)));
+        Assert.That(shipInterface.Speed, Is.LessThanOrEqualTo(Ship.MStoKnots(13.353f)));
         yield return null;
     }
 
     [UnityTest]
     public IEnumerator ShouldHaveSameOptimalTurnSpeed()
     {
-        float optimalTurnSpeed = boatInterface.OptimalTurnSpeed;
-        float factoryTurnSpeed = new MotorBoatFactory().CreateOptimalTurnSpeed();
+        float optimalTurnSpeed = shipInterface.OptimalTurnSpeed;
+        float factoryTurnSpeed = new MotorShipFactory().CreateOptimalTurnSpeed();
 
         Assert.AreEqual(factoryTurnSpeed, optimalTurnSpeed);
         yield return null;
@@ -82,17 +82,17 @@ public class MotorBoatTests
     [UnityTest]
     public IEnumerator TestAccelerationCurve()
     {
-        boatInterface.SetPropulsion(true);
-        boatInterface.SetPropulsionMultiplier(1f);
+        shipInterface.SetPropulsion(true);
+        shipInterface.SetPropulsionMultiplier(1f);
 
 
-        float speedInMS = boatInterface.Speed;
+        float speedInMS = shipInterface.Speed;
 
         for (int i = 0; i < 20; i++)
         {
             yield return new WaitForSeconds(0.5f);
-            Assert.That(boatInterface.Speed, Is.GreaterThan(speedInMS));
-            speedInMS = boatInterface.Speed;
+            Assert.That(shipInterface.Speed, Is.GreaterThan(speedInMS));
+            speedInMS = shipInterface.Speed;
         }
 
 
@@ -104,7 +104,7 @@ public class MotorBoatTests
     [UnityTest]
     public IEnumerator TheoreticalMaxSpeedShouldBe50KMH()
     {
-        Assert.That(Mathf.Abs(13.353f - Boat.KnotsToMS(Boat.MStoKnots(13.353f))),Is.LessThan(0.005f));
+        Assert.That(Mathf.Abs(13.353f - Ship.KnotsToMS(Ship.MStoKnots(13.353f))),Is.LessThan(0.005f));
         yield return null;
     }
 

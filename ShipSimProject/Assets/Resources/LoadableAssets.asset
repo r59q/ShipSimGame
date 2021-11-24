@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed518c1667e6be43aff1aa1b41f50f5, type: 3}
   m_Name: LoadableAssets
   m_EditorClassIdentifier: 
-  boatMeshes:
-    testBoat: {fileID: -5495902117074765545, guid: e210e18d800e7d64798a0f1d93be42db, type: 3}
+  shipMeshes:
+    testShip: {fileID: -5495902117074765545, guid: e210e18d800e7d64798a0f1d93be42db, type: 3}
   materials:
     testMat: {fileID: 2100000, guid: d931c0a30cdab9546896ff09602857b4, type: 2}

@@ -7,13 +7,13 @@ using System.Collections;
 [CreateAssetMenu(fileName = "LoadableAssets", menuName = "LoadableAssets")]
 public class LoadableAssets : ScriptableObject
 {
-    public BoatMesh boatMeshes = new();
+    public ShipMeshes shipMeshes = new();
     public Materials materials = new();
 
     [System.Serializable]
-    public class BoatMesh
+    public class ShipMeshes
     {
-        public Mesh testBoat;
+        public Mesh testShip;
     }
 
     [System.Serializable]

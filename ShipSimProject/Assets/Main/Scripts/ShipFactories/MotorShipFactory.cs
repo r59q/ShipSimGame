@@ -2,18 +2,18 @@
 using UnityEngine;
 
 
-public class MotorBoatFactory : IBoatFactory
+public class MotorShipFactory : IShipFactory
 {
     private static float accelerationMultiplier = 2;
 
     public float CreateMaxSpeed()
     {
-        return Boat.MStoKnots(13.353f);
+        return Ship.MStoKnots(13.353f);
     }
 
     public Mesh CreateMesh()
     {
-        return ResourceLoader.Load.boatMeshes.testBoat;
+        return ResourceLoader.Load.shipMeshes.testShip;
     }
 
     public ICurve CreateAccelerationCurve()

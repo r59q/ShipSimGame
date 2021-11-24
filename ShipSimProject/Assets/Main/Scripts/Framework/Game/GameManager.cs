@@ -6,26 +6,26 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    private List<GameObject> boatObjects;
+    private List<GameObject> shipObjects;
 
     protected virtual void Awake()
     {
-        boatObjects = new List<GameObject>();
+        shipObjects = new List<GameObject>();
     }
 
-    public GameObject BuildBoat(IBoatFactory factory, Vector3 pos)
+    public GameObject BuildShip(IShipFactory factory, Vector3 pos)
     {
-        GameObject boatObject = new GameObject("Boat");
-        IBoat boat = boatObject.AddComponent<Boat>();
-        boatObject.transform.position = pos;
-        boat.Build(factory);
+        GameObject shipObject = new GameObject("Boat");
+        IShip ship = shipObject.AddComponent<Ship>();
+        shipObject.transform.position = pos;
+        ship.Build(factory);
 
-        boatObjects.Add(boatObject);
-        return boatObject;
+        shipObjects.Add(shipObject);
+        return shipObject;
     }
 
-    public int GetBoatCount()
+    public int GetShipCount()
     {
-        return boatObjects.Count;
+        return shipObjects.Count;
     }
 }
