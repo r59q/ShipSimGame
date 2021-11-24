@@ -13,7 +13,7 @@ public class MotorBoatFactory : IBoatFactory
 
     public Mesh CreateMesh()
     {
-        return ResourceLoader.Boats.TestBoat;
+        return ResourceLoader.Load.boatMeshes.testBoat;
     }
 
     public ICurve CreateAccelerationCurve()
@@ -37,7 +37,7 @@ public class MotorBoatFactory : IBoatFactory
 
     public Material CreateMaterial()
     {
-        return ResourceLoader.Materials.TestMat;
+        return ResourceLoader.Load.materials.testMat;
     }
 
     public float CreateDetectionRange()
