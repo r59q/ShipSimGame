@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1397
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 18
+  controlID: 16
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 129
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 130
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 122
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 24
+  controlID: 131
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 155
+    ID: 152
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -487,17 +487,17 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 18}
     m_NewResultList:
-    - id: 1007
-      uniqueId: '[shipsim][suite]'
-      name: shipsim
-      fullName: shipsim
-      resultStatus: 2
-      duration: 67.27789
-      messages: One or more child tests had errors
+    - id: 1000
+      uniqueId: '[ShipSim][suite]'
+      name: ShipSim
+      fullName: ShipSim
+      resultStatus: 1
+      duration: 0.139727
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -507,13 +507,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1003
-      uniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1058
+      uniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
       name: PlayModeTests.dll
-      fullName: G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 2
-      duration: 67.1446
-      messages: One or more child tests had errors
+      fullName: G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll
+      resultStatus: 1
+      duration: 0.0538743
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -522,13 +522,13 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentId: 1000
-      parentUniqueId: '[shipsim][suite]'
+      parentUniqueId: '[ShipSim][suite]'
     - id: 1001
       uniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
       name: BoatAssemblingTest
       fullName: BoatAssemblingTest
       resultStatus: 1
-      duration: 0.1663833
+      duration: 0.0479841
       messages: 
       output: 
       stacktrace: 
@@ -544,7 +544,7 @@ MonoBehaviour:
       name: DetectionSphereShouldBeTrigger
       fullName: BoatAssemblingTest.DetectionSphereShouldBeTrigger
       resultStatus: 1
-      duration: 0.0443959
+      duration: 0.0459979
       messages: 
       output: 
       stacktrace: 
@@ -561,7 +561,7 @@ MonoBehaviour:
       name: HasBoatComponent
       fullName: BoatAssemblingTest.HasBoatComponent
       resultStatus: 1
-      duration: 0.0219029
+      duration: 0.0306115
       messages: 
       output: 
       stacktrace: 
@@ -578,7 +578,7 @@ MonoBehaviour:
       name: HasMeshRendererAndMesh
       fullName: BoatAssemblingTest.HasMeshRendererAndMesh
       resultStatus: 1
-      duration: 0.0226288
+      duration: 0.0450935
       messages: 
       output: 
       stacktrace: 
@@ -595,7 +595,7 @@ MonoBehaviour:
       name: ShouldHaveDetectionRange
       fullName: BoatAssemblingTest.ShouldHaveDetectionRange
       resultStatus: 1
-      duration: 0.0393876
+      duration: 0.0373768
       messages: 
       output: 
       stacktrace: 
@@ -612,7 +612,7 @@ MonoBehaviour:
       name: ShouldHaveDetectionSphereWithRadiusOfDetectionRange
       fullName: BoatAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange
       resultStatus: 1
-      duration: 0.0132973
+      duration: 0.0327457
       messages: 
       output: 
       stacktrace: 
@@ -629,7 +629,7 @@ MonoBehaviour:
       name: ShouldHaveMaterial
       fullName: BoatAssemblingTest.ShouldHaveMaterial
       resultStatus: 1
-      duration: 0.0115299
+      duration: 0.0389889
       messages: 
       output: 
       stacktrace: 
@@ -646,7 +646,7 @@ MonoBehaviour:
       name: BoatInstrumentTest
       fullName: BoatInstrumentTest
       resultStatus: 2
-      duration: 2.6443639
+      duration: 2.6368918
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -662,7 +662,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest
       resultStatus: 2
-      duration: 2.5763104
+      duration: 2.5749216
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -678,7 +678,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(0)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(0)
       resultStatus: 1
-      duration: 0.5154027
+      duration: 0.5137973
       messages: 
       output: 
       stacktrace: 
@@ -695,7 +695,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(1)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(1)
       resultStatus: 2
-      duration: 0.517841
+      duration: 0.5166014
       messages: "  Expected: 1\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -719,7 +719,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(2)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(2)
       resultStatus: 2
-      duration: 0.5132428
+      duration: 0.5129418
       messages: "  Expected: 2\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -743,7 +743,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(10)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(10)
       resultStatus: 2
-      duration: 0.5127822
+      duration: 0.5150603
       messages: "  Expected: 10\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -767,7 +767,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(15)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(15)
       resultStatus: 2
-      duration: 0.5129117
+      duration: 0.5131729
       messages: "  Expected: 15\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -791,7 +791,7 @@ MonoBehaviour:
       name: CompassValueTests
       fullName: BoatInstrumentTest.CompassValueTests
       resultStatus: 1
-      duration: 0.0499636
+      duration: 0.0470991
       messages: 
       output: 
       stacktrace: 
@@ -807,7 +807,7 @@ MonoBehaviour:
       name: CompassValueTests(0)
       fullName: BoatInstrumentTest.CompassValueTests(0)
       resultStatus: 1
-      duration: 0.0105777
+      duration: 0.0099198
       messages: 
       output: 
       stacktrace: 
@@ -824,7 +824,7 @@ MonoBehaviour:
       name: CompassValueTests(90)
       fullName: BoatInstrumentTest.CompassValueTests(90)
       resultStatus: 1
-      duration: 0.0115143
+      duration: 0.0107409
       messages: 
       output: 
       stacktrace: 
@@ -841,7 +841,7 @@ MonoBehaviour:
       name: CompassValueTests(180)
       fullName: BoatInstrumentTest.CompassValueTests(180)
       resultStatus: 1
-      duration: 0.0119347
+      duration: 0.0120695
       messages: 
       output: 
       stacktrace: 
@@ -858,7 +858,7 @@ MonoBehaviour:
       name: CompassValueTests(270)
       fullName: BoatInstrumentTest.CompassValueTests(270)
       resultStatus: 1
-      duration: 0.0113023
+      duration: 0.0100667
       messages: 
       output: 
       stacktrace: 
@@ -875,7 +875,7 @@ MonoBehaviour:
       name: ShouldHaveCompass
       fullName: BoatInstrumentTest.ShouldHaveCompass
       resultStatus: 1
-      duration: 0.011764
+      duration: 0.0111546
       messages: 
       output: 
       stacktrace: 
@@ -892,7 +892,7 @@ MonoBehaviour:
       name: BoatMovementTest
       fullName: BoatMovementTest
       resultStatus: 1
-      duration: 18.16231
+      duration: 18.202356
       messages: 
       output: 
       stacktrace: 
@@ -908,7 +908,7 @@ MonoBehaviour:
       name: BoatShouldHaveTurningSpeedCurve
       fullName: BoatMovementTest.BoatShouldHaveTurningSpeedCurve
       resultStatus: 1
-      duration: 0.0098685
+      duration: 0.0107553
       messages: 
       output: 
       stacktrace: 
@@ -925,7 +925,7 @@ MonoBehaviour:
       name: BoatsShouldNotExperienceGravity
       fullName: BoatMovementTest.BoatsShouldNotExperienceGravity
       resultStatus: 1
-      duration: 0.0113725
+      duration: 0.0113688
       messages: 
       output: 
       stacktrace: 
@@ -942,7 +942,7 @@ MonoBehaviour:
       name: CannotOverthrottleOrUnderthrottle
       fullName: BoatMovementTest.CannotOverthrottleOrUnderthrottle
       resultStatus: 1
-      duration: 0.0125457
+      duration: 0.012121
       messages: 
       output: 
       stacktrace: 
@@ -959,7 +959,7 @@ MonoBehaviour:
       name: CannotOverturnOrUnderturnRudder
       fullName: BoatMovementTest.CannotOverturnOrUnderturnRudder
       resultStatus: 1
-      duration: 0.011517
+      duration: 0.010802
       messages: 
       output: 
       stacktrace: 
@@ -976,7 +976,7 @@ MonoBehaviour:
       name: HardTurnSlowsDownBoat
       fullName: BoatMovementTest.HardTurnSlowsDownBoat
       resultStatus: 1
-      duration: 2.551227
+      duration: 2.5550637
       messages: 
       output: 
       stacktrace: 
@@ -993,7 +993,7 @@ MonoBehaviour:
       name: MovingAndTurningCausesRotation
       fullName: BoatMovementTest.MovingAndTurningCausesRotation
       resultStatus: 1
-      duration: 0.2131475
+      duration: 0.213513
       messages: 
       output: 
       stacktrace: 
@@ -1010,7 +1010,7 @@ MonoBehaviour:
       name: NotPropellingCausesNoMovement
       fullName: BoatMovementTest.NotPropellingCausesNoMovement
       resultStatus: 1
-      duration: 5.013911
+      duration: 5.014631
       messages: 
       output: 
       stacktrace: 
@@ -1027,7 +1027,7 @@ MonoBehaviour:
       name: PropellingCausesMovement
       fullName: BoatMovementTest.PropellingCausesMovement
       resultStatus: 1
-      duration: 1.0130457
+      duration: 1.0140082
       messages: 
       output: 
       stacktrace: 
@@ -1044,7 +1044,7 @@ MonoBehaviour:
       name: RudderNot0DoesNotTurnWhenStill
       fullName: BoatMovementTest.RudderNot0DoesNotTurnWhenStill
       resultStatus: 1
-      duration: 0.2140055
+      duration: 0.2155857
       messages: 
       output: 
       stacktrace: 
@@ -1061,7 +1061,7 @@ MonoBehaviour:
       name: SettingPropulsionChangesPropulsionWhenEngineIsOn
       fullName: BoatMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn
       resultStatus: 1
-      duration: 0.0107609
+      duration: 0.010705
       messages: 
       output: 
       stacktrace: 
@@ -1078,7 +1078,7 @@ MonoBehaviour:
       name: SlowTurnDoesNotSlowDownBoat
       fullName: BoatMovementTest.SlowTurnDoesNotSlowDownBoat
       resultStatus: 1
-      duration: 5.053349
+      duration: 5.0529957
       messages: 
       output: 
       stacktrace: 
@@ -1095,7 +1095,7 @@ MonoBehaviour:
       name: SpeedShouldExceed0WhenMoving
       fullName: BoatMovementTest.SpeedShouldExceed0WhenMoving
       resultStatus: 1
-      duration: 1.0123277
+      duration: 1.0134667
       messages: 
       output: 
       stacktrace: 
@@ -1112,7 +1112,7 @@ MonoBehaviour:
       name: TurningCausesRudderPosToChange
       fullName: BoatMovementTest.TurningCausesRudderPosToChange
       resultStatus: 1
-      duration: 0.0105372
+      duration: 0.0107861
       messages: 
       output: 
       stacktrace: 
@@ -1129,7 +1129,7 @@ MonoBehaviour:
       name: TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
       fullName: BoatMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
       resultStatus: 1
-      duration: 0.0109107
+      duration: 0.0106776
       messages: 
       output: 
       stacktrace: 
@@ -1146,7 +1146,7 @@ MonoBehaviour:
       name: TurningSpeedIncreasesWithSpeed
       fullName: BoatMovementTest.TurningSpeedIncreasesWithSpeed
       resultStatus: 1
-      duration: 0.3529576
+      duration: 0.3551902
       messages: 
       output: 
       stacktrace: 
@@ -1163,7 +1163,7 @@ MonoBehaviour:
       name: TurningTest
       fullName: BoatMovementTest.TurningTest
       resultStatus: 1
-      duration: 2.642258
+      duration: 2.673186
       messages: 
       output: 
       stacktrace: 
@@ -1180,7 +1180,7 @@ MonoBehaviour:
       name: TurningTest([-1, -1])
       fullName: BoatMovementTest.TurningTest([-1, -1])
       resultStatus: 1
-      duration: 0.2098602
+      duration: 0.2120537
       messages: 
       output: 
       stacktrace: 
@@ -1198,7 +1198,7 @@ MonoBehaviour:
       name: TurningTest([-0.1, -1])
       fullName: BoatMovementTest.TurningTest([-0.1, -1])
       resultStatus: 1
-      duration: 0.7932214
+      duration: 0.7906825
       messages: 
       output: 
       stacktrace: 
@@ -1216,7 +1216,7 @@ MonoBehaviour:
       name: TurningTest([0.1, 1])
       fullName: BoatMovementTest.TurningTest([0.1, 1])
       resultStatus: 1
-      duration: 0.7892526
+      duration: 0.7894706
       messages: 
       output: 
       stacktrace: 
@@ -1234,7 +1234,7 @@ MonoBehaviour:
       name: TurningTest([0, 0])
       fullName: BoatMovementTest.TurningTest([0, 0])
       resultStatus: 1
-      duration: 0.8459906
+      duration: 0.877219
       messages: 
       output: 
       stacktrace: 
@@ -1251,7 +1251,7 @@ MonoBehaviour:
       name: WhileEngineIsOffPropulsionShouldBe0
       fullName: BoatMovementTest.WhileEngineIsOffPropulsionShouldBe0
       resultStatus: 1
-      duration: 0.0118015
+      duration: 0.0117576
       messages: 
       output: 
       stacktrace: 
@@ -1268,7 +1268,7 @@ MonoBehaviour:
       name: GameManagerTests
       fullName: GameManagerTests
       resultStatus: 1
-      duration: 0.046576
+      duration: 0.0500135
       messages: 
       output: 
       stacktrace: 
@@ -1284,7 +1284,7 @@ MonoBehaviour:
       name: BoatSpawningTest
       fullName: GameManagerTests.BoatSpawningTest
       resultStatus: 1
-      duration: 0.0327088
+      duration: 0.0359313
       messages: 
       output: 
       stacktrace: 
@@ -1302,7 +1302,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (1.00, 1.00,
         1.00)])
       resultStatus: 1
-      duration: 0.0101668
+      duration: 0.0110068
       messages: 
       output: 
       stacktrace: 
@@ -1321,7 +1321,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (100.00, 1.00,
         100.00)])
       resultStatus: 1
-      duration: 0.0103034
+      duration: 0.0110405
       messages: 
       output: 
       stacktrace: 
@@ -1340,7 +1340,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (-19.00, 1.00,
         10.00)])
       resultStatus: 1
-      duration: 0.0100766
+      duration: 0.0114341
       messages: 
       output: 
       stacktrace: 
@@ -1357,7 +1357,7 @@ MonoBehaviour:
       name: GMStartsWithNoBoats
       fullName: GameManagerTests.GMStartsWithNoBoats
       resultStatus: 1
-      duration: 0.0101229
+      duration: 0.0103899
       messages: 
       output: 
       stacktrace: 
@@ -1374,7 +1374,7 @@ MonoBehaviour:
       name: MotorBoatTests
       fullName: MotorBoatTests
       resultStatus: 1
-      duration: 46.117798
+      duration: 46.113106
       messages: 
       output: 
       stacktrace: 
@@ -1390,7 +1390,7 @@ MonoBehaviour:
       name: MovementSpeedTest
       fullName: MotorBoatTests.MovementSpeedTest
       resultStatus: 1
-      duration: 16.041388
+      duration: 16.041512
       messages: 
       output: 
       stacktrace: 
@@ -1407,7 +1407,7 @@ MonoBehaviour:
       name: MovementSpeedTest([0, 0])
       fullName: MotorBoatTests.MovementSpeedTest([0, 0])
       resultStatus: 1
-      duration: 0.0112613
+      duration: 0.0116305
       messages: 
       output: 
       stacktrace: 
@@ -1425,7 +1425,7 @@ MonoBehaviour:
       name: MovementSpeedTest([1, 13.88])
       fullName: MotorBoatTests.MovementSpeedTest([1, 13.88])
       resultStatus: 1
-      duration: 1.0139434
+      duration: 1.0141637
       messages: 
       output: 
       stacktrace: 
@@ -1443,7 +1443,7 @@ MonoBehaviour:
       name: MovementSpeedTest([15, 208.3333])
       fullName: MotorBoatTests.MovementSpeedTest([15, 208.3333])
       resultStatus: 1
-      duration: 15.013558
+      duration: 15.013309
       messages: 
       output: 
       stacktrace: 
@@ -1460,7 +1460,7 @@ MonoBehaviour:
       name: ShouldHaveSameOptimalTurnSpeed
       fullName: MotorBoatTests.ShouldHaveSameOptimalTurnSpeed
       resultStatus: 1
-      duration: 0.0112154
+      duration: 0.0104885
       messages: 
       output: 
       stacktrace: 
@@ -1477,7 +1477,7 @@ MonoBehaviour:
       name: SpeedShouldNotExceedExpectedMaximumSpeed
       fullName: MotorBoatTests.SpeedShouldNotExceedExpectedMaximumSpeed
       resultStatus: 1
-      duration: 20.013647
+      duration: 20.014812
       messages: 
       output: 
       stacktrace: 
@@ -1494,7 +1494,7 @@ MonoBehaviour:
       name: TestAccelerationCurve
       fullName: MotorBoatTests.TestAccelerationCurve
       resultStatus: 1
-      duration: 10.035763
+      duration: 10.03176
       messages: 
       output: 
       stacktrace: 
@@ -1511,7 +1511,7 @@ MonoBehaviour:
       name: TheoreticalMaxSpeedShouldBe50KMH
       fullName: MotorBoatTests.TheoreticalMaxSpeedShouldBe50KMH
       resultStatus: 1
-      duration: 0.0116573
+      duration: 0.0107055
       messages: 
       output: 
       stacktrace: 
@@ -1523,13 +1523,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    m_ResultText: ShouldHaveDetectionRange (0.039s)
+    m_ResultText: ShouldHaveDetectionRange (0.037s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 300}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 7ff0f39a
       m_LastClickedID: -1695289217
-      m_ExpandedIDs: 58d90a86067fbb9beb9fd4a73b1cfcbf4ec9dfc3a0e75acd70b4e1dbba863ffd55874f0fefb25b18d6ed8e36e426b3778132ec7dffffff7f
+      m_ExpandedIDs: 58d90a86067fbb9beb9fd4a73b1cfcbf4ec9dfc3a0e75acd70b4e1dbba863ffd55874f0fefb25b18d6ed8e36271a2d44ab781d56e426b3778132ec7dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1559,12 +1559,12 @@ MonoBehaviour:
   m_EditModeTestListGUI:
     m_Window: {fileID: 18}
     m_NewResultList:
-    - id: 1000
-      uniqueId: '[shipsim][suite]'
-      name: shipsim
-      fullName: shipsim
+    - id: 1060
+      uniqueId: '[ShipSim][suite]'
+      name: ShipSim
+      fullName: ShipSim
       resultStatus: 2
-      duration: 0.0792115
+      duration: 0.0735981
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1575,12 +1575,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1003
-      uniqueId: '[EditModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1149
+      uniqueId: '[EditModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/EditModeTests.dll][suite]'
       name: EditModeTests.dll
-      fullName: G:/Unity Projects/shipsim/Library/ScriptAssemblies/EditModeTests.dll
+      fullName: G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 2
-      duration: 0.0456613
+      duration: 0.059476
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1589,14 +1589,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
-      parentUniqueId: '[shipsim][suite]'
+      parentId: 1120
+      parentUniqueId: '[ShipSim][suite]'
     - id: 1037
       uniqueId: EditModeTests.dll/[EditModeTests][AccelerationCurveTests][suite]
       name: AccelerationCurveTests
       fullName: AccelerationCurveTests
       resultStatus: 1
-      duration: 0.0200105
+      duration: 0.0067474
       messages: 
       output: 
       stacktrace: 
@@ -1612,7 +1612,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve
       fullName: AccelerationCurveTests.TestMotorBoatCurve
       resultStatus: 1
-      duration: 0.017889
+      duration: 0.0057123
       messages: 
       output: 
       stacktrace: 
@@ -1628,7 +1628,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve(0.0f,0.3f)
       fullName: AccelerationCurveTests.TestMotorBoatCurve(0.0f,0.3f)
       resultStatus: 1
-      duration: 0.009595
+      duration: 0.0037489
       messages: 
       output: 
       stacktrace: 
@@ -1645,7 +1645,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve(2.0f,0.866f)
       fullName: AccelerationCurveTests.TestMotorBoatCurve(2.0f,0.866f)
       resultStatus: 1
-      duration: 0.0000526
+      duration: 0.000064
       messages: 
       output: 
       stacktrace: 
@@ -1662,7 +1662,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve(2.991f,1.847f)
       fullName: AccelerationCurveTests.TestMotorBoatCurve(2.991f,1.847f)
       resultStatus: 1
-      duration: 0.0000444
+      duration: 0.0000505
       messages: 
       output: 
       stacktrace: 
@@ -1679,7 +1679,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve(4.5f,0.528f)
       fullName: AccelerationCurveTests.TestMotorBoatCurve(4.5f,0.528f)
       resultStatus: 1
-      duration: 0.0000422
+      duration: 0.0000488
       messages: 
       output: 
       stacktrace: 
@@ -1696,7 +1696,7 @@ MonoBehaviour:
       name: TestMotorBoatCurve(13.353f,0.0f)
       fullName: AccelerationCurveTests.TestMotorBoatCurve(13.353f,0.0f)
       resultStatus: 1
-      duration: 0.0000426
+      duration: 0.0000474
       messages: 
       output: 
       stacktrace: 
@@ -1713,7 +1713,7 @@ MonoBehaviour:
       name: ResourceLoadingTests
       fullName: ResourceLoadingTests
       resultStatus: 1
-      duration: 0.0066289
+      duration: 0.0088563
       messages: 
       output: 
       stacktrace: 
@@ -1729,7 +1729,7 @@ MonoBehaviour:
       name: HasTestMaterial
       fullName: ResourceLoadingTests.HasTestMaterial
       resultStatus: 1
-      duration: 0.0018391
+      duration: 0.0005594
       messages: 
       output: 
       stacktrace: 
@@ -1746,7 +1746,7 @@ MonoBehaviour:
       name: ResourceLoadingAccessibleByStatic
       fullName: ResourceLoadingTests.ResourceLoadingAccessibleByStatic
       resultStatus: 1
-      duration: 0.0001102
+      duration: 0.0001573
       messages: 
       output: 
       stacktrace: 
@@ -1763,7 +1763,7 @@ MonoBehaviour:
       name: ResourceObjectHasTestBoatAttribute
       fullName: ResourceLoadingTests.ResourceObjectHasTestBoatAttribute
       resultStatus: 1
-      duration: 0.0004767
+      duration: 0.0005102
       messages: 
       output: 
       stacktrace: 
@@ -1780,7 +1780,7 @@ MonoBehaviour:
       name: SpeedConversionTests
       fullName: SpeedConversionTests
       resultStatus: 1
-      duration: 0.011038
+      duration: 0.0205728
       messages: 
       output: 
       stacktrace: 
@@ -1796,7 +1796,7 @@ MonoBehaviour:
       name: ConversionTest
       fullName: SpeedConversionTests.ConversionTest
       resultStatus: 1
-      duration: 0.003683
+      duration: 0.0018902
       messages: 
       output: 
       stacktrace: 
@@ -1812,7 +1812,7 @@ MonoBehaviour:
       name: ConversionTest(1,1.852f,0.5144445f)
       fullName: SpeedConversionTests.ConversionTest(1,1.852f,0.5144445f)
       resultStatus: 1
-      duration: 0.0030354
+      duration: 0.0004878
       messages: 
       output: 
       stacktrace: 
@@ -1829,7 +1829,7 @@ MonoBehaviour:
       name: ConversionTest(2,3.704f,1.028889f)
       fullName: SpeedConversionTests.ConversionTest(2,3.704f,1.028889f)
       resultStatus: 1
-      duration: 0.0000492
+      duration: 0.0000567
       messages: 
       output: 
       stacktrace: 
@@ -1846,7 +1846,7 @@ MonoBehaviour:
       name: ConversionTest(5,9.26f,2.572222f)
       fullName: SpeedConversionTests.ConversionTest(5,9.26f,2.572222f)
       resultStatus: 1
-      duration: 0.000042
+      duration: 0.0000489
       messages: 
       output: 
       stacktrace: 
@@ -1863,7 +1863,7 @@ MonoBehaviour:
       name: UnconversionTest
       fullName: SpeedConversionTests.UnconversionTest
       resultStatus: 1
-      duration: 0.0040357
+      duration: 0.0094986
       messages: 
       output: 
       stacktrace: 
@@ -1879,7 +1879,7 @@ MonoBehaviour:
       name: UnconversionTest(1,1.852f,0.514444f)
       fullName: SpeedConversionTests.UnconversionTest(1,1.852f,0.514444f)
       resultStatus: 1
-      duration: 0.0003075
+      duration: 0.0003801
       messages: 
       output: 
       stacktrace: 
@@ -1896,7 +1896,7 @@ MonoBehaviour:
       name: UnconversionTest(2,3.704f,1.028888f)
       fullName: SpeedConversionTests.UnconversionTest(2,3.704f,1.028888f)
       resultStatus: 1
-      duration: 0.0000505
+      duration: 0.0000627
       messages: 
       output: 
       stacktrace: 
@@ -1913,7 +1913,7 @@ MonoBehaviour:
       name: UnconversionTest(5,9.26f,2.57222f)
       fullName: SpeedConversionTests.UnconversionTest(5,9.26f,2.57222f)
       resultStatus: 1
-      duration: 0.0000445
+      duration: 0.0000551
       messages: 
       output: 
       stacktrace: 
@@ -1930,7 +1930,7 @@ MonoBehaviour:
       name: UnconversionTest(10,18.52f,5.14444f)
       fullName: SpeedConversionTests.UnconversionTest(10,18.52f,5.14444f)
       resultStatus: 1
-      duration: 0.0000463
+      duration: 0.0000519
       messages: 
       output: 
       stacktrace: 
@@ -1947,7 +1947,7 @@ MonoBehaviour:
       name: UnconversionTest(1000,1852.0f,514.444f)
       fullName: SpeedConversionTests.UnconversionTest(1000,1852.0f,514.444f)
       resultStatus: 1
-      duration: 0.0000445
+      duration: 0.0000502
       messages: 
       output: 
       stacktrace: 
@@ -1964,7 +1964,7 @@ MonoBehaviour:
       name: TurningCurveTests
       fullName: TurningCurveTests
       resultStatus: 2
-      duration: 0.0068472
+      duration: 0.0224978
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1980,7 +1980,7 @@ MonoBehaviour:
       name: MotorBoatTurningSpeedTest
       fullName: TurningCurveTests.MotorBoatTurningSpeedTest
       resultStatus: 2
-      duration: 0.00373
+      duration: 0.0063539
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1996,7 +1996,7 @@ MonoBehaviour:
       name: MotorBoatTurningSpeedTest(0,0)
       fullName: TurningCurveTests.MotorBoatTurningSpeedTest(0,0)
       resultStatus: 1
-      duration: 0.0002183
+      duration: 0.0002263
       messages: 
       output: 
       stacktrace: 
@@ -2013,11 +2013,11 @@ MonoBehaviour:
       name: MotorBoatTurningSpeedTest(0.5f,16.4481f)
       fullName: TurningCurveTests.MotorBoatTurningSpeedTest(0.5f,16.4481f)
       resultStatus: 2
-      duration: 0.0026277
+      duration: 0.0028658
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  12.7546711f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2033,11 +2033,11 @@ MonoBehaviour:
       name: MotorBoatTurningSpeedTest(2,19.69728f)
       fullName: TurningCurveTests.MotorBoatTurningSpeedTest(2,19.69728f)
       resultStatus: 2
-      duration: 0.000128
+      duration: 0.000148
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  9.95025253f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2053,11 +2053,11 @@ MonoBehaviour:
       name: MotorBoatTurningSpeedTest(20,26.57091f)
       fullName: TurningCurveTests.MotorBoatTurningSpeedTest(20,26.57091f)
       resultStatus: 2
-      duration: 0.0001158
+      duration: 0.0001252
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  22.279953f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2068,18 +2068,18 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-    m_ResultText: "MotorBoatTurningSpeedTest(0.5f,16.4481f) (0.003s)\n---\nExpected:
-      less than 0.00499999989f\r\n  But was:  12.7546711f\n---\nat TurningCurveTests.MotorBoatTurningSpeedTest
-      (System.Single input, System.Single expected) [0x00019] in G:\\Unity Projects\\shipsim\\Assets\\Scripts\\EditModeTests\\TurningCurveTests.cs:19"
-    m_ResultStacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-      input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+    m_ResultText: 'EditModeTests.dll (0.059s)
 
-'
+      ---
+
+      One or more child
+      tests had errors'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fd111545
-      m_LastClickedID: 1159008765
-      m_ExpandedIDs: 2db43291eb9fd4a7334e70b3703a0fbb1ddc52d1367c87de522f04ef46da9d12e00c051e0d89172774532f3ea3ddaa742f5dc577ffffff7f
+      m_SelectedIDs: c7f01789
+      m_LastClickedID: -1994919737
+      m_ExpandedIDs: c7f017892db43291eb9fd4a7334e70b3703a0fbb1ddc52d1367c87de522f04ef46da9d12e00c051e0d89172774532f3eab781d56a3ddaa742f5dc577ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2136,9 +2136,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d4e5ffff8ce6ffff5ee8ffff22fbffff
+      m_SelectedIDs: b2f3ffff
+      m_LastClickedID: -3150
+      m_ExpandedIDs: b2f3ffff2cf4ffff10f5ffffc2f5ffff10f9ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.041433897, y: 0.95549816, z: -0.24175365, w: 0.16382743}
     speed: 2
-    m_Value: {x: 0.041433897, y: 0.9554982, z: -0.24175365, w: 0.16382743}
+    m_Value: {x: 0.04143436, y: 0.9555088, z: -0.24175635, w: 0.16382927}
   m_Size:
     m_Target: 77.009224
     speed: 2
@@ -2516,14 +2516,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: G:\Unity Projects\shipsim
+  m_LastProjectPath: G:\Unity Projects\shipsim\ShipSimProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 34650000
-    m_LastClickedID: 25908
-    m_ExpandedIDs: 000000003465000036650000386500003a65000000ca9a3b
+    m_SelectedIDs: 30650000
+    m_LastClickedID: 25904
+    m_ExpandedIDs: 000000003065000032650000346500003665000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2551,7 +2551,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003465000036650000386500003a650000
+    m_ExpandedIDs: 0000000030650000326500003465000036650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
