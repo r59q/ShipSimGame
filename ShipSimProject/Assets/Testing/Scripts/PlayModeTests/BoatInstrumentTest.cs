@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 public class BoatInstrumentTest
 {
 
-    IBoat boatInterface;
+    IShip boatInterface;
     GameObject boat;
 
     # region SetUp and TearDown
@@ -16,7 +16,7 @@ public class BoatInstrumentTest
     {
         boat = new GameObject("Boat");
         boat.AddComponent<Boat>().Build(new MotorBoatFactory());
-        boatInterface = boat.GetComponent<IBoat>();
+        boatInterface = boat.GetComponent<IShip>();
         yield return new EnterPlayMode();
     }
     [UnityTearDown]
@@ -78,7 +78,7 @@ public class BoatInstrumentTest
         {
             GameObject gboat = new GameObject("Added boat - " + i);
             gboat.AddComponent<Boat>().Build(new MotorBoatFactory());
-            IBoat iboat = gboat.GetComponent<IBoat>();
+            IShip iboat = gboat.GetComponent<IShip>();
         }
         yield return new WaitForSeconds(0.5f);
         Assert.That(boatInterface.DetectedEntities.Length, Is.EqualTo(val));

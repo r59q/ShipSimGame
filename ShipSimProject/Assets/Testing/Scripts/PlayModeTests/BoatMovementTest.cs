@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 public class BoatMovementTest
 {
     public GameObject motorBoat;
-    public IBoat boatInterface;
+    public IShip boatInterface;
 
     #region set up and tear down
     [UnitySetUp]
@@ -15,7 +15,7 @@ public class BoatMovementTest
     {
         motorBoat = new GameObject("Test Boat");
         motorBoat.AddComponent<Boat>();
-        IBoat boatComponent = motorBoat.GetComponent<IBoat>();
+        IShip boatComponent = motorBoat.GetComponent<IShip>();
         boatInterface = boatComponent;
         boatComponent.Build(new MotorBoatFactory());
         yield return new EnterPlayMode();
@@ -33,7 +33,7 @@ public class BoatMovementTest
     [UnityTest]
     public IEnumerator TurningOnEngineTurnsOnEngineAndStartsAt0Throttle()
     {
-        motorBoat.GetComponent<IBoat>().StartPropulsion();
+        motorBoat.GetComponent<IShip>().StartPropulsion();
         Assert.That(boatInterface.IsPropelling, Is.EqualTo(true));
         Assert.That(boatInterface.PropulsionMultiplier, Is.EqualTo(0f));
         yield return null;
@@ -42,7 +42,7 @@ public class BoatMovementTest
     [UnityTest]
     public IEnumerator WhileEngineIsOffPropulsionShouldBe0()
     {
-        motorBoat.GetComponent<IBoat>().StopPropulsion();
+        motorBoat.GetComponent<IShip>().StopPropulsion();
         Assert.That(boatInterface.IsPropelling, Is.EqualTo(false));
         Assert.That(boatInterface.SetPropulsionMultiplier(1f), Is.EqualTo(false));
         Assert.That(boatInterface.PropulsionMultiplier, Is.EqualTo(0f));
@@ -52,7 +52,7 @@ public class BoatMovementTest
     [UnityTest]
     public IEnumerator SettingPropulsionChangesPropulsionWhenEngineIsOn()
     {
-        motorBoat.GetComponent<IBoat>().StartPropulsion();
+        motorBoat.GetComponent<IShip>().StartPropulsion();
         Assert.That(boatInterface.IsPropelling, Is.EqualTo(true));
         Assert.That(boatInterface.SetPropulsionMultiplier(1f), Is.EqualTo(true));
         Assert.That(boatInterface.PropulsionMultiplier, Is.EqualTo(1f));

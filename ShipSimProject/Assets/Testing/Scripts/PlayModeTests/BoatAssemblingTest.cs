@@ -14,7 +14,7 @@ public class BoatAssemblingTest
     {
         motorBoat = new GameObject("Test Boat");
         motorBoat.AddComponent<Boat>();
-        IBoat boatComponent = motorBoat.GetComponent<IBoat>();
+        IShip boatComponent = motorBoat.GetComponent<IShip>();
         boatComponent.Build(new MotorBoatFactory());
         yield return new EnterPlayMode();
     }
@@ -51,7 +51,7 @@ public class BoatAssemblingTest
     [UnityTest]
     public IEnumerator ShouldHaveDetectionRange()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip boatInterface = motorBoat.GetComponent<IShip>();
 
         Assert.That(boatInterface.DetectionRange, Is.Not.EqualTo(0));
 
@@ -60,7 +60,7 @@ public class BoatAssemblingTest
     [UnityTest]
     public IEnumerator ShouldHaveDetectionSphereWithRadiusOfDetectionRange()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip boatInterface = motorBoat.GetComponent<IShip>();
 
         SphereCollider collider = boatInterface.DetectionCollider;
 
@@ -74,7 +74,7 @@ public class BoatAssemblingTest
     [UnityTest]
     public IEnumerator DetectionSphereShouldBeTrigger()
     {
-        IBoat boatInterface = motorBoat.GetComponent<IBoat>();
+        IShip boatInterface = motorBoat.GetComponent<IShip>();
 
         SphereCollider collider = boatInterface.DetectionCollider;
 

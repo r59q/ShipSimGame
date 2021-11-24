@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IBoat 
+public interface IShip 
 {
 
     public void Build(IBoatFactory boatFactory);

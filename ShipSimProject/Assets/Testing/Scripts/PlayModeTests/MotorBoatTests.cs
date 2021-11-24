@@ -9,7 +9,7 @@ public class MotorBoatTests
     GameManager gm;
 
     GameObject boatObject;
-    IBoat boatInterface;
+    IShip boatInterface;
 
     #region set up and tear down
     [UnitySetUp]
@@ -17,7 +17,7 @@ public class MotorBoatTests
     {
         gm = new GameObject("GM").AddComponent<GameManager>();
         boatObject = gm.BuildBoat(new MotorBoatFactory(), Vector3.zero);
-        boatInterface = boatObject.GetComponent<IBoat>();
+        boatInterface = boatObject.GetComponent<IShip>();
         yield return null;
     
     }
