@@ -20,7 +20,7 @@ public class ResourceLoadingTests
     }
 
     [Test]
-    public void ResourceObjectHasTestBoatAttribute()
+    public void ResourceObjectHasTestShipAttribute()
     {
         LoadableAssets assets = ScriptableObject.CreateInstance<LoadableAssets>();
         Assert.That(assets, Is.Not.Null);

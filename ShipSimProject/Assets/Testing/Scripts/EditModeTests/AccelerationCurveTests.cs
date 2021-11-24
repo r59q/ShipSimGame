@@ -11,7 +11,7 @@ public class AccelerationCurveTests
     [TestCase(2.991f,1.847f)]
     [TestCase(4.5f, 0.528f)]
     [TestCase(13.353f,0f)]
-    public void TestMotorBoatCurve(float input, float expected)
+    public void TestMotorShipCurve(float input, float expected)
     {
         ICurve curve = new MotorShipFactory().CreateAccelerationCurve();
         UpAndDownAccelerationCurve curv = (UpAndDownAccelerationCurve)curve;
