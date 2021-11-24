@@ -19,12 +19,63 @@ MonoBehaviour:
     width: 2560
     height: 1397
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 2}
+  m_Title: Game
+  m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 898
+    width: 739
+    height: 449
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 15}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 1821
+    y: 0
+    width: 739
+    height: 1347
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 721
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +88,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
   - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 7}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -52,7 +103,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,56 +146,6 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 13}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2560
-    height: 1347
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 83
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1949
-    height: 1347
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 104
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,17 +160,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1949
-    height: 797
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
+    y: 30
+    width: 2560
+    height: 1347
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 720
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,25 +180,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1821
+    height: 1347
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 194
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1821
+    height: 797
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 195
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: SceneHierarchyWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 656
+    width: 622
     height: 797
-  m_MinSize: {x: 101, y: 121}
+  m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 16}
-  m_Selected: 1
+  - {fileID: 19}
+  m_Selected: 0
   m_LastSelected: 0
---- !u!114 &9
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,18 +262,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 656
+    x: 622
     y: 0
-    width: 1293
+    width: 1199
     height: 797
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,19 +286,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 11}
-  - {fileID: 12}
+  - {fileID: 13}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 797
-    width: 1949
+    width: 1821
     height: 550
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 40
---- !u!114 &11
+  controlID: 85
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,17 +315,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 929
+    width: 883
     height: 550
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,18 +340,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 929
+    x: 883
     y: 0
-    width: 1020
+    width: 938
     height: 550
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,25 +361,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ServicesEditorWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1949
+    x: 0
     y: 0
-    width: 611
-    height: 1347
-  m_MinSize: {x: 301, y: 171}
+    width: 739
+    height: 898
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 22}
-  - {fileID: 15}
-  - {fileID: 14}
-  m_Selected: 2
-  m_LastSelected: 1
---- !u!114 &14
+  - {fileID: 24}
+  - {fileID: 17}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 2
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -352,12 +402,12 @@ MonoBehaviour:
     x: 1949
     y: 73
     width: 610
-    height: 1326
+    height: 877
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,7 +435,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -405,21 +455,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
-    width: 655
-    height: 776
+    x: 1821
+    y: 971
+    width: 738
+    height: 428
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 133
+    ID: 581
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 529
-    - 177
+    - 268
+    - 90
     relativeSizes:
     - 0.75
     - 0.25
@@ -429,7 +479,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 706
+    lastTotalSize: 358
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -439,14 +489,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 18}
     m_NewResultList:
     - id: 1007
       uniqueId: '[shipsim][suite]'
       name: shipsim
       fullName: shipsim
       resultStatus: 2
-      duration: 67.20339
+      duration: 67.30806
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -462,7 +512,7 @@ MonoBehaviour:
       name: PlayModeTests.dll
       fullName: G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll
       resultStatus: 2
-      duration: 67.15191
+      duration: 67.21551
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -478,7 +528,7 @@ MonoBehaviour:
       name: BoatAssemblingTest
       fullName: BoatAssemblingTest
       resultStatus: 1
-      duration: 0.1629239
+      duration: 0.1721742
       messages: 
       output: 
       stacktrace: 
@@ -494,7 +544,7 @@ MonoBehaviour:
       name: DetectionSphereShouldBeTrigger
       fullName: BoatAssemblingTest.DetectionSphereShouldBeTrigger
       resultStatus: 1
-      duration: 0.0456948
+      duration: 0.0665374
       messages: 
       output: 
       stacktrace: 
@@ -511,7 +561,7 @@ MonoBehaviour:
       name: HasBoatComponent
       fullName: BoatAssemblingTest.HasBoatComponent
       resultStatus: 1
-      duration: 0.0204414
+      duration: 0.0315208
       messages: 
       output: 
       stacktrace: 
@@ -528,7 +578,7 @@ MonoBehaviour:
       name: HasMeshRendererAndMesh
       fullName: BoatAssemblingTest.HasMeshRendererAndMesh
       resultStatus: 1
-      duration: 0.0207317
+      duration: 0.0151733
       messages: 
       output: 
       stacktrace: 
@@ -545,7 +595,7 @@ MonoBehaviour:
       name: ShouldHaveDetectionRange
       fullName: BoatAssemblingTest.ShouldHaveDetectionRange
       resultStatus: 1
-      duration: 0.0187705
+      duration: 0.0135077
       messages: 
       output: 
       stacktrace: 
@@ -562,7 +612,7 @@ MonoBehaviour:
       name: ShouldHaveDetectionSphereWithRadiusOfDetectionRange
       fullName: BoatAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange
       resultStatus: 1
-      duration: 0.0225508
+      duration: 0.0158065
       messages: 
       output: 
       stacktrace: 
@@ -579,7 +629,7 @@ MonoBehaviour:
       name: ShouldHaveMaterial
       fullName: BoatAssemblingTest.ShouldHaveMaterial
       resultStatus: 1
-      duration: 0.0219235
+      duration: 0.0137193
       messages: 
       output: 
       stacktrace: 
@@ -596,7 +646,7 @@ MonoBehaviour:
       name: BoatInstrumentTest
       fullName: BoatInstrumentTest
       resultStatus: 2
-      duration: 2.6354296
+      duration: 2.6350908
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -612,7 +662,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest
       resultStatus: 2
-      duration: 2.5774915
+      duration: 2.5729768
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -628,7 +678,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(0)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(0)
       resultStatus: 1
-      duration: 0.5202519
+      duration: 0.5136625
       messages: 
       output: 
       stacktrace: 
@@ -645,7 +695,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(1)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(1)
       resultStatus: 2
-      duration: 0.5175004
+      duration: 0.5176516
       messages: "  Expected: 1\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -653,7 +703,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -669,7 +719,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(2)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(2)
       resultStatus: 2
-      duration: 0.5106591
+      duration: 0.5113594
       messages: "  Expected: 2\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -677,7 +727,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -693,7 +743,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(10)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(10)
       resultStatus: 2
-      duration: 0.5112664
+      duration: 0.5118723
       messages: "  Expected: 10\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -701,7 +751,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -717,7 +767,7 @@ MonoBehaviour:
       name: BoatsInVisualFieldTest(15)
       fullName: BoatInstrumentTest.BoatsInVisualFieldTest(15)
       resultStatus: 2
-      duration: 0.5110886
+      duration: 0.5129024
       messages: "  Expected: 15\r\n  But was:  0\r\n"
       output: 
       stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
@@ -725,7 +775,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
 
 '
       notRunnable: 0
@@ -741,7 +791,7 @@ MonoBehaviour:
       name: CompassValueTests
       fullName: BoatInstrumentTest.CompassValueTests
       resultStatus: 1
-      duration: 0.0434136
+      duration: 0.047095
       messages: 
       output: 
       stacktrace: 
@@ -757,7 +807,7 @@ MonoBehaviour:
       name: CompassValueTests(0)
       fullName: BoatInstrumentTest.CompassValueTests(0)
       resultStatus: 1
-      duration: 0.0102877
+      duration: 0.0095149
       messages: 
       output: 
       stacktrace: 
@@ -774,7 +824,7 @@ MonoBehaviour:
       name: CompassValueTests(90)
       fullName: BoatInstrumentTest.CompassValueTests(90)
       resultStatus: 1
-      duration: 0.010021
+      duration: 0.0111902
       messages: 
       output: 
       stacktrace: 
@@ -791,7 +841,7 @@ MonoBehaviour:
       name: CompassValueTests(180)
       fullName: BoatInstrumentTest.CompassValueTests(180)
       resultStatus: 1
-      duration: 0.0097353
+      duration: 0.0114383
       messages: 
       output: 
       stacktrace: 
@@ -808,7 +858,7 @@ MonoBehaviour:
       name: CompassValueTests(270)
       fullName: BoatInstrumentTest.CompassValueTests(270)
       resultStatus: 1
-      duration: 0.0099415
+      duration: 0.0113256
       messages: 
       output: 
       stacktrace: 
@@ -825,7 +875,7 @@ MonoBehaviour:
       name: ShouldHaveCompass
       fullName: BoatInstrumentTest.ShouldHaveCompass
       resultStatus: 1
-      duration: 0.0100182
+      duration: 0.0114659
       messages: 
       output: 
       stacktrace: 
@@ -842,7 +892,7 @@ MonoBehaviour:
       name: BoatMovementTest
       fullName: BoatMovementTest
       resultStatus: 1
-      duration: 18.185482
+      duration: 18.236853
       messages: 
       output: 
       stacktrace: 
@@ -858,7 +908,7 @@ MonoBehaviour:
       name: BoatShouldHaveTurningSpeedCurve
       fullName: BoatMovementTest.BoatShouldHaveTurningSpeedCurve
       resultStatus: 1
-      duration: 0.0094943
+      duration: 0.0106886
       messages: 
       output: 
       stacktrace: 
@@ -875,7 +925,7 @@ MonoBehaviour:
       name: BoatsShouldNotExperienceGravity
       fullName: BoatMovementTest.BoatsShouldNotExperienceGravity
       resultStatus: 1
-      duration: 0.0106043
+      duration: 0.0116238
       messages: 
       output: 
       stacktrace: 
@@ -892,7 +942,7 @@ MonoBehaviour:
       name: CannotOverthrottleOrUnderthrottle
       fullName: BoatMovementTest.CannotOverthrottleOrUnderthrottle
       resultStatus: 1
-      duration: 0.0127079
+      duration: 0.0118329
       messages: 
       output: 
       stacktrace: 
@@ -909,7 +959,7 @@ MonoBehaviour:
       name: CannotOverturnOrUnderturnRudder
       fullName: BoatMovementTest.CannotOverturnOrUnderturnRudder
       resultStatus: 1
-      duration: 0.0106207
+      duration: 0.0117609
       messages: 
       output: 
       stacktrace: 
@@ -926,7 +976,7 @@ MonoBehaviour:
       name: HardTurnSlowsDownBoat
       fullName: BoatMovementTest.HardTurnSlowsDownBoat
       resultStatus: 1
-      duration: 2.5662074
+      duration: 2.5559227
       messages: 
       output: 
       stacktrace: 
@@ -943,7 +993,7 @@ MonoBehaviour:
       name: MovingAndTurningCausesRotation
       fullName: BoatMovementTest.MovingAndTurningCausesRotation
       resultStatus: 1
-      duration: 0.2124079
+      duration: 0.2127869
       messages: 
       output: 
       stacktrace: 
@@ -960,7 +1010,7 @@ MonoBehaviour:
       name: NotPropellingCausesNoMovement
       fullName: BoatMovementTest.NotPropellingCausesNoMovement
       resultStatus: 1
-      duration: 5.0153823
+      duration: 5.01374
       messages: 
       output: 
       stacktrace: 
@@ -977,7 +1027,7 @@ MonoBehaviour:
       name: PropellingCausesMovement
       fullName: BoatMovementTest.PropellingCausesMovement
       resultStatus: 1
-      duration: 1.0122366
+      duration: 1.0136288
       messages: 
       output: 
       stacktrace: 
@@ -994,7 +1044,7 @@ MonoBehaviour:
       name: RudderNot0DoesNotTurnWhenStill
       fullName: BoatMovementTest.RudderNot0DoesNotTurnWhenStill
       resultStatus: 1
-      duration: 0.2138305
+      duration: 0.2133255
       messages: 
       output: 
       stacktrace: 
@@ -1011,7 +1061,7 @@ MonoBehaviour:
       name: SettingPropulsionChangesPropulsionWhenEngineIsOn
       fullName: BoatMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn
       resultStatus: 1
-      duration: 0.010334
+      duration: 0.0114549
       messages: 
       output: 
       stacktrace: 
@@ -1028,7 +1078,7 @@ MonoBehaviour:
       name: SlowTurnDoesNotSlowDownBoat
       fullName: BoatMovementTest.SlowTurnDoesNotSlowDownBoat
       resultStatus: 1
-      duration: 5.052314
+      duration: 5.056536
       messages: 
       output: 
       stacktrace: 
@@ -1045,7 +1095,7 @@ MonoBehaviour:
       name: SpeedShouldExceed0WhenMoving
       fullName: BoatMovementTest.SpeedShouldExceed0WhenMoving
       resultStatus: 1
-      duration: 1.0162725
+      duration: 1.0139005
       messages: 
       output: 
       stacktrace: 
@@ -1062,7 +1112,7 @@ MonoBehaviour:
       name: TurningCausesRudderPosToChange
       fullName: BoatMovementTest.TurningCausesRudderPosToChange
       resultStatus: 1
-      duration: 0.0100546
+      duration: 0.0116003
       messages: 
       output: 
       stacktrace: 
@@ -1079,7 +1129,7 @@ MonoBehaviour:
       name: TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
       fullName: BoatMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
       resultStatus: 1
-      duration: 0.0097396
+      duration: 0.010622
       messages: 
       output: 
       stacktrace: 
@@ -1096,7 +1146,7 @@ MonoBehaviour:
       name: TurningSpeedIncreasesWithSpeed
       fullName: BoatMovementTest.TurningSpeedIncreasesWithSpeed
       resultStatus: 1
-      duration: 0.3377976
+      duration: 0.3564046
       messages: 
       output: 
       stacktrace: 
@@ -1113,7 +1163,7 @@ MonoBehaviour:
       name: TurningTest
       fullName: BoatMovementTest.TurningTest
       resultStatus: 1
-      duration: 2.6684995
+      duration: 2.7039347
       messages: 
       output: 
       stacktrace: 
@@ -1130,7 +1180,7 @@ MonoBehaviour:
       name: TurningTest([-1, -1])
       fullName: BoatMovementTest.TurningTest([-1, -1])
       resultStatus: 1
-      duration: 0.2130484
+      duration: 0.2105883
       messages: 
       output: 
       stacktrace: 
@@ -1148,7 +1198,7 @@ MonoBehaviour:
       name: TurningTest([-0.1, -1])
       fullName: BoatMovementTest.TurningTest([-0.1, -1])
       resultStatus: 1
-      duration: 0.7936405
+      duration: 0.7886866
       messages: 
       output: 
       stacktrace: 
@@ -1166,7 +1216,7 @@ MonoBehaviour:
       name: TurningTest([0.1, 1])
       fullName: BoatMovementTest.TurningTest([0.1, 1])
       resultStatus: 1
-      duration: 0.7913394
+      duration: 0.7893949
       messages: 
       output: 
       stacktrace: 
@@ -1184,7 +1234,7 @@ MonoBehaviour:
       name: TurningTest([0, 0])
       fullName: BoatMovementTest.TurningTest([0, 0])
       resultStatus: 1
-      duration: 0.8667567
+      duration: 0.9115161
       messages: 
       output: 
       stacktrace: 
@@ -1201,7 +1251,7 @@ MonoBehaviour:
       name: WhileEngineIsOffPropulsionShouldBe0
       fullName: BoatMovementTest.WhileEngineIsOffPropulsionShouldBe0
       resultStatus: 1
-      duration: 0.0106095
+      duration: 0.0109246
       messages: 
       output: 
       stacktrace: 
@@ -1218,7 +1268,7 @@ MonoBehaviour:
       name: GameManagerTests
       fullName: GameManagerTests
       resultStatus: 1
-      duration: 0.0454408
+      duration: 0.0472734
       messages: 
       output: 
       stacktrace: 
@@ -1234,7 +1284,7 @@ MonoBehaviour:
       name: BoatSpawningTest
       fullName: GameManagerTests.BoatSpawningTest
       resultStatus: 1
-      duration: 0.0319669
+      duration: 0.0343661
       messages: 
       output: 
       stacktrace: 
@@ -1252,7 +1302,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (1.00, 1.00,
         1.00)])
       resultStatus: 1
-      duration: 0.0102097
+      duration: 0.0106819
       messages: 
       output: 
       stacktrace: 
@@ -1271,7 +1321,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (100.00, 1.00,
         100.00)])
       resultStatus: 1
-      duration: 0.0101144
+      duration: 0.0105027
       messages: 
       output: 
       stacktrace: 
@@ -1290,7 +1340,7 @@ MonoBehaviour:
       fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (-19.00, 1.00,
         10.00)])
       resultStatus: 1
-      duration: 0.009261
+      duration: 0.0107632
       messages: 
       output: 
       stacktrace: 
@@ -1307,7 +1357,7 @@ MonoBehaviour:
       name: GMStartsWithNoBoats
       fullName: GameManagerTests.GMStartsWithNoBoats
       resultStatus: 1
-      duration: 0.0099818
+      duration: 0.0099484
       messages: 
       output: 
       stacktrace: 
@@ -1324,7 +1374,7 @@ MonoBehaviour:
       name: MotorBoatTests
       fullName: MotorBoatTests
       resultStatus: 1
-      duration: 46.116337
+      duration: 46.114155
       messages: 
       output: 
       stacktrace: 
@@ -1340,7 +1390,7 @@ MonoBehaviour:
       name: MovementSpeedTest
       fullName: MotorBoatTests.MovementSpeedTest
       resultStatus: 1
-      duration: 16.03811
+      duration: 16.04215
       messages: 
       output: 
       stacktrace: 
@@ -1357,7 +1407,7 @@ MonoBehaviour:
       name: MovementSpeedTest([0, 0])
       fullName: MotorBoatTests.MovementSpeedTest([0, 0])
       resultStatus: 1
-      duration: 0.0112601
+      duration: 0.0123444
       messages: 
       output: 
       stacktrace: 
@@ -1375,7 +1425,7 @@ MonoBehaviour:
       name: MovementSpeedTest([1, 13.88])
       fullName: MotorBoatTests.MovementSpeedTest([1, 13.88])
       resultStatus: 1
-      duration: 1.0125425
+      duration: 1.0139815
       messages: 
       output: 
       stacktrace: 
@@ -1393,7 +1443,7 @@ MonoBehaviour:
       name: MovementSpeedTest([15, 208.3333])
       fullName: MotorBoatTests.MovementSpeedTest([15, 208.3333])
       resultStatus: 1
-      duration: 15.011934
+      duration: 15.013172
       messages: 
       output: 
       stacktrace: 
@@ -1410,7 +1460,7 @@ MonoBehaviour:
       name: ShouldHaveSameOptimalTurnSpeed
       fullName: MotorBoatTests.ShouldHaveSameOptimalTurnSpeed
       resultStatus: 1
-      duration: 0.0103908
+      duration: 0.0108983
       messages: 
       output: 
       stacktrace: 
@@ -1427,7 +1477,7 @@ MonoBehaviour:
       name: SpeedShouldNotExceedExpectedMaximumSpeed
       fullName: MotorBoatTests.SpeedShouldNotExceedExpectedMaximumSpeed
       resultStatus: 1
-      duration: 20.012264
+      duration: 20.015224
       messages: 
       output: 
       stacktrace: 
@@ -1444,7 +1494,7 @@ MonoBehaviour:
       name: TestAccelerationCurve
       fullName: MotorBoatTests.TestAccelerationCurve
       resultStatus: 1
-      duration: 10.041381
+      duration: 10.0305
       messages: 
       output: 
       stacktrace: 
@@ -1461,7 +1511,7 @@ MonoBehaviour:
       name: TheoreticalMaxSpeedShouldBe50KMH
       fullName: MotorBoatTests.TheoreticalMaxSpeedShouldBe50KMH
       resultStatus: 1
-      duration: 0.0104526
+      duration: 0.0114134
       messages: 
       output: 
       stacktrace: 
@@ -1473,23 +1523,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1026
       parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    m_ResultText: "StartsWithMaxSpeedWithMaxSpeedBoatFunc (0.009s)\n---\nExpected:
-      less than 0.00499999989f\r\n  But was:  13.9561481f\n---\nat BoatMovementTest+<StartsWithMaxSpeedWithMaxSpeedBoatFunc>d__21.MoveNext
-      () [0x00035] in G:\\Unity Projects\\shipsim\\Assets\\Scripts\\PlayModeTests\\BoatMovementTest.cs:224\r\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      G:\\Unity Projects\\shipsim\\Library\\PackageCache\\com.unity.test-framework@1.1.29\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46"
-    m_ResultStacktrace: 'at BoatMovementTest+<StartsWithMaxSpeedWithMaxSpeedBoatFunc>d__21.MoveNext
-      () [0x00035] in G:\Unity Projects\shipsim\Assets\Scripts\PlayModeTests\BoatMovementTest.cs:224
-
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
+    m_ResultText: ShouldHaveDetectionRange (0.014s)
+    m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 419}
-      m_SelectedIDs: 0d4356f1
-      m_LastClickedID: -246004979
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 7ff0f39a
+      m_LastClickedID: -1695289217
       m_ExpandedIDs: 58d90a86067fbb9beb9fd4a73b1cfcbf4ec9dfc3a0e75acd70b4e1dbba863ffd55874f0fefb25b18d6ed8e36e426b3778132ec7dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1518,7 +1557,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 16}
+    m_Window: {fileID: 18}
     m_NewResultList:
     - id: 1000
       uniqueId: '[shipsim][suite]'
@@ -2032,7 +2071,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &17
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2054,7 +2093,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 655
+    width: 621
     height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2065,7 +2104,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 22fbffff
+      m_ExpandedIDs: 6089ffff128affff0e93ffff26e1fffff6e5ffff70eaffff7ef3ffffd4f5ffff62f7ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2081,7 +2120,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2089,7 +2128,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &18
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2109,9 +2148,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 656
+    x: 622
     y: 73
-    width: 1291
+    width: 1197
     height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2314,9 +2353,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -13.482742, y: -3.6511116, z: 31.444239}
+    m_Target: {x: -18.95231, y: 22.175726, z: 56.92892}
     speed: 2
-    m_Value: {x: -13.482742, y: -3.6511116, z: 31.444239}
+    m_Value: {x: -18.95231, y: 22.175726, z: 56.92892}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2363,13 +2402,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.18544479, y: 0.69337714, z: -0.19212879, w: -0.6692545}
+    m_Target: {x: 0.041433897, y: 0.95549816, z: -0.24175365, w: 0.16382743}
     speed: 2
-    m_Value: {x: -0.1854448, y: 0.69337714, z: -0.19212879, w: -0.6692545}
+    m_Value: {x: 0.04143436, y: 0.9555088, z: -0.24175635, w: 0.16382927}
   m_Size:
-    m_Target: 60.363605
+    m_Target: 77.009224
     speed: 2
-    m_Value: 60.363605
+    m_Value: 77.009224
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2394,7 +2433,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &19
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2416,7 +2455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 870
-    width: 928
+    width: 882
     height: 529
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2450,7 +2489,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 16650000
     m_LastClickedID: 25878
-    m_ExpandedIDs: 0000000016650000186500001a6500001c65000000ca9a3b
+    m_ExpandedIDs: 0000000016650000186500001a6500001c650000aa660000b0660000be660000a298000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2522,7 +2561,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -2534,7 +2573,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &20
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2562,7 +2601,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &21
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2582,9 +2621,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 929
+    x: 883
     y: 870
-    width: 1018
+    width: 936
     height: 529
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2596,7 +2635,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1018, y: 508}
+  m_TargetSize: {x: 936, y: 508}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2611,8 +2650,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -509
-    m_HBaseRangeMax: 509
+    m_HBaseRangeMin: -468
+    m_HBaseRangeMax: 468
     m_VBaseRangeMin: -254
     m_VBaseRangeMax: 254
     m_HAllowExceedBaseRangeMin: 1
@@ -2632,29 +2671,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1018
+      width: 936
       height: 508
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 509, y: 254}
+    m_Translation: {x: 468, y: 254}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -509
+      x: -468
       y: -254
-      width: 1018
+      width: 936
       height: 508
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1018, y: 529}
+  m_LastWindowPixelSize: {x: 936, y: 529}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &22
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2674,10 +2713,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1949
+    x: 1821
     y: 73
-    width: 610
-    height: 1326
+    width: 738
+    height: 877
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2688,7 +2727,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -2452
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
