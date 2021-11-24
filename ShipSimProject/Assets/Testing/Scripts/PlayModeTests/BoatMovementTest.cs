@@ -17,7 +17,7 @@ public class BoatMovementTest
         motorBoat.AddComponent<Ship>();
         IShip boatComponent = motorBoat.GetComponent<IShip>();
         boatInterface = boatComponent;
-        boatComponent.Build(new MotorBoatFactory());
+        boatComponent.Build(new MotorShipFactory());
         yield return new EnterPlayMode();
     }
 

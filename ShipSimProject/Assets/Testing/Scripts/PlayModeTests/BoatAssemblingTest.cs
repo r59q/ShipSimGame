@@ -15,7 +15,7 @@ public class BoatAssemblingTest
         motorBoat = new GameObject("Test Boat");
         motorBoat.AddComponent<Ship>();
         IShip boatComponent = motorBoat.GetComponent<IShip>();
-        boatComponent.Build(new MotorBoatFactory());
+        boatComponent.Build(new MotorShipFactory());
         yield return new EnterPlayMode();
     }
 
@@ -44,7 +44,7 @@ public class BoatAssemblingTest
         MeshRenderer mr = motorBoat.GetComponent<MeshRenderer>();
         Assert.That(mr.materials.Length, Is.Not.EqualTo(0));
         Material mat = mr.sharedMaterial;
-        Assert.That(mat.name, Is.EqualTo(new MotorBoatFactory().CreateMaterial().name + " (Instance)"));
+        Assert.That(mat.name, Is.EqualTo(new MotorShipFactory().CreateMaterial().name + " (Instance)"));
         yield return null;
     }
 

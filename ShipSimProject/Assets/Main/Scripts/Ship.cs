@@ -11,9 +11,9 @@ public class Ship : MonoBehaviour, IShip
     List<IDetectableEntity> detectedEntitiesList;
 
     /// <summary>
-    /// Builds a boat on the GameObject this script is bound to.
+    /// Builds a ship on the GameObject this script is bound to.
     /// </summary>
-    /// <param name="shipFactory">The ShipFactory object to build the boat from</param>
+    /// <param name="shipFactory">The ShipFactory object to build the ship from</param>
     public void Build(IShipFactory shipFactory)
     {
         // Create and render mesh
@@ -23,12 +23,12 @@ public class Ship : MonoBehaviour, IShip
 
         // Add rigid body.
         rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false; // Avoid the boat falling through the 'ground'
+        rb.useGravity = false; // Avoid the ship falling through the 'ground'
 
         // Create detected entities list
         detectedEntitiesList = new List<IDetectableEntity>();
 
-        // Build properties from boat factory.
+        // Build properties from ship factory.
         AccelerationCurve = shipFactory.CreateAccelerationCurve(); 
         TurningSpeedCurve = shipFactory.CreateTurningSpeedCurve();
         OptimalTurnSpeed = shipFactory.CreateOptimalTurnSpeed();
@@ -43,7 +43,7 @@ public class Ship : MonoBehaviour, IShip
    
 
     /// <summary>
-    /// Sets the propulsion state. Decide whether or not the boat should have propulsion.
+    /// Sets the propulsion state. Decide whether or not the ship should have propulsion.
     /// Use this to turn off engine or lower the sails.
     /// </summary>
     /// <param name="state">Propulsion state.</param>

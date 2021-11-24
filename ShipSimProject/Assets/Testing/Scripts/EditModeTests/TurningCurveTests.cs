@@ -12,7 +12,7 @@ public class TurningCurveTests
     [TestCase(20, 26.570908f)]
     public void MotorBoatTurningSpeedTest(float input, float expected)
     {
-        ICurve curve = new MotorBoatFactory().CreateTurningSpeedCurve();
+        ICurve curve = new MotorShipFactory().CreateTurningSpeedCurve();
 
         float val = curve.F(input);
         float result = Mathf.Abs(expected - val);

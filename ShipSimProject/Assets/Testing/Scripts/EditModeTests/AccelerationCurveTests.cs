@@ -13,7 +13,7 @@ public class AccelerationCurveTests
     [TestCase(13.353f,0f)]
     public void TestMotorBoatCurve(float input, float expected)
     {
-        ICurve curve = new MotorBoatFactory().CreateAccelerationCurve();
+        ICurve curve = new MotorShipFactory().CreateAccelerationCurve();
         UpAndDownAccelerationCurve curv = (UpAndDownAccelerationCurve)curve;
         Assert.That(Mathf.Abs(curve.F(input)/curv.AccelerationMultiplier - expected), Is.LessThan(0.005f));
     }

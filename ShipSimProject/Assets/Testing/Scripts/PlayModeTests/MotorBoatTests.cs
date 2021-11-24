@@ -16,7 +16,7 @@ public class MotorBoatTests
     public IEnumerator SetUp()
     {
         gm = new GameObject("GM").AddComponent<GameManager>();
-        boatObject = gm.BuildBoat(new MotorBoatFactory(), Vector3.zero);
+        boatObject = gm.BuildBoat(new MotorShipFactory(), Vector3.zero);
         boatInterface = boatObject.GetComponent<IShip>();
         yield return null;
     
@@ -73,7 +73,7 @@ public class MotorBoatTests
     public IEnumerator ShouldHaveSameOptimalTurnSpeed()
     {
         float optimalTurnSpeed = boatInterface.OptimalTurnSpeed;
-        float factoryTurnSpeed = new MotorBoatFactory().CreateOptimalTurnSpeed();
+        float factoryTurnSpeed = new MotorShipFactory().CreateOptimalTurnSpeed();
 
         Assert.AreEqual(factoryTurnSpeed, optimalTurnSpeed);
         yield return null;
