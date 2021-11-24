@@ -14,7 +14,7 @@ public class BoatMovementTest
     public IEnumerator SetUp()
     {
         motorBoat = new GameObject("Test Boat");
-        motorBoat.AddComponent<Boat>();
+        motorBoat.AddComponent<Ship>();
         IShip boatComponent = motorBoat.GetComponent<IShip>();
         boatInterface = boatComponent;
         boatComponent.Build(new MotorBoatFactory());

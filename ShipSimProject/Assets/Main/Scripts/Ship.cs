@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boat : MonoBehaviour, IShip
+public class Ship : MonoBehaviour, IShip
 {
 
     private Rigidbody rb;

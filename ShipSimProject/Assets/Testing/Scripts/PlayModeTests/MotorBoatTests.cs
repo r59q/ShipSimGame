@@ -65,7 +65,7 @@ public class MotorBoatTests
         boatInterface.SetPropulsion(true);
         boatInterface.SetPropulsionMultiplier(1f);
         yield return new WaitForSeconds(20);
-        Assert.That(boatInterface.Speed, Is.LessThanOrEqualTo(Boat.MStoKnots(13.353f)));
+        Assert.That(boatInterface.Speed, Is.LessThanOrEqualTo(Ship.MStoKnots(13.353f)));
         yield return null;
     }
 
@@ -104,7 +104,7 @@ public class MotorBoatTests
     [UnityTest]
     public IEnumerator TheoreticalMaxSpeedShouldBe50KMH()
     {
-        Assert.That(Mathf.Abs(13.353f - Boat.KnotsToMS(Boat.MStoKnots(13.353f))),Is.LessThan(0.005f));
+        Assert.That(Mathf.Abs(13.353f - Ship.KnotsToMS(Ship.MStoKnots(13.353f))),Is.LessThan(0.005f));
         yield return null;
     }
 

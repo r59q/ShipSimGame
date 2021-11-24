@@ -8,7 +8,7 @@ public class MotorBoatFactory : IShipFactory
 
     public float CreateMaxSpeed()
     {
-        return Boat.MStoKnots(13.353f);
+        return Ship.MStoKnots(13.353f);
     }
 
     public Mesh CreateMesh()

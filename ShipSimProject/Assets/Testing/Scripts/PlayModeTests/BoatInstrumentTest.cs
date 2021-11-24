@@ -15,7 +15,7 @@ public class BoatInstrumentTest
     public IEnumerator SetUp()
     {
         boat = new GameObject("Boat");
-        boat.AddComponent<Boat>().Build(new MotorBoatFactory());
+        boat.AddComponent<Ship>().Build(new MotorBoatFactory());
         boatInterface = boat.GetComponent<IShip>();
         yield return new EnterPlayMode();
     }
@@ -30,7 +30,7 @@ public class BoatInstrumentTest
         GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
         foreach (var ob in allObjects)
         {
-            if (ob.GetComponent<Boat>() != null)
+            if (ob.GetComponent<Ship>() != null)
             {
                 GameObject.Destroy(ob);
             }
@@ -77,7 +77,7 @@ public class BoatInstrumentTest
         for (int i = 0; i < val; i++)
         {
             GameObject gboat = new GameObject("Added boat - " + i);
-            gboat.AddComponent<Boat>().Build(new MotorBoatFactory());
+            gboat.AddComponent<Ship>().Build(new MotorBoatFactory());
             IShip iboat = gboat.GetComponent<IShip>();
         }
         yield return new WaitForSeconds(0.5f);

@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject BuildBoat(IShipFactory factory, Vector3 pos)
     {
         GameObject boatObject = new GameObject("Boat");
-        IShip boat = boatObject.AddComponent<Boat>();
+        IShip boat = boatObject.AddComponent<Ship>();
         boatObject.transform.position = pos;
         boat.Build(factory);
 

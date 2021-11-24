@@ -13,7 +13,7 @@ public class BoatAssemblingTest
     public IEnumerator SetUp()
     {
         motorBoat = new GameObject("Test Boat");
-        motorBoat.AddComponent<Boat>();
+        motorBoat.AddComponent<Ship>();
         IShip boatComponent = motorBoat.GetComponent<IShip>();
         boatComponent.Build(new MotorBoatFactory());
         yield return new EnterPlayMode();
@@ -23,7 +23,7 @@ public class BoatAssemblingTest
     public IEnumerator HasBoatComponent()
     {
         Assert.That(motorBoat, Is.Not.Null);
-        Assert.That(motorBoat.GetComponent<Boat>(),Is.Not.Null);
+        Assert.That(motorBoat.GetComponent<Ship>(),Is.Not.Null);
         yield return null;
     }
 
