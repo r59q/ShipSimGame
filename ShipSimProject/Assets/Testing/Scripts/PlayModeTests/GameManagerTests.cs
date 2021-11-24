@@ -40,7 +40,7 @@ public class GameManagerTests
     [UnityTest]
     public IEnumerator GMStartsWithNoBoats()
     {
-        Assert.AreEqual(gmComp.GetBoatCount(),0);
+        Assert.AreEqual(gmComp.GetShipCount(),0);
         yield return null;
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IShip 
 {
 
-    public void Build(IShipFactory boatFactory);
+    public void Build(IShipFactory shipFactory);
 
     public bool TurnRudderTo(float rudderPos);
 
