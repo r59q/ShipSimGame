@@ -4,13 +4,22 @@ using UnityEngine;
 
 public static class ResourceLoader
 {
-    public static class Boats
+
+    private static LoadableAssets storedAssets;
+
+    public static LoadableAssets Load
     {
-        public static Mesh TestBoat => (Resources.Load("Mesh/TestBoat") as GameObject).GetComponent<MeshFilter>().sharedMesh;
-    }
-    public static class Materials
-    {
-        public static Material TestMat => (Resources.Load("Material/TestMat") as Material);
+        get { 
+            if (storedAssets == null)
+            {
+                storedAssets = Resources.Load("LoadableAssets") as LoadableAssets;
+                if (storedAssets == null)
+                {
+                    throw new System.NullReferenceException("WARNING: A LoadableAssets object must be present in a resources folder.");
+                }
+            }
+            return storedAssets;
+        }
     }
 
 }
