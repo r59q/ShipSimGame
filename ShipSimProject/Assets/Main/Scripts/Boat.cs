@@ -14,7 +14,7 @@ public class Boat : MonoBehaviour, IShip
     /// Builds a boat on the GameObject this script is bound to.
     /// </summary>
     /// <param name="boatFactory">The BoatFactory object to build the boat from</param>
-    public void Build(IBoatFactory boatFactory)
+    public void Build(IShipFactory boatFactory)
     {
         // Create and render mesh
         MeshFilter mf = gameObject.AddComponent<MeshFilter>();

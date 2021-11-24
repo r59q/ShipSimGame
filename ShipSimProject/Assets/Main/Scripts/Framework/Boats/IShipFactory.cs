@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IBoatFactory
+public interface IShipFactory
 {
     Mesh CreateMesh();
     float CreateMaxSpeed();

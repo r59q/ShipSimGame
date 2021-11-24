@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-public class MotorBoatFactory : IBoatFactory
+public class MotorBoatFactory : IShipFactory
 {
     private static float accelerationMultiplier = 2;
 

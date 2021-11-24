@@ -19,15 +19,15 @@ public class GameManagerTests
     }
 
 
-    static KeyValuePair<IBoatFactory, Vector3>[] boatSpawnValues = new KeyValuePair<IBoatFactory, Vector3>[]
+    static KeyValuePair<IShipFactory, Vector3>[] boatSpawnValues = new KeyValuePair<IShipFactory, Vector3>[]
     {
-        new KeyValuePair<IBoatFactory, Vector3>(new MotorBoatFactory(), new Vector3(1,1,1)),
-        new KeyValuePair<IBoatFactory, Vector3>(new MotorBoatFactory(), new Vector3(100,1,100)),
-        new KeyValuePair<IBoatFactory, Vector3>(new MotorBoatFactory(), new Vector3(-19,1,10)),
+        new KeyValuePair<IShipFactory, Vector3>(new MotorBoatFactory(), new Vector3(1,1,1)),
+        new KeyValuePair<IShipFactory, Vector3>(new MotorBoatFactory(), new Vector3(100,1,100)),
+        new KeyValuePair<IShipFactory, Vector3>(new MotorBoatFactory(), new Vector3(-19,1,10)),
     };
 
     [UnityTest]
-    public IEnumerator BoatSpawningTest([ValueSource("boatSpawnValues")] KeyValuePair<IBoatFactory, Vector3> values)
+    public IEnumerator BoatSpawningTest([ValueSource("boatSpawnValues")] KeyValuePair<IShipFactory, Vector3> values)
     {
         GameObject boatObject = gmComp.BuildBoat(values.Key, values.Value);
         Assert.That(boatObject, Is.Not.Null);

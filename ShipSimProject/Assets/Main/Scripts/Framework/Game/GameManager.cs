@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
         boatObjects = new List<GameObject>();
     }
 
-    public GameObject BuildBoat(IBoatFactory factory, Vector3 pos)
+    public GameObject BuildBoat(IShipFactory factory, Vector3 pos)
     {
         GameObject boatObject = new GameObject("Boat");
         IShip boat = boatObject.AddComponent<Boat>();
