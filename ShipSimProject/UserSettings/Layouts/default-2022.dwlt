@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1397
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Test Runner
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 543
-    width: 878
-    height: 804
+    y: 684
+    width: 879
+    height: 663
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 1682
+    x: 1681
     y: 0
-    width: 878
+    width: 879
     height: 1347
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 28
+  controlID: 141
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 27
+  controlID: 140
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,12 +190,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1682
+    width: 1681
     height: 1347
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 37
+  controlID: 119
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,12 +215,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1682
+    width: 1681
     height: 798
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 120
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,10 +238,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 574
+    width: 573
     height: 798
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -262,12 +262,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 574
+    x: 573
     y: 0
     width: 1108
     height: 798
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -292,12 +292,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 798
-    width: 1682
+    width: 1681
     height: 549
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38
+  controlID: 83
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,10 +315,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 810
+    width: 809
     height: 549
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
@@ -340,12 +340,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 810
+    x: 809
     y: 0
     width: 872
     height: 549
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -368,8 +368,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 878
-    height: 543
+    width: 879
+    height: 684
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
@@ -455,21 +455,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1682
-    y: 616
-    width: 877
-    height: 783
+    x: 1681
+    y: 757
+    width: 878
+    height: 642
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 150
+    ID: 146
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 535
-    - 178
+    - 429
+    - 143
     relativeSizes:
     - 0.75
     - 0.25
@@ -479,7 +479,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 713
+    lastTotalSize: 572
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 18}
     m_NewResultList:
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_ResultText: BoatsInVisualFieldTest(0) (0.513s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 413}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: dafb3d0a
       m_LastClickedID: 171834330
       m_ExpandedIDs: 58d90a86067fbb9b449b429deb9fd4a73b1cfcbf92470bc04ec9dfc3a0e75acd70b4e1db9f0164e33c3d3aeeba863ffd33019f0455874f0fefb25b188294882bd6ed8e36271a2d441afb864667870f4b2202df4dab781d56e426b3778132ec7dffffff7f
@@ -1564,7 +1564,7 @@ MonoBehaviour:
       name: ShipSim
       fullName: ShipSim
       resultStatus: 2
-      duration: 0.0356887
+      duration: 0.073353
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1580,7 +1580,7 @@ MonoBehaviour:
       name: EditModeTests.dll
       fullName: G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 2
-      duration: 0.0249505
+      duration: 0.0587753
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1591,12 +1591,62 @@ MonoBehaviour:
       categories: []
       parentId: 1120
       parentUniqueId: '[ShipSim][suite]'
+    - id: 1061
+      uniqueId: EditModeTests.dll/[EditModeTests][AccelerationAndTurningProfileTests][suite]
+      name: AccelerationAndTurningProfileTests
+      fullName: AccelerationAndTurningProfileTests
+      resultStatus: 1
+      duration: 0.0226265
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1091
+      parentUniqueId: '[EditModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1062
+      uniqueId: EditModeTests.dll/AccelerationAndTurningProfileTests/[EditModeTests][AccelerationAndTurningProfileTests.CanCreateAccelerationProfile]
+      name: CanCreateAccelerationProfile
+      fullName: AccelerationAndTurningProfileTests.CanCreateAccelerationProfile
+      resultStatus: 1
+      duration: 0.0091705
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: EditModeTests.dll/[EditModeTests][AccelerationAndTurningProfileTests][suite]
+    - id: 1003
+      uniqueId: EditModeTests.dll/AccelerationAndTurningProfileTests/[EditModeTests][AccelerationAndTurningProfileTests.HasCurveAndSpeedProperties]
+      name: HasCurveAndSpeedProperties
+      fullName: AccelerationAndTurningProfileTests.HasCurveAndSpeedProperties
+      resultStatus: 1
+      duration: 0.0035805
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeTests.dll/[EditModeTests][AccelerationAndTurningProfileTests][suite]
     - id: 1037
       uniqueId: EditModeTests.dll/[EditModeTests][AccelerationCurveTests][suite]
       name: AccelerationCurveTests
       fullName: AccelerationCurveTests
       resultStatus: 1
-      duration: 0.0013703
+      duration: 0.0080808
       messages: 
       output: 
       stacktrace: 
@@ -1612,7 +1662,7 @@ MonoBehaviour:
       name: TestMotorShipCurve
       fullName: AccelerationCurveTests.TestMotorShipCurve
       resultStatus: 1
-      duration: 0.0010607
+      duration: 0.0039616
       messages: 
       output: 
       stacktrace: 
@@ -1628,7 +1678,7 @@ MonoBehaviour:
       name: TestMotorShipCurve(0.0f,0.3f)
       fullName: AccelerationCurveTests.TestMotorShipCurve(0.0f,0.3f)
       resultStatus: 1
-      duration: 0.0000765
+      duration: 0.0026649
       messages: 
       output: 
       stacktrace: 
@@ -1645,7 +1695,7 @@ MonoBehaviour:
       name: TestMotorShipCurve(2.0f,0.866f)
       fullName: AccelerationCurveTests.TestMotorShipCurve(2.0f,0.866f)
       resultStatus: 1
-      duration: 0.0000473
+      duration: 0.0000538
       messages: 
       output: 
       stacktrace: 
@@ -1662,7 +1712,7 @@ MonoBehaviour:
       name: TestMotorShipCurve(2.991f,1.847f)
       fullName: AccelerationCurveTests.TestMotorShipCurve(2.991f,1.847f)
       resultStatus: 1
-      duration: 0.000045
+      duration: 0.0000427
       messages: 
       output: 
       stacktrace: 
@@ -1679,7 +1729,7 @@ MonoBehaviour:
       name: TestMotorShipCurve(4.5f,0.528f)
       fullName: AccelerationCurveTests.TestMotorShipCurve(4.5f,0.528f)
       resultStatus: 1
-      duration: 0.0000439
+      duration: 0.000043
       messages: 
       output: 
       stacktrace: 
@@ -1696,7 +1746,7 @@ MonoBehaviour:
       name: TestMotorShipCurve(13.353f,0.0f)
       fullName: AccelerationCurveTests.TestMotorShipCurve(13.353f,0.0f)
       resultStatus: 1
-      duration: 0.0000446
+      duration: 0.0000414
       messages: 
       output: 
       stacktrace: 
@@ -1713,7 +1763,7 @@ MonoBehaviour:
       name: ResourceLoadingTests
       fullName: ResourceLoadingTests
       resultStatus: 1
-      duration: 0.0044452
+      duration: 0.0048646
       messages: 
       output: 
       stacktrace: 
@@ -1729,7 +1779,7 @@ MonoBehaviour:
       name: HasTestMaterial
       fullName: ResourceLoadingTests.HasTestMaterial
       resultStatus: 1
-      duration: 0.0000613
+      duration: 0.0010479
       messages: 
       output: 
       stacktrace: 
@@ -1746,7 +1796,7 @@ MonoBehaviour:
       name: ResourceLoadingAccessibleByStatic
       fullName: ResourceLoadingTests.ResourceLoadingAccessibleByStatic
       resultStatus: 1
-      duration: 0.0000463
+      duration: 0.0001143
       messages: 
       output: 
       stacktrace: 
@@ -1763,7 +1813,7 @@ MonoBehaviour:
       name: ResourceObjectHasTestShipAttribute
       fullName: ResourceLoadingTests.ResourceObjectHasTestShipAttribute
       resultStatus: 1
-      duration: 0.000059
+      duration: 0.0003584
       messages: 
       output: 
       stacktrace: 
@@ -1780,7 +1830,7 @@ MonoBehaviour:
       name: SpeedConversionTests
       fullName: SpeedConversionTests
       resultStatus: 1
-      duration: 0.0137847
+      duration: 0.0096849
       messages: 
       output: 
       stacktrace: 
@@ -1796,7 +1846,7 @@ MonoBehaviour:
       name: ConversionTest
       fullName: SpeedConversionTests.ConversionTest
       resultStatus: 1
-      duration: 0.0012218
+      duration: 0.0009201
       messages: 
       output: 
       stacktrace: 
@@ -1812,7 +1862,7 @@ MonoBehaviour:
       name: ConversionTest(1,1.852f,0.5144445f)
       fullName: SpeedConversionTests.ConversionTest(1,1.852f,0.5144445f)
       resultStatus: 1
-      duration: 0.0000579
+      duration: 0.0002911
       messages: 
       output: 
       stacktrace: 
@@ -1829,7 +1879,7 @@ MonoBehaviour:
       name: ConversionTest(2,3.704f,1.028889f)
       fullName: SpeedConversionTests.ConversionTest(2,3.704f,1.028889f)
       resultStatus: 1
-      duration: 0.0000526
+      duration: 0.0000456
       messages: 
       output: 
       stacktrace: 
@@ -1846,7 +1896,7 @@ MonoBehaviour:
       name: ConversionTest(5,9.26f,2.572222f)
       fullName: SpeedConversionTests.ConversionTest(5,9.26f,2.572222f)
       resultStatus: 1
-      duration: 0.0000437
+      duration: 0.0000431
       messages: 
       output: 
       stacktrace: 
@@ -1863,7 +1913,7 @@ MonoBehaviour:
       name: UnconversionTest
       fullName: SpeedConversionTests.UnconversionTest
       resultStatus: 1
-      duration: 0.006489
+      duration: 0.0047878
       messages: 
       output: 
       stacktrace: 
@@ -1879,7 +1929,7 @@ MonoBehaviour:
       name: UnconversionTest(1,1.852f,0.514444f)
       fullName: SpeedConversionTests.UnconversionTest(1,1.852f,0.514444f)
       resultStatus: 1
-      duration: 0.0000649
+      duration: 0.0003294
       messages: 
       output: 
       stacktrace: 
@@ -1896,7 +1946,7 @@ MonoBehaviour:
       name: UnconversionTest(2,3.704f,1.028888f)
       fullName: SpeedConversionTests.UnconversionTest(2,3.704f,1.028888f)
       resultStatus: 1
-      duration: 0.0000475
+      duration: 0.0000516
       messages: 
       output: 
       stacktrace: 
@@ -1913,7 +1963,7 @@ MonoBehaviour:
       name: UnconversionTest(5,9.26f,2.57222f)
       fullName: SpeedConversionTests.UnconversionTest(5,9.26f,2.57222f)
       resultStatus: 1
-      duration: 0.0000508
+      duration: 0.0000547
       messages: 
       output: 
       stacktrace: 
@@ -1930,7 +1980,7 @@ MonoBehaviour:
       name: UnconversionTest(10,18.52f,5.14444f)
       fullName: SpeedConversionTests.UnconversionTest(10,18.52f,5.14444f)
       resultStatus: 1
-      duration: 0.0000462
+      duration: 0.0000469
       messages: 
       output: 
       stacktrace: 
@@ -1947,7 +1997,7 @@ MonoBehaviour:
       name: UnconversionTest(1000,1852.0f,514.444f)
       fullName: SpeedConversionTests.UnconversionTest(1000,1852.0f,514.444f)
       resultStatus: 1
-      duration: 0.0000452
+      duration: 0.0000454
       messages: 
       output: 
       stacktrace: 
@@ -1964,7 +2014,7 @@ MonoBehaviour:
       name: TurningCurveTests
       fullName: TurningCurveTests
       resultStatus: 2
-      duration: 0.0038535
+      duration: 0.0120355
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1980,7 +2030,7 @@ MonoBehaviour:
       name: MotorShipTurningSpeedTest
       fullName: TurningCurveTests.MotorShipTurningSpeedTest
       resultStatus: 2
-      duration: 0.0009979
+      duration: 0.0045386
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1996,7 +2046,7 @@ MonoBehaviour:
       name: MotorShipTurningSpeedTest(0,0)
       fullName: TurningCurveTests.MotorShipTurningSpeedTest(0,0)
       resultStatus: 1
-      duration: 0.000057
+      duration: 0.000236
       messages: 
       output: 
       stacktrace: 
@@ -2013,7 +2063,7 @@ MonoBehaviour:
       name: MotorShipTurningSpeedTest(0.5f,16.4481f)
       fullName: TurningCurveTests.MotorShipTurningSpeedTest(0.5f,16.4481f)
       resultStatus: 2
-      duration: 0.000172
+      duration: 0.0032682
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  12.7546711f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
@@ -2033,7 +2083,7 @@ MonoBehaviour:
       name: MotorShipTurningSpeedTest(2,19.69728f)
       fullName: TurningCurveTests.MotorShipTurningSpeedTest(2,19.69728f)
       resultStatus: 2
-      duration: 0.0001185
+      duration: 0.0001445
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  9.95025253f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
@@ -2053,7 +2103,7 @@ MonoBehaviour:
       name: MotorShipTurningSpeedTest(20,26.57091f)
       fullName: TurningCurveTests.MotorShipTurningSpeedTest(20,26.57091f)
       resultStatus: 2
-      duration: 0.0001081
+      duration: 0.000123
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  22.279953f\r\n"
       output: 
       stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
@@ -2068,18 +2118,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1028
       parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
-    m_ResultText: 'MotorShipTurningSpeedTest (0.001s)
-
-      ---
-
-      One or more
-      child tests had errors'
+    m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 25c918a9
-      m_LastClickedID: -1457993435
-      m_ExpandedIDs: c7f017892db43291eb9fd4a725c918a9334e70b3703a0fbb1ddc52d1367c87de522f04ef46da9d12e00c051e0d89172774532f3eab781d56a3ddaa742f5dc577ffffff7f
+      m_SelectedIDs: 1240f4e1
+      m_LastClickedID: -504086510
+      m_ExpandedIDs: c7f017892db43291eb9fd4a725c918a9334e70b3703a0fbb1ddc52d1367c87deab9576e6522f04ef46da9d12e00c051e0d89172774532f3eab781d56a3ddaa742f5dc577ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2127,7 +2172,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 573
+    width: 572
     height: 777
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2138,7 +2183,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7230ffff3c39fffff439ffff083bffff4c3cffff603dffffba3fffff8448ffffd649ffff5e6dfffff86fffffa270ffff6a76ffff0e77ffff1878ffffca78ffff9481ffffca82fffffa87ffff9892ffff4a93ffff149cffff429dffffe0acffff30b0ffff7ab4ffff82b5ffff34b6fffffebeffffc6c9ffff78caffff42d3ffff70d4ffffe2d7ffff36d9ffff44dafffff6daffffc0e3ffffd2e4ffff84e5ffffdef2ffff16f4ffff22fbffff
+      m_ExpandedIDs: 1eb0ffff3ab1ffff9ae0ffffc2e1ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2182,7 +2227,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 574
+    x: 573
     y: 73
     width: 1106
     height: 777
@@ -2508,22 +2553,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Testing/Scripts/PlayModeTests
+    - Assets/Testing/Scripts/EditModeTests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Testing/Scripts/PlayModeTests
+  - Assets/Testing/Scripts/EditModeTests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: G:\Unity Projects\shipsim\ShipSimProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04720000
-    m_LastClickedID: 29188
-    m_ExpandedIDs: 000000002e65000030650000326500003465000036650000386500003a6500003c6500003e650000c266000000ca9a3b
+    m_SelectedIDs: ce710000
+    m_LastClickedID: 29134
+    m_ExpandedIDs: 00000000fe64000000650000026500000465000006650000086500000a6500000c6500000e650000b071000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2551,7 +2596,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e65000030650000326500003465000036650000386500003a6500003c6500003e650000
+    m_ExpandedIDs: 00000000fe64000000650000026500000465000006650000086500000a6500000c6500000e650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2576,24 +2621,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: fa710000
+    m_LastClickedInstanceID: 29178
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e05a020008720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: MotorShipTest
-      m_OriginalName: MotorShipTest
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10024
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
@@ -2629,7 +2674,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 871
-    width: 809
+    width: 808
     height: 528
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2655,7 +2700,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 810
+    x: 809
     y: 871
     width: 870
     height: 528
@@ -2747,10 +2792,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1682
+    x: 1681
     y: 73
-    width: 877
-    height: 522
+    width: 878
+    height: 663
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
