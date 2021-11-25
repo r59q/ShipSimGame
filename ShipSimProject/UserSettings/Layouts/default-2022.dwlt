@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 543
     width: 878
     height: 804
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 16
+  controlID: 28
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 129
+  controlID: 27
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 130
+  controlID: 37
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,11 +216,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1682
-    height: 797
+    height: 798
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 122
+  controlID: 18
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,9 +239,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 574
-    height: 797
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 798
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -265,9 +265,9 @@ MonoBehaviour:
     x: 574
     y: 0
     width: 1108
-    height: 797
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 798
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -291,13 +291,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 797
+    y: 798
     width: 1682
-    height: 550
+    height: 549
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 131
+  controlID: 38
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -316,15 +316,15 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 810
-    height: 550
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 21}
+    height: 549
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,7 +343,7 @@ MonoBehaviour:
     x: 810
     y: 0
     width: 872
-    height: 550
+    height: 549
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
@@ -370,8 +370,8 @@ MonoBehaviour:
     y: 0
     width: 878
     height: 543
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 152
+    ID: 150
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -487,7 +487,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 18}
     m_NewResultList:
@@ -495,9 +495,9 @@ MonoBehaviour:
       uniqueId: '[ShipSim][suite]'
       name: ShipSim
       fullName: ShipSim
-      resultStatus: 1
-      duration: 0.139727
-      messages: 
+      resultStatus: 2
+      duration: 67.30688
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -511,9 +511,9 @@ MonoBehaviour:
       uniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
       name: PlayModeTests.dll
       fullName: G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll
-      resultStatus: 1
-      duration: 0.0538743
-      messages: 
+      resultStatus: 2
+      duration: 67.195915
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -523,752 +523,12 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[ShipSim][suite]'
-    - id: 1001
-      uniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-      name: BoatAssemblingTest
-      fullName: BoatAssemblingTest
-      resultStatus: 1
-      duration: 0.0479841
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
-    - id: 1007
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.DetectionSphereShouldBeTrigger]
-      name: DetectionSphereShouldBeTrigger
-      fullName: BoatAssemblingTest.DetectionSphereShouldBeTrigger
-      resultStatus: 1
-      duration: 0.0459979
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1002
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.HasBoatComponent]
-      name: HasBoatComponent
-      fullName: BoatAssemblingTest.HasBoatComponent
-      resultStatus: 1
-      duration: 0.0306115
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1003
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.HasMeshRendererAndMesh]
-      name: HasMeshRendererAndMesh
-      fullName: BoatAssemblingTest.HasMeshRendererAndMesh
-      resultStatus: 1
-      duration: 0.0450935
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1005
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.ShouldHaveDetectionRange]
-      name: ShouldHaveDetectionRange
-      fullName: BoatAssemblingTest.ShouldHaveDetectionRange
-      resultStatus: 1
-      duration: 0.0373768
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1006
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange]
-      name: ShouldHaveDetectionSphereWithRadiusOfDetectionRange
-      fullName: BoatAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange
-      resultStatus: 1
-      duration: 0.0327457
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1004
-      uniqueId: PlayModeTests.dll/BoatAssemblingTest/[PlayModeTests][BoatAssemblingTest.ShouldHaveMaterial]
-      name: ShouldHaveMaterial
-      fullName: BoatAssemblingTest.ShouldHaveMaterial
-      resultStatus: 1
-      duration: 0.0389889
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatAssemblingTest][suite]
-    - id: 1008
-      uniqueId: PlayModeTests.dll/[PlayModeTests][BoatInstrumentTest][suite]
-      name: BoatInstrumentTest
-      fullName: BoatInstrumentTest
-      resultStatus: 2
-      duration: 2.6368918
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1048
-      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
-    - id: 1020
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-      name: BoatsInVisualFieldTest
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest
-      resultStatus: 2
-      duration: 2.5749216
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1008
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatInstrumentTest][suite]
-    - id: 1015
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/BoatsInVisualFieldTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest(0)]
-      name: BoatsInVisualFieldTest(0)
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest(0)
-      resultStatus: 1
-      duration: 0.5137973
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-    - id: 1016
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/BoatsInVisualFieldTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest(1)]
-      name: BoatsInVisualFieldTest(1)
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest(1)
-      resultStatus: 2
-      duration: 0.5166014
-      messages: "  Expected: 1\r\n  But was:  0\r\n"
-      output: 
-      stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
-        [0x00086] in G:\Unity Projects\shipsim\Assets\Scripts\PlayModeTests\BoatInstrumentTest.cs:84
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-    - id: 1017
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/BoatsInVisualFieldTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest(2)]
-      name: BoatsInVisualFieldTest(2)
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest(2)
-      resultStatus: 2
-      duration: 0.5129418
-      messages: "  Expected: 2\r\n  But was:  0\r\n"
-      output: 
-      stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
-        [0x00086] in G:\Unity Projects\shipsim\Assets\Scripts\PlayModeTests\BoatInstrumentTest.cs:84
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-    - id: 1018
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/BoatsInVisualFieldTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest(10)]
-      name: BoatsInVisualFieldTest(10)
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest(10)
-      resultStatus: 2
-      duration: 0.5150603
-      messages: "  Expected: 10\r\n  But was:  0\r\n"
-      output: 
-      stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
-        [0x00086] in G:\Unity Projects\shipsim\Assets\Scripts\PlayModeTests\BoatInstrumentTest.cs:84
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-    - id: 1019
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/BoatsInVisualFieldTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest(15)]
-      name: BoatsInVisualFieldTest(15)
-      fullName: BoatInstrumentTest.BoatsInVisualFieldTest(15)
-      resultStatus: 2
-      duration: 0.5131729
-      messages: "  Expected: 15\r\n  But was:  0\r\n"
-      output: 
-      stacktrace: 'at BoatInstrumentTest+<BoatsInVisualFieldTest>d__8.MoveNext ()
-        [0x00086] in G:\Unity Projects\shipsim\Assets\Scripts\PlayModeTests\BoatInstrumentTest.cs:84
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in G:\Unity Projects\shipsim\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.BoatsInVisualFieldTest][suite]
-    - id: 1014
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.CompassValueTests][suite]
-      name: CompassValueTests
-      fullName: BoatInstrumentTest.CompassValueTests
-      resultStatus: 1
-      duration: 0.0470991
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1008
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatInstrumentTest][suite]
-    - id: 1010
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/CompassValueTests/[PlayModeTests][BoatInstrumentTest.CompassValueTests(0)]
-      name: CompassValueTests(0)
-      fullName: BoatInstrumentTest.CompassValueTests(0)
-      resultStatus: 1
-      duration: 0.0099198
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.CompassValueTests][suite]
-    - id: 1011
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/CompassValueTests/[PlayModeTests][BoatInstrumentTest.CompassValueTests(90)]
-      name: CompassValueTests(90)
-      fullName: BoatInstrumentTest.CompassValueTests(90)
-      resultStatus: 1
-      duration: 0.0107409
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.CompassValueTests][suite]
-    - id: 1012
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/CompassValueTests/[PlayModeTests][BoatInstrumentTest.CompassValueTests(180)]
-      name: CompassValueTests(180)
-      fullName: BoatInstrumentTest.CompassValueTests(180)
-      resultStatus: 1
-      duration: 0.0120695
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.CompassValueTests][suite]
-    - id: 1013
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/CompassValueTests/[PlayModeTests][BoatInstrumentTest.CompassValueTests(270)]
-      name: CompassValueTests(270)
-      fullName: BoatInstrumentTest.CompassValueTests(270)
-      resultStatus: 1
-      duration: 0.0100667
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.CompassValueTests][suite]
-    - id: 1009
-      uniqueId: PlayModeTests.dll/BoatInstrumentTest/[PlayModeTests][BoatInstrumentTest.ShouldHaveCompass]
-      name: ShouldHaveCompass
-      fullName: BoatInstrumentTest.ShouldHaveCompass
-      resultStatus: 1
-      duration: 0.0111546
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1008
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatInstrumentTest][suite]
-    - id: 1004
-      uniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-      name: BoatMovementTest
-      fullName: BoatMovementTest
-      resultStatus: 1
-      duration: 18.202356
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1006
-      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
-    - id: 1012
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.BoatShouldHaveTurningSpeedCurve]
-      name: BoatShouldHaveTurningSpeedCurve
-      fullName: BoatMovementTest.BoatShouldHaveTurningSpeedCurve
-      resultStatus: 1
-      duration: 0.0107553
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1012
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.BoatsShouldNotExperienceGravity]
-      name: BoatsShouldNotExperienceGravity
-      fullName: BoatMovementTest.BoatsShouldNotExperienceGravity
-      resultStatus: 1
-      duration: 0.0113688
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1011
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.CannotOverthrottleOrUnderthrottle]
-      name: CannotOverthrottleOrUnderthrottle
-      fullName: BoatMovementTest.CannotOverthrottleOrUnderthrottle
-      resultStatus: 1
-      duration: 0.012121
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1009
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.CannotOverturnOrUnderturnRudder]
-      name: CannotOverturnOrUnderturnRudder
-      fullName: BoatMovementTest.CannotOverturnOrUnderturnRudder
-      resultStatus: 1
-      duration: 0.010802
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1025
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.HardTurnSlowsDownBoat]
-      name: HardTurnSlowsDownBoat
-      fullName: BoatMovementTest.HardTurnSlowsDownBoat
-      resultStatus: 1
-      duration: 2.5550637
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1013
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.MovingAndTurningCausesRotation]
-      name: MovingAndTurningCausesRotation
-      fullName: BoatMovementTest.MovingAndTurningCausesRotation
-      resultStatus: 1
-      duration: 0.213513
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1011
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.NotPropellingCausesNoMovement]
-      name: NotPropellingCausesNoMovement
-      fullName: BoatMovementTest.NotPropellingCausesNoMovement
-      resultStatus: 1
-      duration: 5.014631
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1010
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.PropellingCausesMovement]
-      name: PropellingCausesMovement
-      fullName: BoatMovementTest.PropellingCausesMovement
-      resultStatus: 1
-      duration: 1.0140082
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1012
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.RudderNot0DoesNotTurnWhenStill]
-      name: RudderNot0DoesNotTurnWhenStill
-      fullName: BoatMovementTest.RudderNot0DoesNotTurnWhenStill
-      resultStatus: 1
-      duration: 0.2155857
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1007
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn]
-      name: SettingPropulsionChangesPropulsionWhenEngineIsOn
-      fullName: BoatMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn
-      resultStatus: 1
-      duration: 0.010705
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1026
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.SlowTurnDoesNotSlowDownBoat]
-      name: SlowTurnDoesNotSlowDownBoat
-      fullName: BoatMovementTest.SlowTurnDoesNotSlowDownBoat
-      resultStatus: 1
-      duration: 5.0529957
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1011
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.SpeedShouldExceed0WhenMoving]
-      name: SpeedShouldExceed0WhenMoving
-      fullName: BoatMovementTest.SpeedShouldExceed0WhenMoving
-      resultStatus: 1
-      duration: 1.0134667
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1008
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningCausesRudderPosToChange]
-      name: TurningCausesRudderPosToChange
-      fullName: BoatMovementTest.TurningCausesRudderPosToChange
-      resultStatus: 1
-      duration: 0.0107861
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1005
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle]
-      name: TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
-      fullName: BoatMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
-      resultStatus: 1
-      duration: 0.0106776
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1022
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningSpeedIncreasesWithSpeed]
-      name: TurningSpeedIncreasesWithSpeed
-      fullName: BoatMovementTest.TurningSpeedIncreasesWithSpeed
-      resultStatus: 1
-      duration: 0.3551902
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1015
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningTest][suite]
-      name: TurningTest
-      fullName: BoatMovementTest.TurningTest
-      resultStatus: 1
-      duration: 2.673186
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
-    - id: 1014
-      uniqueId: PlayModeTests.dll/BoatMovementTest/TurningTest/[PlayModeTests][BoatMovementTest.TurningTest([-1,
-        -1])]
-      name: TurningTest([-1, -1])
-      fullName: BoatMovementTest.TurningTest([-1, -1])
-      resultStatus: 1
-      duration: 0.2120537
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningTest][suite]
-    - id: 1015
-      uniqueId: PlayModeTests.dll/BoatMovementTest/TurningTest/[PlayModeTests][BoatMovementTest.TurningTest([-0.1,
-        -1])]
-      name: TurningTest([-0.1, -1])
-      fullName: BoatMovementTest.TurningTest([-0.1, -1])
-      resultStatus: 1
-      duration: 0.7906825
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningTest][suite]
-    - id: 1016
-      uniqueId: PlayModeTests.dll/BoatMovementTest/TurningTest/[PlayModeTests][BoatMovementTest.TurningTest([0.1,
-        1])]
-      name: TurningTest([0.1, 1])
-      fullName: BoatMovementTest.TurningTest([0.1, 1])
-      resultStatus: 1
-      duration: 0.7894706
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningTest][suite]
-    - id: 1017
-      uniqueId: PlayModeTests.dll/BoatMovementTest/TurningTest/[PlayModeTests][BoatMovementTest.TurningTest([0,
-        0])]
-      name: TurningTest([0, 0])
-      fullName: BoatMovementTest.TurningTest([0, 0])
-      resultStatus: 1
-      duration: 0.877219
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.TurningTest][suite]
-    - id: 1006
-      uniqueId: PlayModeTests.dll/BoatMovementTest/[PlayModeTests][BoatMovementTest.WhileEngineIsOffPropulsionShouldBe0]
-      name: WhileEngineIsOffPropulsionShouldBe0
-      fullName: BoatMovementTest.WhileEngineIsOffPropulsionShouldBe0
-      resultStatus: 1
-      duration: 0.0117576
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][BoatMovementTest][suite]
     - id: 1024
       uniqueId: PlayModeTests.dll/[PlayModeTests][GameManagerTests][suite]
       name: GameManagerTests
       fullName: GameManagerTests
       resultStatus: 1
-      duration: 0.0500135
+      duration: 0.1314352
       messages: 
       output: 
       stacktrace: 
@@ -1279,85 +539,12 @@ MonoBehaviour:
       categories: []
       parentId: 1026
       parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
-    - id: 1022
-      uniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.BoatSpawningTest][suite]
-      name: BoatSpawningTest
-      fullName: GameManagerTests.BoatSpawningTest
-      resultStatus: 1
-      duration: 0.0359313
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1020
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][GameManagerTests][suite]
-    - id: 1021
-      uniqueId: PlayModeTests.dll/GameManagerTests/BoatSpawningTest/[PlayModeTests][GameManagerTests.BoatSpawningTest([MotorBoatFactory,
-        (1.00, 1.00, 1.00)])]
-      name: BoatSpawningTest([MotorBoatFactory, (1.00, 1.00, 1.00)])
-      fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (1.00, 1.00,
-        1.00)])
-      resultStatus: 1
-      duration: 0.0110068
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.BoatSpawningTest][suite]
-    - id: 1030
-      uniqueId: PlayModeTests.dll/GameManagerTests/BoatSpawningTest/[PlayModeTests][GameManagerTests.BoatSpawningTest([MotorBoatFactory,
-        (100.00, 1.00, 100.00)])]
-      name: BoatSpawningTest([MotorBoatFactory, (100.00, 1.00, 100.00)])
-      fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (100.00, 1.00,
-        100.00)])
-      resultStatus: 1
-      duration: 0.0110405
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1032
-      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.BoatSpawningTest][suite]
-    - id: 1031
-      uniqueId: PlayModeTests.dll/GameManagerTests/BoatSpawningTest/[PlayModeTests][GameManagerTests.BoatSpawningTest([MotorBoatFactory,
-        (-19.00, 1.00, 10.00)])]
-      name: BoatSpawningTest([MotorBoatFactory, (-19.00, 1.00, 10.00)])
-      fullName: GameManagerTests.BoatSpawningTest([MotorBoatFactory, (-19.00, 1.00,
-        10.00)])
-      resultStatus: 1
-      duration: 0.0114341
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1032
-      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.BoatSpawningTest][suite]
     - id: 1023
       uniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.GMStartsWithNoBoats]
       name: GMStartsWithNoBoats
       fullName: GameManagerTests.GMStartsWithNoBoats
       resultStatus: 1
-      duration: 0.0103899
+      duration: 0.0316964
       messages: 
       output: 
       stacktrace: 
@@ -1369,12 +556,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1020
       parentUniqueId: PlayModeTests.dll/[PlayModeTests][GameManagerTests][suite]
-    - id: 1024
-      uniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-      name: MotorBoatTests
-      fullName: MotorBoatTests
+    - id: 1104
+      uniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.ShipSpawningTest][suite]
+      name: ShipSpawningTest
+      fullName: GameManagerTests.ShipSpawningTest
       resultStatus: 1
-      duration: 46.113106
+      duration: 0.0869125
       messages: 
       output: 
       stacktrace: 
@@ -1383,14 +570,87 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1029
-      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
-    - id: 1028
-      uniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.MovementSpeedTest][suite]
+      parentId: 1100
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][GameManagerTests][suite]
+    - id: 1101
+      uniqueId: PlayModeTests.dll/GameManagerTests/ShipSpawningTest/[PlayModeTests][GameManagerTests.ShipSpawningTest([MotorShipFactory,
+        (1.00, 1.00, 1.00)])]
+      name: ShipSpawningTest([MotorShipFactory, (1.00, 1.00, 1.00)])
+      fullName: GameManagerTests.ShipSpawningTest([MotorShipFactory, (1.00, 1.00,
+        1.00)])
+      resultStatus: 1
+      duration: 0.027922
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.ShipSpawningTest][suite]
+    - id: 1102
+      uniqueId: PlayModeTests.dll/GameManagerTests/ShipSpawningTest/[PlayModeTests][GameManagerTests.ShipSpawningTest([MotorShipFactory,
+        (100.00, 1.00, 100.00)])]
+      name: ShipSpawningTest([MotorShipFactory, (100.00, 1.00, 100.00)])
+      fullName: GameManagerTests.ShipSpawningTest([MotorShipFactory, (100.00, 1.00,
+        100.00)])
+      resultStatus: 1
+      duration: 0.026652
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.ShipSpawningTest][suite]
+    - id: 1103
+      uniqueId: PlayModeTests.dll/GameManagerTests/ShipSpawningTest/[PlayModeTests][GameManagerTests.ShipSpawningTest([MotorShipFactory,
+        (-19.00, 1.00, 10.00)])]
+      name: ShipSpawningTest([MotorShipFactory, (-19.00, 1.00, 10.00)])
+      fullName: GameManagerTests.ShipSpawningTest([MotorShipFactory, (-19.00, 1.00,
+        10.00)])
+      resultStatus: 1
+      duration: 0.0245428
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: PlayModeTests.dll/GameManagerTests/[PlayModeTests][GameManagerTests.ShipSpawningTest][suite]
+    - id: 1106
+      uniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+      name: MotorShipTest
+      fullName: MotorShipTest
+      resultStatus: 1
+      duration: 46.148643
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1157
+      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1110
+      uniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.MovementSpeedTest][suite]
       name: MovementSpeedTest
-      fullName: MotorBoatTests.MovementSpeedTest
+      fullName: MotorShipTest.MovementSpeedTest
       resultStatus: 1
-      duration: 16.041512
+      duration: 16.075714
       messages: 
       output: 
       stacktrace: 
@@ -1399,15 +659,15 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1024
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    - id: 1025
-      uniqueId: PlayModeTests.dll/MotorBoatTests/MovementSpeedTest/[PlayModeTests][MotorBoatTests.MovementSpeedTest([0,
+      parentId: 1106
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+    - id: 1107
+      uniqueId: PlayModeTests.dll/MotorShipTest/MovementSpeedTest/[PlayModeTests][MotorShipTest.MovementSpeedTest([0,
         0])]
       name: MovementSpeedTest([0, 0])
-      fullName: MotorBoatTests.MovementSpeedTest([0, 0])
+      fullName: MotorShipTest.MovementSpeedTest([0, 0])
       resultStatus: 1
-      duration: 0.0116305
+      duration: 0.0325228
       messages: 
       output: 
       stacktrace: 
@@ -1417,15 +677,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1028
-      parentUniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.MovementSpeedTest][suite]
-    - id: 1026
-      uniqueId: PlayModeTests.dll/MotorBoatTests/MovementSpeedTest/[PlayModeTests][MotorBoatTests.MovementSpeedTest([1,
+      parentId: 1110
+      parentUniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.MovementSpeedTest][suite]
+    - id: 1108
+      uniqueId: PlayModeTests.dll/MotorShipTest/MovementSpeedTest/[PlayModeTests][MotorShipTest.MovementSpeedTest([1,
         13.88])]
       name: MovementSpeedTest([1, 13.88])
-      fullName: MotorBoatTests.MovementSpeedTest([1, 13.88])
+      fullName: MotorShipTest.MovementSpeedTest([1, 13.88])
       resultStatus: 1
-      duration: 1.0141637
+      duration: 1.0234925
       messages: 
       output: 
       stacktrace: 
@@ -1435,15 +695,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1028
-      parentUniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.MovementSpeedTest][suite]
-    - id: 1028
-      uniqueId: PlayModeTests.dll/MotorBoatTests/MovementSpeedTest/[PlayModeTests][MotorBoatTests.MovementSpeedTest([15,
+      parentId: 1110
+      parentUniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.MovementSpeedTest][suite]
+    - id: 1109
+      uniqueId: PlayModeTests.dll/MotorShipTest/MovementSpeedTest/[PlayModeTests][MotorShipTest.MovementSpeedTest([15,
         208.3333])]
       name: MovementSpeedTest([15, 208.3333])
-      fullName: MotorBoatTests.MovementSpeedTest([15, 208.3333])
+      fullName: MotorShipTest.MovementSpeedTest([15, 208.3333])
       resultStatus: 1
-      duration: 15.013309
+      duration: 15.014185
       messages: 
       output: 
       stacktrace: 
@@ -1453,14 +713,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1029
-      parentUniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.MovementSpeedTest][suite]
-    - id: 1038
-      uniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.ShouldHaveSameOptimalTurnSpeed]
+      parentId: 1110
+      parentUniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.MovementSpeedTest][suite]
+    - id: 1112
+      uniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.ShouldHaveSameOptimalTurnSpeed]
       name: ShouldHaveSameOptimalTurnSpeed
-      fullName: MotorBoatTests.ShouldHaveSameOptimalTurnSpeed
+      fullName: MotorShipTest.ShouldHaveSameOptimalTurnSpeed
       resultStatus: 1
-      duration: 0.0104885
+      duration: 0.0115797
       messages: 
       output: 
       stacktrace: 
@@ -1470,14 +730,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1032
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    - id: 1055
-      uniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.SpeedShouldNotExceedExpectedMaximumSpeed]
+      parentId: 1106
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+    - id: 1111
+      uniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.SpeedShouldNotExceedExpectedMaximumSpeed]
       name: SpeedShouldNotExceedExpectedMaximumSpeed
-      fullName: MotorBoatTests.SpeedShouldNotExceedExpectedMaximumSpeed
+      fullName: MotorShipTest.SpeedShouldNotExceedExpectedMaximumSpeed
       resultStatus: 1
-      duration: 20.014812
+      duration: 20.013817
       messages: 
       output: 
       stacktrace: 
@@ -1487,14 +747,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1050
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    - id: 1032
-      uniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.TestAccelerationCurve]
+      parentId: 1106
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+    - id: 1113
+      uniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.TestAccelerationCurve]
       name: TestAccelerationCurve
-      fullName: MotorBoatTests.TestAccelerationCurve
+      fullName: MotorShipTest.TestAccelerationCurve
       resultStatus: 1
-      duration: 10.03176
+      duration: 10.029488
       messages: 
       output: 
       stacktrace: 
@@ -1504,14 +764,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    - id: 1031
-      uniqueId: PlayModeTests.dll/MotorBoatTests/[PlayModeTests][MotorBoatTests.TheoreticalMaxSpeedShouldBe50KMH]
+      parentId: 1106
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+    - id: 1114
+      uniqueId: PlayModeTests.dll/MotorShipTest/[PlayModeTests][MotorShipTest.TheoreticalMaxSpeedShouldBe50KMH]
       name: TheoreticalMaxSpeedShouldBe50KMH
-      fullName: MotorBoatTests.TheoreticalMaxSpeedShouldBe50KMH
+      fullName: MotorShipTest.TheoreticalMaxSpeedShouldBe50KMH
       resultStatus: 1
-      duration: 0.0107055
+      duration: 0.0107689
       messages: 
       output: 
       stacktrace: 
@@ -1521,15 +781,755 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
-      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorBoatTests][suite]
-    m_ResultText: ShouldHaveDetectionRange (0.037s)
+      parentId: 1106
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][MotorShipTest][suite]
+    - id: 1115
+      uniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+      name: ShipAssemblingTest
+      fullName: ShipAssemblingTest
+      resultStatus: 1
+      duration: 0.0735484
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1157
+      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1121
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.DetectionSphereShouldBeTrigger]
+      name: DetectionSphereShouldBeTrigger
+      fullName: ShipAssemblingTest.DetectionSphereShouldBeTrigger
+      resultStatus: 1
+      duration: 0.0105837
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1117
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.HasMeshRendererAndMesh]
+      name: HasMeshRendererAndMesh
+      fullName: ShipAssemblingTest.HasMeshRendererAndMesh
+      resultStatus: 1
+      duration: 0.0111123
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1116
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.HasShipComponent]
+      name: HasShipComponent
+      fullName: ShipAssemblingTest.HasShipComponent
+      resultStatus: 1
+      duration: 0.0109324
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1119
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.ShouldHaveDetectionRange]
+      name: ShouldHaveDetectionRange
+      fullName: ShipAssemblingTest.ShouldHaveDetectionRange
+      resultStatus: 1
+      duration: 0.012076
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1120
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange]
+      name: ShouldHaveDetectionSphereWithRadiusOfDetectionRange
+      fullName: ShipAssemblingTest.ShouldHaveDetectionSphereWithRadiusOfDetectionRange
+      resultStatus: 1
+      duration: 0.0112419
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1118
+      uniqueId: PlayModeTests.dll/ShipAssemblingTest/[PlayModeTests][ShipAssemblingTest.ShouldHaveMaterial]
+      name: ShouldHaveMaterial
+      fullName: ShipAssemblingTest.ShouldHaveMaterial
+      resultStatus: 1
+      duration: 0.0124667
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipAssemblingTest][suite]
+    - id: 1122
+      uniqueId: PlayModeTests.dll/[PlayModeTests][ShipInstrumentTests][suite]
+      name: ShipInstrumentTests
+      fullName: ShipInstrumentTests
+      resultStatus: 2
+      duration: 2.6436505
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1157
+      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1134
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+      name: BoatsInVisualFieldTest
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest
+      resultStatus: 2
+      duration: 2.5761418
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1122
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipInstrumentTests][suite]
+    - id: 1129
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/BoatsInVisualFieldTest/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest(0)]
+      name: BoatsInVisualFieldTest(0)
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest(0)
+      resultStatus: 1
+      duration: 0.512804
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1134
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+    - id: 1130
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/BoatsInVisualFieldTest/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest(1)]
+      name: BoatsInVisualFieldTest(1)
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest(1)
+      resultStatus: 2
+      duration: 0.5182051
+      messages: "  Expected: 1\r\n  But was:  0\r\n"
+      output: 
+      stacktrace: 'at ShipInstrumentTests+<BoatsInVisualFieldTest>d__8.MoveNext ()
+        [0x0007f] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\PlayModeTests\ShipInstrumentTests.cs:83
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in G:\Unity Projects\shipsim\ShipSimProject\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1134
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+    - id: 1131
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/BoatsInVisualFieldTest/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest(2)]
+      name: BoatsInVisualFieldTest(2)
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest(2)
+      resultStatus: 2
+      duration: 0.51475
+      messages: "  Expected: 2\r\n  But was:  0\r\n"
+      output: 
+      stacktrace: 'at ShipInstrumentTests+<BoatsInVisualFieldTest>d__8.MoveNext ()
+        [0x0007f] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\PlayModeTests\ShipInstrumentTests.cs:83
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in G:\Unity Projects\shipsim\ShipSimProject\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1134
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+    - id: 1132
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/BoatsInVisualFieldTest/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest(10)]
+      name: BoatsInVisualFieldTest(10)
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest(10)
+      resultStatus: 2
+      duration: 0.5126272
+      messages: "  Expected: 10\r\n  But was:  0\r\n"
+      output: 
+      stacktrace: 'at ShipInstrumentTests+<BoatsInVisualFieldTest>d__8.MoveNext ()
+        [0x0007f] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\PlayModeTests\ShipInstrumentTests.cs:83
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in G:\Unity Projects\shipsim\ShipSimProject\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1134
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+    - id: 1133
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/BoatsInVisualFieldTest/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest(15)]
+      name: BoatsInVisualFieldTest(15)
+      fullName: ShipInstrumentTests.BoatsInVisualFieldTest(15)
+      resultStatus: 2
+      duration: 0.5143364
+      messages: "  Expected: 15\r\n  But was:  0\r\n"
+      output: 
+      stacktrace: 'at ShipInstrumentTests+<BoatsInVisualFieldTest>d__8.MoveNext ()
+        [0x0007f] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\PlayModeTests\ShipInstrumentTests.cs:83
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in G:\Unity Projects\shipsim\ShipSimProject\Library\PackageCache\com.unity.test-framework@1.1.30\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1134
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.BoatsInVisualFieldTest][suite]
+    - id: 1127
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests][suite]
+      name: CompassValueTests
+      fullName: ShipInstrumentTests.CompassValueTests
+      resultStatus: 1
+      duration: 0.0513568
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1122
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipInstrumentTests][suite]
+    - id: 1123
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/CompassValueTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests(0)]
+      name: CompassValueTests(0)
+      fullName: ShipInstrumentTests.CompassValueTests(0)
+      resultStatus: 1
+      duration: 0.0103919
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1127
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests][suite]
+    - id: 1124
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/CompassValueTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests(90)]
+      name: CompassValueTests(90)
+      fullName: ShipInstrumentTests.CompassValueTests(90)
+      resultStatus: 1
+      duration: 0.0125785
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1127
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests][suite]
+    - id: 1125
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/CompassValueTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests(180)]
+      name: CompassValueTests(180)
+      fullName: ShipInstrumentTests.CompassValueTests(180)
+      resultStatus: 1
+      duration: 0.0114495
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1127
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests][suite]
+    - id: 1126
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/CompassValueTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests(270)]
+      name: CompassValueTests(270)
+      fullName: ShipInstrumentTests.CompassValueTests(270)
+      resultStatus: 1
+      duration: 0.0123533
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1127
+      parentUniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.CompassValueTests][suite]
+    - id: 1128
+      uniqueId: PlayModeTests.dll/ShipInstrumentTests/[PlayModeTests][ShipInstrumentTests.ShouldHaveCompass]
+      name: ShouldHaveCompass
+      fullName: ShipInstrumentTests.ShouldHaveCompass
+      resultStatus: 1
+      duration: 0.0123228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1122
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipInstrumentTests][suite]
+    - id: 1135
+      uniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+      name: ShipMovementTest
+      fullName: ShipMovementTest
+      resultStatus: 1
+      duration: 18.191622
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1157
+      parentUniqueId: '[PlayModeTests][G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1143
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.BoatShouldHaveTurningSpeedCurve]
+      name: BoatShouldHaveTurningSpeedCurve
+      fullName: ShipMovementTest.BoatShouldHaveTurningSpeedCurve
+      resultStatus: 1
+      duration: 0.0109121
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1144
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.BoatsShouldNotExperienceGravity]
+      name: BoatsShouldNotExperienceGravity
+      fullName: ShipMovementTest.BoatsShouldNotExperienceGravity
+      resultStatus: 1
+      duration: 0.0121755
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1145
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.CannotOverthrottleOrUnderthrottle]
+      name: CannotOverthrottleOrUnderthrottle
+      fullName: ShipMovementTest.CannotOverthrottleOrUnderthrottle
+      resultStatus: 1
+      duration: 0.0136343
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1140
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.CannotOverturnOrUnderturnRudder]
+      name: CannotOverturnOrUnderturnRudder
+      fullName: ShipMovementTest.CannotOverturnOrUnderturnRudder
+      resultStatus: 1
+      duration: 0.0112078
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1155
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.HardTurnSlowsDownShip]
+      name: HardTurnSlowsDownShip
+      fullName: ShipMovementTest.HardTurnSlowsDownShip
+      resultStatus: 1
+      duration: 2.56436
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1147
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.MovingAndTurningCausesRotation]
+      name: MovingAndTurningCausesRotation
+      fullName: ShipMovementTest.MovingAndTurningCausesRotation
+      resultStatus: 1
+      duration: 0.214348
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1154
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.NotPropellingCausesNoMovement]
+      name: NotPropellingCausesNoMovement
+      fullName: ShipMovementTest.NotPropellingCausesNoMovement
+      resultStatus: 1
+      duration: 5.014849
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1141
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.PropellingCausesMovement]
+      name: PropellingCausesMovement
+      fullName: ShipMovementTest.PropellingCausesMovement
+      resultStatus: 1
+      duration: 1.0145477
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1146
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.RudderNot0DoesNotTurnWhenStill]
+      name: RudderNot0DoesNotTurnWhenStill
+      fullName: ShipMovementTest.RudderNot0DoesNotTurnWhenStill
+      resultStatus: 1
+      duration: 0.2136381
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1138
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn]
+      name: SettingPropulsionChangesPropulsionWhenEngineIsOn
+      fullName: ShipMovementTest.SettingPropulsionChangesPropulsionWhenEngineIsOn
+      resultStatus: 1
+      duration: 0.0112696
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1156
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.SlowTurnDoesNotSlowDownShip]
+      name: SlowTurnDoesNotSlowDownShip
+      fullName: ShipMovementTest.SlowTurnDoesNotSlowDownShip
+      resultStatus: 1
+      duration: 5.0569186
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1142
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.SpeedShouldExceed0WhenMoving]
+      name: SpeedShouldExceed0WhenMoving
+      fullName: ShipMovementTest.SpeedShouldExceed0WhenMoving
+      resultStatus: 1
+      duration: 1.0147927
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1139
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningCausesRudderPosToChange]
+      name: TurningCausesRudderPosToChange
+      fullName: ShipMovementTest.TurningCausesRudderPosToChange
+      resultStatus: 1
+      duration: 0.0107588
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1136
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle]
+      name: TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
+      fullName: ShipMovementTest.TurningOnEngineTurnsOnEngineAndStartsAt0Throttle
+      resultStatus: 1
+      duration: 0.0110177
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1153
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningSpeedIncreasesWithSpeed]
+      name: TurningSpeedIncreasesWithSpeed
+      fullName: ShipMovementTest.TurningSpeedIncreasesWithSpeed
+      resultStatus: 1
+      duration: 0.3456829
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1152
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningTest][suite]
+      name: TurningTest
+      fullName: ShipMovementTest.TurningTest
+      resultStatus: 1
+      duration: 2.6520782
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    - id: 1148
+      uniqueId: PlayModeTests.dll/ShipMovementTest/TurningTest/[PlayModeTests][ShipMovementTest.TurningTest([-1,
+        -1])]
+      name: TurningTest([-1, -1])
+      fullName: ShipMovementTest.TurningTest([-1, -1])
+      resultStatus: 1
+      duration: 0.2111567
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1152
+      parentUniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningTest][suite]
+    - id: 1149
+      uniqueId: PlayModeTests.dll/ShipMovementTest/TurningTest/[PlayModeTests][ShipMovementTest.TurningTest([-0.1,
+        -1])]
+      name: TurningTest([-0.1, -1])
+      fullName: ShipMovementTest.TurningTest([-0.1, -1])
+      resultStatus: 1
+      duration: 0.7921317
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1152
+      parentUniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningTest][suite]
+    - id: 1150
+      uniqueId: PlayModeTests.dll/ShipMovementTest/TurningTest/[PlayModeTests][ShipMovementTest.TurningTest([0.1,
+        1])]
+      name: TurningTest([0.1, 1])
+      fullName: ShipMovementTest.TurningTest([0.1, 1])
+      resultStatus: 1
+      duration: 0.7859305
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1152
+      parentUniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningTest][suite]
+    - id: 1151
+      uniqueId: PlayModeTests.dll/ShipMovementTest/TurningTest/[PlayModeTests][ShipMovementTest.TurningTest([0,
+        0])]
+      name: TurningTest([0, 0])
+      fullName: ShipMovementTest.TurningTest([0, 0])
+      resultStatus: 1
+      duration: 0.8583831
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1152
+      parentUniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.TurningTest][suite]
+    - id: 1137
+      uniqueId: PlayModeTests.dll/ShipMovementTest/[PlayModeTests][ShipMovementTest.WhileEngineIsOffPropulsionShouldBe0]
+      name: WhileEngineIsOffPropulsionShouldBe0
+      fullName: ShipMovementTest.WhileEngineIsOffPropulsionShouldBe0
+      resultStatus: 1
+      duration: 0.0116575
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ShipMovementTest][suite]
+    m_ResultText: BoatsInVisualFieldTest(0) (0.513s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7ff0f39a
-      m_LastClickedID: -1695289217
-      m_ExpandedIDs: 58d90a86067fbb9beb9fd4a73b1cfcbf4ec9dfc3a0e75acd70b4e1dbba863ffd55874f0fefb25b18d6ed8e36271a2d44ab781d56e426b3778132ec7dffffff7f
+      scrollPos: {x: 0, y: 413}
+      m_SelectedIDs: dafb3d0a
+      m_LastClickedID: 171834330
+      m_ExpandedIDs: 58d90a86067fbb9b449b429deb9fd4a73b1cfcbf92470bc04ec9dfc3a0e75acd70b4e1db9f0164e33c3d3aeeba863ffd33019f0455874f0fefb25b188294882bd6ed8e36271a2d441afb864667870f4b2202df4dab781d56e426b3778132ec7dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1564,7 +1564,7 @@ MonoBehaviour:
       name: ShipSim
       fullName: ShipSim
       resultStatus: 2
-      duration: 0.0735981
+      duration: 0.0356887
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1580,7 +1580,7 @@ MonoBehaviour:
       name: EditModeTests.dll
       fullName: G:/Unity Projects/shipsim/ShipSimProject/Library/ScriptAssemblies/EditModeTests.dll
       resultStatus: 2
-      duration: 0.059476
+      duration: 0.0249505
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1596,7 +1596,7 @@ MonoBehaviour:
       name: AccelerationCurveTests
       fullName: AccelerationCurveTests
       resultStatus: 1
-      duration: 0.0067474
+      duration: 0.0013703
       messages: 
       output: 
       stacktrace: 
@@ -1607,12 +1607,12 @@ MonoBehaviour:
       categories: []
       parentId: 1052
       parentUniqueId: '[EditModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/EditModeTests.dll][suite]'
-    - id: 1003
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
-      name: TestMotorBoatCurve
-      fullName: AccelerationCurveTests.TestMotorBoatCurve
+    - id: 1067
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
+      name: TestMotorShipCurve
+      fullName: AccelerationCurveTests.TestMotorShipCurve
       resultStatus: 1
-      duration: 0.0057123
+      duration: 0.0010607
       messages: 
       output: 
       stacktrace: 
@@ -1621,14 +1621,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1001
+      parentId: 1061
       parentUniqueId: EditModeTests.dll/[EditModeTests][AccelerationCurveTests][suite]
-    - id: 1002
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorBoatCurve/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve(0.0f,0.3f)]
-      name: TestMotorBoatCurve(0.0f,0.3f)
-      fullName: AccelerationCurveTests.TestMotorBoatCurve(0.0f,0.3f)
+    - id: 1062
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorShipCurve/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve(0.0f,0.3f)]
+      name: TestMotorShipCurve(0.0f,0.3f)
+      fullName: AccelerationCurveTests.TestMotorShipCurve(0.0f,0.3f)
       resultStatus: 1
-      duration: 0.0037489
+      duration: 0.0000765
       messages: 
       output: 
       stacktrace: 
@@ -1638,14 +1638,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
-      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
-    - id: 1003
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorBoatCurve/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve(2.0f,0.866f)]
-      name: TestMotorBoatCurve(2.0f,0.866f)
-      fullName: AccelerationCurveTests.TestMotorBoatCurve(2.0f,0.866f)
+      parentId: 1067
+      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
+    - id: 1063
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorShipCurve/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve(2.0f,0.866f)]
+      name: TestMotorShipCurve(2.0f,0.866f)
+      fullName: AccelerationCurveTests.TestMotorShipCurve(2.0f,0.866f)
       resultStatus: 1
-      duration: 0.000064
+      duration: 0.0000473
       messages: 
       output: 
       stacktrace: 
@@ -1655,14 +1655,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
-      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
-    - id: 1004
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorBoatCurve/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve(2.991f,1.847f)]
-      name: TestMotorBoatCurve(2.991f,1.847f)
-      fullName: AccelerationCurveTests.TestMotorBoatCurve(2.991f,1.847f)
+      parentId: 1067
+      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
+    - id: 1064
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorShipCurve/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve(2.991f,1.847f)]
+      name: TestMotorShipCurve(2.991f,1.847f)
+      fullName: AccelerationCurveTests.TestMotorShipCurve(2.991f,1.847f)
       resultStatus: 1
-      duration: 0.0000505
+      duration: 0.000045
       messages: 
       output: 
       stacktrace: 
@@ -1672,14 +1672,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
-      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
-    - id: 1005
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorBoatCurve/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve(4.5f,0.528f)]
-      name: TestMotorBoatCurve(4.5f,0.528f)
-      fullName: AccelerationCurveTests.TestMotorBoatCurve(4.5f,0.528f)
+      parentId: 1067
+      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
+    - id: 1065
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorShipCurve/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve(4.5f,0.528f)]
+      name: TestMotorShipCurve(4.5f,0.528f)
+      fullName: AccelerationCurveTests.TestMotorShipCurve(4.5f,0.528f)
       resultStatus: 1
-      duration: 0.0000488
+      duration: 0.0000439
       messages: 
       output: 
       stacktrace: 
@@ -1689,14 +1689,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1007
-      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
-    - id: 1005
-      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorBoatCurve/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve(13.353f,0.0f)]
-      name: TestMotorBoatCurve(13.353f,0.0f)
-      fullName: AccelerationCurveTests.TestMotorBoatCurve(13.353f,0.0f)
+      parentId: 1067
+      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
+    - id: 1066
+      uniqueId: EditModeTests.dll/AccelerationCurveTests/TestMotorShipCurve/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve(13.353f,0.0f)]
+      name: TestMotorShipCurve(13.353f,0.0f)
+      fullName: AccelerationCurveTests.TestMotorShipCurve(13.353f,0.0f)
       resultStatus: 1
-      duration: 0.0000474
+      duration: 0.0000446
       messages: 
       output: 
       stacktrace: 
@@ -1706,14 +1706,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorBoatCurve][suite]
+      parentId: 1067
+      parentUniqueId: EditModeTests.dll/AccelerationCurveTests/[EditModeTests][AccelerationCurveTests.TestMotorShipCurve][suite]
     - id: 1001
       uniqueId: EditModeTests.dll/[EditModeTests][ResourceLoadingTests][suite]
       name: ResourceLoadingTests
       fullName: ResourceLoadingTests
       resultStatus: 1
-      duration: 0.0088563
+      duration: 0.0044452
       messages: 
       output: 
       stacktrace: 
@@ -1729,7 +1729,7 @@ MonoBehaviour:
       name: HasTestMaterial
       fullName: ResourceLoadingTests.HasTestMaterial
       resultStatus: 1
-      duration: 0.0005594
+      duration: 0.0000613
       messages: 
       output: 
       stacktrace: 
@@ -1746,7 +1746,7 @@ MonoBehaviour:
       name: ResourceLoadingAccessibleByStatic
       fullName: ResourceLoadingTests.ResourceLoadingAccessibleByStatic
       resultStatus: 1
-      duration: 0.0001573
+      duration: 0.0000463
       messages: 
       output: 
       stacktrace: 
@@ -1758,12 +1758,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: EditModeTests.dll/[EditModeTests][ResourceLoadingTests][suite]
-    - id: 1010
-      uniqueId: EditModeTests.dll/ResourceLoadingTests/[EditModeTests][ResourceLoadingTests.ResourceObjectHasTestBoatAttribute]
-      name: ResourceObjectHasTestBoatAttribute
-      fullName: ResourceLoadingTests.ResourceObjectHasTestBoatAttribute
+    - id: 1011
+      uniqueId: EditModeTests.dll/ResourceLoadingTests/[EditModeTests][ResourceLoadingTests.ResourceObjectHasTestShipAttribute]
+      name: ResourceObjectHasTestShipAttribute
+      fullName: ResourceLoadingTests.ResourceObjectHasTestShipAttribute
       resultStatus: 1
-      duration: 0.0005102
+      duration: 0.000059
       messages: 
       output: 
       stacktrace: 
@@ -1780,7 +1780,7 @@ MonoBehaviour:
       name: SpeedConversionTests
       fullName: SpeedConversionTests
       resultStatus: 1
-      duration: 0.0205728
+      duration: 0.0137847
       messages: 
       output: 
       stacktrace: 
@@ -1796,7 +1796,7 @@ MonoBehaviour:
       name: ConversionTest
       fullName: SpeedConversionTests.ConversionTest
       resultStatus: 1
-      duration: 0.0018902
+      duration: 0.0012218
       messages: 
       output: 
       stacktrace: 
@@ -1812,7 +1812,7 @@ MonoBehaviour:
       name: ConversionTest(1,1.852f,0.5144445f)
       fullName: SpeedConversionTests.ConversionTest(1,1.852f,0.5144445f)
       resultStatus: 1
-      duration: 0.0004878
+      duration: 0.0000579
       messages: 
       output: 
       stacktrace: 
@@ -1829,7 +1829,7 @@ MonoBehaviour:
       name: ConversionTest(2,3.704f,1.028889f)
       fullName: SpeedConversionTests.ConversionTest(2,3.704f,1.028889f)
       resultStatus: 1
-      duration: 0.0000567
+      duration: 0.0000526
       messages: 
       output: 
       stacktrace: 
@@ -1846,7 +1846,7 @@ MonoBehaviour:
       name: ConversionTest(5,9.26f,2.572222f)
       fullName: SpeedConversionTests.ConversionTest(5,9.26f,2.572222f)
       resultStatus: 1
-      duration: 0.0000489
+      duration: 0.0000437
       messages: 
       output: 
       stacktrace: 
@@ -1863,7 +1863,7 @@ MonoBehaviour:
       name: UnconversionTest
       fullName: SpeedConversionTests.UnconversionTest
       resultStatus: 1
-      duration: 0.0094986
+      duration: 0.006489
       messages: 
       output: 
       stacktrace: 
@@ -1879,7 +1879,7 @@ MonoBehaviour:
       name: UnconversionTest(1,1.852f,0.514444f)
       fullName: SpeedConversionTests.UnconversionTest(1,1.852f,0.514444f)
       resultStatus: 1
-      duration: 0.0003801
+      duration: 0.0000649
       messages: 
       output: 
       stacktrace: 
@@ -1896,7 +1896,7 @@ MonoBehaviour:
       name: UnconversionTest(2,3.704f,1.028888f)
       fullName: SpeedConversionTests.UnconversionTest(2,3.704f,1.028888f)
       resultStatus: 1
-      duration: 0.0000627
+      duration: 0.0000475
       messages: 
       output: 
       stacktrace: 
@@ -1913,7 +1913,7 @@ MonoBehaviour:
       name: UnconversionTest(5,9.26f,2.57222f)
       fullName: SpeedConversionTests.UnconversionTest(5,9.26f,2.57222f)
       resultStatus: 1
-      duration: 0.0000551
+      duration: 0.0000508
       messages: 
       output: 
       stacktrace: 
@@ -1930,7 +1930,7 @@ MonoBehaviour:
       name: UnconversionTest(10,18.52f,5.14444f)
       fullName: SpeedConversionTests.UnconversionTest(10,18.52f,5.14444f)
       resultStatus: 1
-      duration: 0.0000519
+      duration: 0.0000462
       messages: 
       output: 
       stacktrace: 
@@ -1947,7 +1947,7 @@ MonoBehaviour:
       name: UnconversionTest(1000,1852.0f,514.444f)
       fullName: SpeedConversionTests.UnconversionTest(1000,1852.0f,514.444f)
       resultStatus: 1
-      duration: 0.0000502
+      duration: 0.0000452
       messages: 
       output: 
       stacktrace: 
@@ -1964,7 +1964,7 @@ MonoBehaviour:
       name: TurningCurveTests
       fullName: TurningCurveTests
       resultStatus: 2
-      duration: 0.0224978
+      duration: 0.0038535
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1975,12 +1975,12 @@ MonoBehaviour:
       categories: []
       parentId: 1023
       parentUniqueId: '[EditModeTests][G:/Unity Projects/shipsim/Library/ScriptAssemblies/EditModeTests.dll][suite]'
-    - id: 1023
-      uniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-      name: MotorBoatTurningSpeedTest
-      fullName: TurningCurveTests.MotorBoatTurningSpeedTest
+    - id: 1028
+      uniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
+      name: MotorShipTurningSpeedTest
+      fullName: TurningCurveTests.MotorShipTurningSpeedTest
       resultStatus: 2
-      duration: 0.0063539
+      duration: 0.0009979
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1989,14 +1989,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1021
+      parentId: 1023
       parentUniqueId: EditModeTests.dll/[EditModeTests][TurningCurveTests][suite]
-    - id: 1022
-      uniqueId: EditModeTests.dll/TurningCurveTests/MotorBoatTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest(0,0)]
-      name: MotorBoatTurningSpeedTest(0,0)
-      fullName: TurningCurveTests.MotorBoatTurningSpeedTest(0,0)
+    - id: 1024
+      uniqueId: EditModeTests.dll/TurningCurveTests/MotorShipTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest(0,0)]
+      name: MotorShipTurningSpeedTest(0,0)
+      fullName: TurningCurveTests.MotorShipTurningSpeedTest(0,0)
       resultStatus: 1
-      duration: 0.0002263
+      duration: 0.000057
       messages: 
       output: 
       stacktrace: 
@@ -2006,18 +2006,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-    - id: 1023
-      uniqueId: EditModeTests.dll/TurningCurveTests/MotorBoatTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest(0.5f,16.4481f)]
-      name: MotorBoatTurningSpeedTest(0.5f,16.4481f)
-      fullName: TurningCurveTests.MotorBoatTurningSpeedTest(0.5f,16.4481f)
+      parentId: 1028
+      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
+    - id: 1025
+      uniqueId: EditModeTests.dll/TurningCurveTests/MotorShipTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest(0.5f,16.4481f)]
+      name: MotorShipTurningSpeedTest(0.5f,16.4481f)
+      fullName: TurningCurveTests.MotorShipTurningSpeedTest(0.5f,16.4481f)
       resultStatus: 2
-      duration: 0.0028658
+      duration: 0.000172
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  12.7546711f\r\n"
       output: 
-      stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+      stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2026,18 +2026,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-    - id: 1024
-      uniqueId: EditModeTests.dll/TurningCurveTests/MotorBoatTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest(2,19.69728f)]
-      name: MotorBoatTurningSpeedTest(2,19.69728f)
-      fullName: TurningCurveTests.MotorBoatTurningSpeedTest(2,19.69728f)
+      parentId: 1028
+      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
+    - id: 1026
+      uniqueId: EditModeTests.dll/TurningCurveTests/MotorShipTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest(2,19.69728f)]
+      name: MotorShipTurningSpeedTest(2,19.69728f)
+      fullName: TurningCurveTests.MotorShipTurningSpeedTest(2,19.69728f)
       resultStatus: 2
-      duration: 0.000148
+      duration: 0.0001185
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  9.95025253f\r\n"
       output: 
-      stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+      stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2046,18 +2046,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-    - id: 1025
-      uniqueId: EditModeTests.dll/TurningCurveTests/MotorBoatTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest(20,26.57091f)]
-      name: MotorBoatTurningSpeedTest(20,26.57091f)
-      fullName: TurningCurveTests.MotorBoatTurningSpeedTest(20,26.57091f)
+      parentId: 1028
+      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
+    - id: 1027
+      uniqueId: EditModeTests.dll/TurningCurveTests/MotorShipTurningSpeedTest/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest(20,26.57091f)]
+      name: MotorShipTurningSpeedTest(20,26.57091f)
+      fullName: TurningCurveTests.MotorShipTurningSpeedTest(20,26.57091f)
       resultStatus: 2
-      duration: 0.0001252
+      duration: 0.0001081
       messages: "  Expected: less than 0.00499999989f\r\n  But was:  22.279953f\r\n"
       output: 
-      stacktrace: 'at TurningCurveTests.MotorBoatTurningSpeedTest (System.Single
-        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Scripts\EditModeTests\TurningCurveTests.cs:19
+      stacktrace: 'at TurningCurveTests.MotorShipTurningSpeedTest (System.Single
+        input, System.Single expected) [0x00019] in G:\Unity Projects\shipsim\ShipSimProject\Assets\Testing\Scripts\EditModeTests\TurningCurveTests.cs:19
 
 '
       notRunnable: 0
@@ -2066,20 +2066,20 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1026
-      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorBoatTurningSpeedTest][suite]
-    m_ResultText: 'EditModeTests.dll (0.059s)
+      parentId: 1028
+      parentUniqueId: EditModeTests.dll/TurningCurveTests/[EditModeTests][TurningCurveTests.MotorShipTurningSpeedTest][suite]
+    m_ResultText: 'MotorShipTurningSpeedTest (0.001s)
 
       ---
 
-      One or more child
-      tests had errors'
+      One or more
+      child tests had errors'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c7f01789
-      m_LastClickedID: -1994919737
-      m_ExpandedIDs: c7f017892db43291eb9fd4a7334e70b3703a0fbb1ddc52d1367c87de522f04ef46da9d12e00c051e0d89172774532f3eab781d56a3ddaa742f5dc577ffffff7f
+      m_SelectedIDs: 25c918a9
+      m_LastClickedID: -1457993435
+      m_ExpandedIDs: c7f017892db43291eb9fd4a725c918a9334e70b3703a0fbb1ddc52d1367c87de522f04ef46da9d12e00c051e0d89172774532f3eab781d56a3ddaa742f5dc577ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2128,7 +2128,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 573
-    height: 776
+    height: 777
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2136,9 +2136,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b2f3ffff
-      m_LastClickedID: -3150
-      m_ExpandedIDs: b2f3ffff2cf4ffff10f5ffffc2f5ffff10f9ffff22fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 7230ffff3c39fffff439ffff083bffff4c3cffff603dffffba3fffff8448ffffd649ffff5e6dfffff86fffffa270ffff6a76ffff0e77ffff1878ffffca78ffff9481ffffca82fffffa87ffff9892ffff4a93ffff149cffff429dffffe0acffff30b0ffff7ab4ffff82b5ffff34b6fffffebeffffc6c9ffff78caffff42d3ffff70d4ffffe2d7ffff36d9ffff44dafffff6daffffc0e3ffffd2e4ffff84e5ffffdef2ffff16f4ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2185,7 +2185,7 @@ MonoBehaviour:
     x: 574
     y: 73
     width: 1106
-    height: 776
+    height: 777
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2387,9 +2387,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -18.95231, y: 22.175726, z: 56.92892}
+    m_Target: {x: -9.475627, y: -13.316055, z: -42.133087}
     speed: 2
-    m_Value: {x: -18.95231, y: 22.175726, z: 56.92892}
+    m_Value: {x: -9.475627, y: -13.316055, z: -42.133087}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2436,13 +2436,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.041433897, y: 0.95549816, z: -0.24175365, w: 0.16382743}
+    m_Target: {x: 0.00423431, y: 0.9764913, z: -0.21458216, w: 0.019342827}
     speed: 2
-    m_Value: {x: 0.04143436, y: 0.9555088, z: -0.24175635, w: 0.16382927}
+    m_Value: {x: 0.0042343675, y: 0.9765046, z: -0.2145851, w: 0.019343091}
   m_Size:
-    m_Target: 77.009224
+    m_Target: 114.39642
     speed: 2
-    m_Value: 77.009224
+    m_Value: 114.39642
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2488,9 +2488,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 870
+    y: 871
     width: 809
-    height: 529
+    height: 528
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2508,22 +2508,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Testing/Scripts/PlayModeTests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Testing/Scripts/PlayModeTests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: G:\Unity Projects\shipsim\ShipSimProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 30650000
-    m_LastClickedID: 25904
-    m_ExpandedIDs: 000000003065000032650000346500003665000000ca9a3b
+    m_SelectedIDs: 04720000
+    m_LastClickedID: 29188
+    m_ExpandedIDs: 000000002e65000030650000326500003465000036650000386500003a6500003c6500003e650000c266000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2551,7 +2551,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030650000326500003465000036650000
+    m_ExpandedIDs: 000000002e65000030650000326500003465000036650000386500003a6500003c6500003e650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2579,21 +2579,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000e05a0200
+    m_ExpandedInstanceIDs: c6230000e05a020008720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MotorShipTest
+      m_OriginalName: MotorShipTest
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10024
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
@@ -2628,9 +2628,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 870
+    y: 871
     width: 809
-    height: 529
+    height: 528
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2656,9 +2656,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 810
-    y: 870
+    y: 871
     width: 870
-    height: 529
+    height: 528
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2669,7 +2669,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 870, y: 508}
+  m_TargetSize: {x: 870, y: 507}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -2686,8 +2686,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -435
     m_HBaseRangeMax: 435
-    m_VBaseRangeMin: -254
-    m_VBaseRangeMax: 254
+    m_VBaseRangeMin: -253.5
+    m_VBaseRangeMax: 253.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -2706,9 +2706,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 870
-      height: 508
+      height: 507
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 435, y: 254}
+    m_Translation: {x: 435, y: 253.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -2716,12 +2716,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -435
-      y: -254
+      y: -253.5
       width: 870
-      height: 508
+      height: 507
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 870, y: 529}
+  m_LastWindowPixelSize: {x: 870, y: 528}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
