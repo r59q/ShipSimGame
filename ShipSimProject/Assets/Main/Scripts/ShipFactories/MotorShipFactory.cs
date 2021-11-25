@@ -13,7 +13,7 @@ public class MotorShipFactory : IShipFactory
 
     public Mesh CreateMesh()
     {
-        return ResourceLoader.Load.shipMeshes.testShip;
+        return ResourceLoader.Load.shipMeshes.defaultShip;
     }
 
     public ICurve CreateAccelerationCurve()
@@ -37,7 +37,7 @@ public class MotorShipFactory : IShipFactory
 
     public Material CreateMaterial()
     {
-        return ResourceLoader.Load.materials.testMat;
+        return ResourceLoader.Load.materials.defaultMat;
     }
 
     public float CreateDetectionRange()

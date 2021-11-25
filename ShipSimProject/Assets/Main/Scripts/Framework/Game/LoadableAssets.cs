@@ -13,13 +13,13 @@ public class LoadableAssets : ScriptableObject
     [System.Serializable]
     public class ShipMeshes
     {
-        public Mesh testShip;
+        public Mesh defaultShip;
     }
 
     [System.Serializable]
     public class Materials
     {
-        public Material testMat;
+        public Material defaultMat;
     }
 
 }
