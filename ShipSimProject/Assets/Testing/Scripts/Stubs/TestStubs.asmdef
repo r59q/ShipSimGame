@@ -1,0 +1,16 @@
+{
+    "name": "TestStubs",
+    "rootNamespace": "",
+    "references": [
+        "GUID:678c3911a0887c14d8477c62ee489af9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

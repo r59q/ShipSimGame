@@ -9,6 +9,7 @@ public class LoadableAssets : ScriptableObject
 {
     public ShipMeshes shipMeshes = new();
     public Materials materials = new();
+    public ShipDatas shipDatas = new();
 
     [System.Serializable]
     public class ShipMeshes
@@ -20,6 +21,12 @@ public class LoadableAssets : ScriptableObject
     public class Materials
     {
         public Material defaultMat;
+    }
+
+    [System.Serializable]
+    public class ShipDatas
+    {
+        public LoadableShipData defaultData;
     }
 
 }
