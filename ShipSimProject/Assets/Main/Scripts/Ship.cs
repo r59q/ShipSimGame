@@ -24,23 +24,26 @@ public class Ship : MonoBehaviour, IShip
         // Add rigid body.
         rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false; // Avoid the ship falling through the 'ground'
+        rb.mass = shipFactory.CreateMass();
 
         // Create detected entities list
         detectedEntitiesList = new List<IDetectableEntity>();
 
         // Build properties from ship factory.
-        AccelerationCurve = shipFactory.CreateAccelerationCurve(); 
+        AccelerationCurve = shipFactory.CreateAccelerationCurve();
         TurningSpeedCurve = shipFactory.CreateTurningSpeedCurve();
         OptimalTurnSpeed = shipFactory.CreateOptimalTurnSpeed();
+        HandlingProfile = shipFactory.CreateHandlingProfile();
         mr.sharedMaterial = shipFactory.CreateMaterial();
-        
+
         // Add the 'visual' sphere of the boat. I.e the detection collider
         SphereCollider detectCol = gameObject.AddComponent<SphereCollider>();
         detectCol.isTrigger = true;
         detectCol.radius = shipFactory.CreateDetectionRange();
+
     }
 
-   
+
 
     /// <summary>
     /// Sets the propulsion state. Decide whether or not the ship should have propulsion.
@@ -53,7 +56,7 @@ public class Ship : MonoBehaviour, IShip
         IsPropelling = state;
         return true;
     }
-    
+
     // Update is called once per frame
     protected virtual void Update()
     {
@@ -67,7 +70,7 @@ public class Ship : MonoBehaviour, IShip
             if (RudderPos != 0f)
             {
                 transform.RotateAround(transform.position, Vector3.up, TurningSpeed * RudderPos * Time.deltaTime);
-                if (Mathf.Abs( RudderPos)> OptimalTurnSpeed)
+                if (Mathf.Abs(RudderPos) > OptimalTurnSpeed)
                     rb.velocity -= rb.velocity * 0.1f * Time.deltaTime;
             }
         }
@@ -122,11 +125,11 @@ public class Ship : MonoBehaviour, IShip
 
     public ICurve TurningSpeedCurve
     {
-        get;private set;
+        get; private set;
     }
 
     public float TurningSpeed => TurningSpeedCurve.F(Speed);
-    
+
     public float DetectionRange
     {
         get { return DetectionCollider.radius; }
@@ -137,8 +140,12 @@ public class Ship : MonoBehaviour, IShip
         get { return GetComponent<SphereCollider>(); }
     }
 
-        
+
     public float CompassDirection { get { return transform.rotation.eulerAngles.y % 360; } }
+
+    public HandlingProfile HandlingProfile { get; private set; }
+
+    public float Mass => rb.mass;
 
     #region OnTrigger events
     private void OnTriggerEnter(Collider other)

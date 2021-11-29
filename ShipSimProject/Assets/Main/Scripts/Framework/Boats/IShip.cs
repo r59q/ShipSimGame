@@ -38,4 +38,6 @@ public interface IShip
     public Rigidbody Rigidbody { get; }
     public SphereCollider DetectionCollider { get; }
     public IDetectableEntity[] DetectedEntities { get; }
+    public HandlingProfile HandlingProfile { get; }
+    public float Mass { get; }
 }

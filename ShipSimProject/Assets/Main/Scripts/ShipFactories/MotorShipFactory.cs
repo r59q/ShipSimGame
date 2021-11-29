@@ -44,4 +44,16 @@ public class MotorShipFactory : IShipFactory
     {
         return 1000f;
     }
+
+    public HandlingProfile CreateHandlingProfile()
+    {
+        return ShipData.HandlingProfile;
+    }
+
+    public float CreateMass()
+    {
+        return ShipData.Mass;
+    }
+
+    private LoadableShipData ShipData => ResourceLoader.Load.shipDatas.defaultData;
 }
