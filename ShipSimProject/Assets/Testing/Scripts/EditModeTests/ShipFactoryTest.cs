@@ -24,6 +24,12 @@ public class ShipFactoryTest
     }
 
     [Test]
+    public void HasSizeProperty()
+    {
+        Assert.That(mockFactory.CreateSize(),Is.Not.Null);
+    }
+
+    [Test]
     public void MotorShipFactoryHasProfile()
     {
         IShipFactory motorShipFactory = new MotorShipFactory();
@@ -87,6 +93,11 @@ public class ShipFactoryTest
         public ICurve CreateTurningSpeedCurve()
         {
             throw new System.NotImplementedException();
+        }
+
+        public float CreateSize()
+        {
+            return 99;
         }
 
         #endregion

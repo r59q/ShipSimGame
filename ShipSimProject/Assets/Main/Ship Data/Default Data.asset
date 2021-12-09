@@ -16,6 +16,7 @@ MonoBehaviour:
   turningSpeed: 0.3
   mass: 800
   size: 4
+  detectionRange: 5000
   accelerationCurve:
     serializedVersion: 2
     m_Curve:

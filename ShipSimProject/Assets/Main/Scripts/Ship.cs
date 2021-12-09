@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ship : MonoBehaviour, IShip
+public class Ship : MonoBehaviour, IShip, IDetectableEntity
 {
 
     private Rigidbody rb;
@@ -40,7 +40,11 @@ public class Ship : MonoBehaviour, IShip
         SphereCollider detectCol = gameObject.AddComponent<SphereCollider>();
         detectCol.isTrigger = true;
         detectCol.radius = shipFactory.CreateDetectionRange();
+        DetectionCollider = detectCol;
 
+        SphereCollider collisionCol = gameObject.AddComponent<SphereCollider>();
+        collisionCol.radius = shipFactory.CreateSize();
+        Collider = collisionCol;
     }
 
 
@@ -137,7 +141,7 @@ public class Ship : MonoBehaviour, IShip
 
     public SphereCollider DetectionCollider
     {
-        get { return GetComponent<SphereCollider>(); }
+        get;private set;
     }
 
 
@@ -149,29 +153,35 @@ public class Ship : MonoBehaviour, IShip
 
     public float TopSpeed => HandlingProfile.TopSpeed;
 
-    public float Size => throw new NotImplementedException();
+    public float Size => Collider.radius;
 
     public float TopTurningSpeed => HandlingProfile.TurningSpeed;
+
+    public SphereCollider Collider { get; private set; }
 
     #region OnTrigger events
     private void OnTriggerEnter(Collider other)
     {
-        IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
-        if (entity != null)
+        if (!other.isTrigger)
         {
-            // Object is detectable
-            detectedEntitiesList.Add(entity);
+            IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
+            if (entity != null && entity != gameObject.GetComponent<IDetectableEntity>())
+            {
+                // Object is detectable and not self
+                detectedEntitiesList.Add(entity);
+            }
+            else
+            {
+                // object was not detectable
+            }
         }
-        else
-        {
-            // object was not detectable
-        }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
-        if (entity != null)
+        if (entity != null && entity != gameObject.GetComponent<IDetectableEntity>())
         {
             // Object is detectable
             detectedEntitiesList.Remove(entity);

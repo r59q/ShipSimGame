@@ -13,4 +13,5 @@ public interface IShipFactory
     Material CreateMaterial();
     float CreateDetectionRange();
     float CreateMass();
+    float CreateSize();
 }

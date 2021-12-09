@@ -42,6 +42,19 @@ public class ShipInterfaceTest : MonoBehaviour
         Assert.That(motorShip.Mass, Is.Not.EqualTo(0));
     }
 
+
+    [Test]
+    public void MotorShipHasDetectionRange()
+    {
+        GameObject motorShipObject = new GameObject();
+        IShip motorShip = motorShipObject.AddComponent<Ship>();
+        motorShip.Build(new MotorShipFactory());
+
+        Assert.That(motorShip.DetectionRange, Is.Not.EqualTo(0));
+    }
+
+
+
     [Test]
     public void MotorShipHasTopSpeed()
     {
@@ -68,13 +81,25 @@ public class ShipInterfaceTest : MonoBehaviour
     {
         GameObject testShipObject = new GameObject();
         IShip testShip = testShipObject.AddComponent<Ship>();
-        testShip.Build(new TestShipFactory());
+        testShip.Build(new ShipFactoryStub());
 
         Assert.That(testShip.Mass, Is.EqualTo(10f));
         Assert.That(testShip.TopTurningSpeed, Is.EqualTo(6));
         Assert.That(testShip.TopSpeed, Is.EqualTo(5));
         Assert.That(testShip.DetectionRange, Is.EqualTo(999f));
         Assert.That(testShip.Size, Is.EqualTo(10f)); // Can't be resolved until collider is created. Check #5 on github -> Ship size
+    }
+
+    [Test]
+    public void ShipHasColliderWithSizeSetByShipData()
+    {
+        GameObject testShipObject = new GameObject();
+        IShip testShip = testShipObject.AddComponent<Ship>();
+        testShip.Build(new ShipFactoryStub());
+
+        Assert.That(testShipObject.GetComponents<Collider>().Length, Is.EqualTo(2));
+
+        Assert.That(testShip.Collider, Is.Not.Null);
     }
 
 
@@ -116,6 +141,8 @@ public class ShipInterfaceTest : MonoBehaviour
         public float Size => throw new System.NotImplementedException();
 
         public float TopTurningSpeed => throw new System.NotImplementedException();
+
+        public SphereCollider Collider => throw new System.NotImplementedException();
 
         public void Build(IShipFactory shipFactory)
         {

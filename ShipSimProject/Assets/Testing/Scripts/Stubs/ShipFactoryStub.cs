@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestShipFactory : IShipFactory
+public class ShipFactoryStub : IShipFactory
 {
     public ICurve CreateAccelerationCurve()
     {
@@ -47,6 +47,11 @@ public class TestShipFactory : IShipFactory
     public float CreateOptimalTurnSpeed()
     {
         return -1;
+    }
+
+    public float CreateSize()
+    {
+        return TestGM.LoadFromResources().testData.Size;
     }
 
     public ICurve CreateTurningSpeedCurve()

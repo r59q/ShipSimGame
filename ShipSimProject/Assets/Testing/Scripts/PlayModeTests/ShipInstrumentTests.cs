@@ -77,7 +77,40 @@ public class ShipInstrumentTests
         for (int i = 0; i < val; i++)
         {
             GameObject gShip = new GameObject("Added Ship - " + i);
-            gShip.AddComponent<Ship>().Build(new MotorShipFactory());
+            gShip.AddComponent<Ship>().Build(new MotorShipFactory()); // Todo: Let this be stub factory instead.
+        }
+        yield return new WaitForSeconds(0.5f);
+        Assert.That(shipInterface.DetectedEntities.Length, Is.EqualTo(val));
+        yield return null;
+    }
+
+    [UnityTest]
+    public IEnumerator BoatsInVisualFieldGetsRemovedAgainTest([ValueSource("shipDetectionTestValues")] int val)
+    {
+        for (int i = 0; i < val; i++)
+        {
+            GameObject gShip = new GameObject("Added Ship - " + i);
+            gShip.AddComponent<Ship>().Build(new MotorShipFactory()); // Todo: Let this be stub factory instead.
+            yield return new WaitForSeconds(0.5f);
+            gShip.transform.position = Vector3.forward * (gShip.GetComponent<Ship>().Size + shipInterface.DetectionRange + 0.1f);
+        }
+        yield return new WaitForSeconds(0.5f);
+        Assert.That(shipInterface.DetectedEntities.Length, Is.EqualTo(0));
+        yield return null;
+    }
+    [UnityTest]
+    public IEnumerator BoatsInVisualFieldOnEdgeTest([ValueSource("shipDetectionTestValues")] int val)
+    {
+        for (int i = 0; i < val; i++)
+        {
+            GameObject gShip = new GameObject("Added Ship - " + i);
+            gShip.AddComponent<Ship>().Build(new MotorShipFactory()); // Todo: Let this be stub factory instead.
+            yield return new WaitForSeconds(0.05f);
+            gShip.transform.position = Vector3.forward * (gShip.GetComponent<Ship>().Size + shipInterface.DetectionRange + (gShip.GetComponent<Ship>().Size*i) + 0.1f);
+            yield return new WaitForSeconds(0.05f);
+            gShip.transform.position = Vector3.forward * (shipInterface.DetectionRange - ((0.01f+gShip.GetComponent<Ship>().Size) * i) - (shipInterface.DetectionRange/10));
+
+
         }
         yield return new WaitForSeconds(0.5f);
         Assert.That(shipInterface.DetectedEntities.Length, Is.EqualTo(val));

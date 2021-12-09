@@ -3,6 +3,7 @@ using UnityEngine;
 
 
 public class MotorShipFactory : IShipFactory
+
 {
     private static float accelerationMultiplier = 2;
 
@@ -42,7 +43,7 @@ public class MotorShipFactory : IShipFactory
 
     public float CreateDetectionRange()
     {
-        return 1000f;
+        return ShipData.DetectionRange;
     }
 
     public HandlingProfile CreateHandlingProfile()
@@ -53,6 +54,11 @@ public class MotorShipFactory : IShipFactory
     public float CreateMass()
     {
         return ShipData.Mass;
+    }
+
+    public float CreateSize()
+    {
+        return ShipData.Size;
     }
 
     private LoadableShipData ShipData => ResourceLoader.Load.shipDatas.defaultData;

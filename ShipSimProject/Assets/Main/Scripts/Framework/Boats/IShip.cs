@@ -37,10 +37,12 @@ public interface IShip
     public bool IsPropelling { get; }
     public float CompassDirection { get; }
     public Rigidbody Rigidbody { get; }
-    public SphereCollider DetectionCollider { get; }
     public IDetectableEntity[] DetectedEntities { get; }
     public HandlingProfile HandlingProfile { get; }
     public float Mass { get; }
     public float TopSpeed { get; }
     public float Size { get; }
+    public SphereCollider DetectionCollider { get; }
+
+    public SphereCollider Collider { get; }
 }
