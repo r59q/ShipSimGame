@@ -36,9 +36,9 @@ Currently the master branch is empty, because the project is still in early deve
 
 ## Current goals
 
-The primary goal right now is building a solid foundation to work with. The first thing is the boat interface `IBoat.cs`. This needs to perfect before proceeding
+The primary goal right now is building a solid foundation to work with. The first thing is the ship interface `IShip.cs`. This needs to perfect before proceeding.
 
-To do this I am working on a motorboat implementation, that will be used as a testbed for future boats.
+During this, the ship implementation is being developed. Development is test-driven using mocks/stubs.
 
 ## Getting started
 This is a walkthrough of how to get the project up and running on your own machine.
@@ -57,10 +57,6 @@ TDD is the development style that dictates that tests are written before the cod
 ## Authors
 
 A. Malthe Henriksen (https://github.com/r59q)
-
-### Contributions
-
-<sub>Othneil Drew (https://github.com/othneildrew/Best-README-Template) - Joinked his readme</sub>
 
 ## Contributing
 
