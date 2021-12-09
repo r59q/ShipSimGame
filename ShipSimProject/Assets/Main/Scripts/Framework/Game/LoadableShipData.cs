@@ -7,7 +7,7 @@ using UnityEngine;
 public class LoadableShipData : ScriptableObject
 {
     [SerializeField]
-    private float topSpeed, turningSpeed, mass, size;
+    private float topSpeed, turningSpeed, mass, size, detectionRange;
 
     [SerializeField]
     private AnimationCurve accelerationCurve, turningCurve;
@@ -19,6 +19,8 @@ public class LoadableShipData : ScriptableObject
     public float Size => size;
 
     public float Mass => mass;
+
+    public float DetectionRange => detectionRange;
 
     public AnimationCurve AccelerationCurve => accelerationCurve; 
 

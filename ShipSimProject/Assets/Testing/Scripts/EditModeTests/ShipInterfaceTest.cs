@@ -42,12 +42,47 @@ public class ShipInterfaceTest : MonoBehaviour
         Assert.That(motorShip.Mass, Is.Not.EqualTo(0));
     }
 
+    [Test]
+    public void MotorShipHasTopSpeed()
+    {
+        GameObject motorShipObject = new GameObject();
+        IShip motorShip = motorShipObject.AddComponent<Ship>();
+        motorShip.Build(new MotorShipFactory());
+
+        Assert.That(motorShip.HandlingProfile.TopSpeed, Is.Not.EqualTo(0));
+    }
+
+    [Test]
+    public void MotorShipHasTurnSpeed()
+    {
+        GameObject motorShipObject = new GameObject();
+        IShip motorShip = motorShipObject.AddComponent<Ship>();
+        motorShip.Build(new MotorShipFactory());
+
+        Assert.That(motorShip.HandlingProfile.TurningSpeed, Is.Not.EqualTo(0));
+    }
+    
+
+    [Test]
+    public void ProfileHasCorrectValueSetByScriptableObject()
+    {
+        GameObject testShipObject = new GameObject();
+        IShip testShip = testShipObject.AddComponent<Ship>();
+        testShip.Build(new TestShipFactory());
+
+        Assert.That(testShip.Mass, Is.EqualTo(10f));
+        Assert.That(testShip.TopTurningSpeed, Is.EqualTo(6));
+        Assert.That(testShip.TopSpeed, Is.EqualTo(5));
+        Assert.That(testShip.DetectionRange, Is.EqualTo(999f));
+        Assert.That(testShip.Size, Is.EqualTo(10f)); // Can't be resolved until collider is created. Check #5 on github -> Ship size
+    }
+
 
 
     class MockShip : IShip
     {
-        public HandlingProfile HandlingProfile => new HandlingProfile(null, null, 0, 0);
-        public float Mass => 0;
+        public HandlingProfile HandlingProfile => new HandlingProfile(TestGM.LoadFromResources().testData.AccelerationCurve, TestGM.LoadFromResources().testData.TurningCurve, TestGM.LoadFromResources().testData.TopSpeed, TestGM.LoadFromResources().testData.TurningSpeed);
+        public float Mass => TestGM.LoadFromResources().testData.Mass;
 
         #region Not implemented
         public float Speed => throw new System.NotImplementedException();
@@ -76,6 +111,11 @@ public class ShipInterfaceTest : MonoBehaviour
 
         public IDetectableEntity[] DetectedEntities => throw new System.NotImplementedException();
 
+        public float TopSpeed => throw new System.NotImplementedException();
+
+        public float Size => throw new System.NotImplementedException();
+
+        public float TopTurningSpeed => throw new System.NotImplementedException();
 
         public void Build(IShipFactory shipFactory)
         {

@@ -147,6 +147,12 @@ public class Ship : MonoBehaviour, IShip
 
     public float Mass => rb.mass;
 
+    public float TopSpeed => HandlingProfile.TopSpeed;
+
+    public float Size => throw new NotImplementedException();
+
+    public float TopTurningSpeed => HandlingProfile.TurningSpeed;
+
     #region OnTrigger events
     private void OnTriggerEnter(Collider other)
     {

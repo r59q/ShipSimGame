@@ -16,6 +16,7 @@ public class ShipDataTest
     public void HasProperties()
     {
         Assert.That(loadableShipData.TopSpeed, Is.Not.Null);
+        Assert.That(loadableShipData.DetectionRange, Is.Not.Null);
         Assert.That(loadableShipData.TurningSpeed, Is.Not.Null);
         Assert.That(loadableShipData.AccelerationCurve, Is.Null);
         Assert.That(loadableShipData.TurningCurve, Is.Null);
@@ -38,6 +39,7 @@ public class ShipDataTest
 
         Assert.That(loadableShipData.Mass, Is.EqualTo(10));
         Assert.That(loadableShipData.Size, Is.EqualTo(10));
+        Assert.That(loadableShipData.DetectionRange, Is.EqualTo(999f));
 
         HandlingProfile profile = loadableShipData.HandlingProfile;
         Assert.That(profile.AccelerationCurve, Is.EqualTo(loadableShipData.AccelerationCurve));

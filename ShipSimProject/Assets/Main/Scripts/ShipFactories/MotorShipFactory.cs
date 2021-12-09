@@ -47,7 +47,7 @@ public class MotorShipFactory : IShipFactory
 
     public HandlingProfile CreateHandlingProfile()
     {
-        return ShipData.HandlingProfile;
+        return ShipData.HandlingProfile ;
     }
 
     public float CreateMass()
