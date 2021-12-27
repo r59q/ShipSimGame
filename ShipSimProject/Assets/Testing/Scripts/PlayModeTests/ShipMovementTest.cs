@@ -100,14 +100,6 @@ public class ShipMovementTest
     }
 
     [UnityTest]
-    public IEnumerator BoatShouldHaveTurningSpeedCurve()
-    {
-        Assert.That(shipInterface.TurningSpeedCurve,Is.Not.Null);
-        yield return null;
-    }
-
-
-    [UnityTest]
     public IEnumerator BoatsShouldNotExperienceGravity()
     {
         bool usingGravity = shipInterface.Rigidbody.useGravity;
@@ -133,9 +125,11 @@ public class ShipMovementTest
 
         shipInterface.StopPropulsion();
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(3);
 
         Quaternion endRot = motorShip.transform.rotation;
+
+        Assert.That(Quaternion.Angle(startRot, endRot), Is.LessThan(0.0001));
 
         Assert.AreEqual(endRot, startRot);
         yield return null;

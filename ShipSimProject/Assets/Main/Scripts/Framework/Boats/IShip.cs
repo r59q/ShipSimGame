@@ -26,8 +26,6 @@ public interface IShip
     }
 
     public float Speed { get; }
-    public ICurve AccelerationCurve { get; }
-    public ICurve TurningSpeedCurve { get; }
     public float TurningSpeed { get; } 
     public float TopTurningSpeed { get; } 
     public float OptimalTurnSpeed { get; }

@@ -30,9 +30,6 @@ public class Ship : MonoBehaviour, IShip, IDetectableEntity
         detectedEntitiesList = new List<IDetectableEntity>();
 
         // Build properties from ship factory.
-        AccelerationCurve = shipFactory.CreateAccelerationCurve();
-        TurningSpeedCurve = shipFactory.CreateTurningSpeedCurve();
-        OptimalTurnSpeed = shipFactory.CreateOptimalTurnSpeed();
         HandlingProfile = shipFactory.CreateHandlingProfile();
         mr.sharedMaterial = shipFactory.CreateMaterial();
 
@@ -74,7 +71,7 @@ public class Ship : MonoBehaviour, IShip, IDetectableEntity
             if (RudderPos != 0f)
             {
                 transform.RotateAround(transform.position, Vector3.up, TurningSpeed * RudderPos * Time.deltaTime);
-                if (Mathf.Abs(RudderPos) > OptimalTurnSpeed)
+                if (Speed > OptimalTurnSpeed)
                     rb.velocity -= rb.velocity * 0.1f * Time.deltaTime;
             }
         }
@@ -111,7 +108,18 @@ public class Ship : MonoBehaviour, IShip, IDetectableEntity
 
     public float OptimalTurnSpeed
     {
-        get; private set;
+        get {
+            Keyframe highestFrame = new Keyframe(0,-1);
+            for (int i = 0; i < HandlingProfile.TurningCurve.length; i++)
+            {
+                Keyframe currentKeyFrame = HandlingProfile.TurningCurve.keys[i];
+                if (currentKeyFrame.value > highestFrame.value)
+                {
+                    highestFrame = currentKeyFrame;
+                }
+            }
+            return highestFrame.time * HandlingProfile.TopSpeed;
+        } 
     }
 
     public IDetectableEntity[] DetectedEntities
@@ -119,20 +127,13 @@ public class Ship : MonoBehaviour, IShip, IDetectableEntity
         get { return detectedEntitiesList.ToArray(); }
     }
 
-    public ICurve AccelerationCurve { get; private set; }
-
     public bool IsPropelling { get; protected set; }
 
     public float Speed => rb.velocity.magnitude;
 
-    public float Acceleration => AccelerationCurve.F((Speed));
+    public float Acceleration => HandlingProfile.GetAccelerationAt(Speed);
 
-    public ICurve TurningSpeedCurve
-    {
-        get; private set;
-    }
-
-    public float TurningSpeed => TurningSpeedCurve.F(Speed);
+    public float TurningSpeed => HandlingProfile.GetTurningAt(Speed);
 
     public float DetectionRange
     {

@@ -70,16 +70,6 @@ public class MotorShipTest
     }
 
     [UnityTest]
-    public IEnumerator ShouldHaveSameOptimalTurnSpeed()
-    {
-        float optimalTurnSpeed = shipInterface.OptimalTurnSpeed;
-        float factoryTurnSpeed = new MotorShipFactory().CreateOptimalTurnSpeed();
-
-        Assert.AreEqual(factoryTurnSpeed, optimalTurnSpeed);
-        yield return null;
-    }
-
-    [UnityTest]
     public IEnumerator TestAccelerationCurve()
     {
         shipInterface.SetPropulsion(true);

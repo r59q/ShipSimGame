@@ -75,11 +75,6 @@ public class ShipFactoryTest
             throw new System.NotImplementedException();
         }
 
-        public float CreateMaxSpeed()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public Mesh CreateMesh()
         {
             throw new System.NotImplementedException();
