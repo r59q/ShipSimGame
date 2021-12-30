@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: LoadableAssets
   m_EditorClassIdentifier: 
   shipMeshes:
-    testShip: {fileID: -5495902117074765545, guid: e210e18d800e7d64798a0f1d93be42db, type: 3}
+    defaultShip: {fileID: -5495902117074765545, guid: e210e18d800e7d64798a0f1d93be42db, type: 3}
   materials:
-    testMat: {fileID: 2100000, guid: d931c0a30cdab9546896ff09602857b4, type: 2}
+    defaultMat: {fileID: 2100000, guid: d931c0a30cdab9546896ff09602857b4, type: 2}
+  shipDatas:
+    defaultData: {fileID: 11400000, guid: 557408e8f4f227f42845081a4e3c773c, type: 2}

@@ -24,7 +24,7 @@ public class MotorShipTest
     [UnityTearDown]
     public IEnumerator TearDown()
     {
-        GameObject.Destroy(gm);
+        GameObject.Destroy(gm.gameObject);
         GameObject.Destroy(shipObject);
         shipObject = null;
         gm = null;
@@ -66,16 +66,6 @@ public class MotorShipTest
         shipInterface.SetPropulsionMultiplier(1f);
         yield return new WaitForSeconds(20);
         Assert.That(shipInterface.Speed, Is.LessThanOrEqualTo(Ship.MStoKnots(13.353f)));
-        yield return null;
-    }
-
-    [UnityTest]
-    public IEnumerator ShouldHaveSameOptimalTurnSpeed()
-    {
-        float optimalTurnSpeed = shipInterface.OptimalTurnSpeed;
-        float factoryTurnSpeed = new MotorShipFactory().CreateOptimalTurnSpeed();
-
-        Assert.AreEqual(factoryTurnSpeed, optimalTurnSpeed);
         yield return null;
     }
 

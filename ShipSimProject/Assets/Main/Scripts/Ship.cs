@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ship : MonoBehaviour, IShip
+public class Ship : MonoBehaviour, IShip, IDetectableEntity
 {
 
     private Rigidbody rb;
@@ -24,23 +24,27 @@ public class Ship : MonoBehaviour, IShip
         // Add rigid body.
         rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false; // Avoid the ship falling through the 'ground'
+        rb.mass = shipFactory.CreateMass();
 
         // Create detected entities list
         detectedEntitiesList = new List<IDetectableEntity>();
 
         // Build properties from ship factory.
-        AccelerationCurve = shipFactory.CreateAccelerationCurve(); 
-        TurningSpeedCurve = shipFactory.CreateTurningSpeedCurve();
-        OptimalTurnSpeed = shipFactory.CreateOptimalTurnSpeed();
+        HandlingProfile = shipFactory.CreateHandlingProfile();
         mr.sharedMaterial = shipFactory.CreateMaterial();
-        
+
         // Add the 'visual' sphere of the boat. I.e the detection collider
         SphereCollider detectCol = gameObject.AddComponent<SphereCollider>();
         detectCol.isTrigger = true;
         detectCol.radius = shipFactory.CreateDetectionRange();
+        DetectionCollider = detectCol;
+
+        SphereCollider collisionCol = gameObject.AddComponent<SphereCollider>();
+        collisionCol.radius = shipFactory.CreateSize();
+        Collider = collisionCol;
     }
 
-   
+
 
     /// <summary>
     /// Sets the propulsion state. Decide whether or not the ship should have propulsion.
@@ -53,7 +57,7 @@ public class Ship : MonoBehaviour, IShip
         IsPropelling = state;
         return true;
     }
-    
+
     // Update is called once per frame
     protected virtual void Update()
     {
@@ -67,7 +71,7 @@ public class Ship : MonoBehaviour, IShip
             if (RudderPos != 0f)
             {
                 transform.RotateAround(transform.position, Vector3.up, TurningSpeed * RudderPos * Time.deltaTime);
-                if (Mathf.Abs( RudderPos)> OptimalTurnSpeed)
+                if (Speed > OptimalTurnSpeed)
                     rb.velocity -= rb.velocity * 0.1f * Time.deltaTime;
             }
         }
@@ -104,7 +108,18 @@ public class Ship : MonoBehaviour, IShip
 
     public float OptimalTurnSpeed
     {
-        get; private set;
+        get {
+            Keyframe highestFrame = new Keyframe(0,-1);
+            for (int i = 0; i < HandlingProfile.TurningCurve.length; i++)
+            {
+                Keyframe currentKeyFrame = HandlingProfile.TurningCurve.keys[i];
+                if (currentKeyFrame.value > highestFrame.value)
+                {
+                    highestFrame = currentKeyFrame;
+                }
+            }
+            return highestFrame.time * HandlingProfile.TopSpeed;
+        } 
     }
 
     public IDetectableEntity[] DetectedEntities
@@ -112,21 +127,14 @@ public class Ship : MonoBehaviour, IShip
         get { return detectedEntitiesList.ToArray(); }
     }
 
-    public ICurve AccelerationCurve { get; private set; }
-
     public bool IsPropelling { get; protected set; }
 
     public float Speed => rb.velocity.magnitude;
 
-    public float Acceleration => AccelerationCurve.F((Speed));
+    public float Acceleration => HandlingProfile.GetAccelerationAt(Speed);
 
-    public ICurve TurningSpeedCurve
-    {
-        get;private set;
-    }
+    public float TurningSpeed => HandlingProfile.GetTurningAt(Speed);
 
-    public float TurningSpeed => TurningSpeedCurve.F(Speed);
-    
     public float DetectionRange
     {
         get { return DetectionCollider.radius; }
@@ -134,31 +142,47 @@ public class Ship : MonoBehaviour, IShip
 
     public SphereCollider DetectionCollider
     {
-        get { return GetComponent<SphereCollider>(); }
+        get;private set;
     }
 
-        
+
     public float CompassDirection { get { return transform.rotation.eulerAngles.y % 360; } }
+
+    public HandlingProfile HandlingProfile { get; private set; }
+
+    public float Mass => rb.mass;
+
+    public float TopSpeed => HandlingProfile.TopSpeed;
+
+    public float Size => Collider.radius;
+
+    public float TopTurningSpeed => HandlingProfile.TurningSpeed;
+
+    public SphereCollider Collider { get; private set; }
 
     #region OnTrigger events
     private void OnTriggerEnter(Collider other)
     {
-        IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
-        if (entity != null)
+        if (!other.isTrigger)
         {
-            // Object is detectable
-            detectedEntitiesList.Add(entity);
+            IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
+            if (entity != null && entity != gameObject.GetComponent<IDetectableEntity>())
+            {
+                // Object is detectable and not self
+                detectedEntitiesList.Add(entity);
+            }
+            else
+            {
+                // object was not detectable
+            }
         }
-        else
-        {
-            // object was not detectable
-        }
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         IDetectableEntity entity = other.GetComponent<IDetectableEntity>();
-        if (entity != null)
+        if (entity != null && entity != gameObject.GetComponent<IDetectableEntity>())
         {
             // Object is detectable
             detectedEntitiesList.Remove(entity);

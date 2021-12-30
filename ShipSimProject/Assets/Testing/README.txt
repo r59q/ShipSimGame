@@ -1,0 +1,1 @@
+Test folder should be for testing/prototyping purposes only. No production code should be present, and should be entirely seperable from the project.

@@ -9,17 +9,25 @@ public class LoadableAssets : ScriptableObject
 {
     public ShipMeshes shipMeshes = new();
     public Materials materials = new();
+    public ShipDatas shipDatas = new();
 
     [System.Serializable]
     public class ShipMeshes
     {
-        public Mesh testShip;
+        public Mesh defaultShip;
     }
 
     [System.Serializable]
     public class Materials
     {
-        public Material testMat;
+        public Material defaultMat;
+    }
+
+    [System.Serializable]
+    public class ShipDatas
+    {
+        public LoadableShipData defaultData;
     }
 
 }
+

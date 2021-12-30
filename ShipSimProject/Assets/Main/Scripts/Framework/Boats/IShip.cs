@@ -26,9 +26,8 @@ public interface IShip
     }
 
     public float Speed { get; }
-    public ICurve AccelerationCurve { get; }
-    public ICurve TurningSpeedCurve { get; }
-    public float TurningSpeed { get; }
+    public float TurningSpeed { get; } 
+    public float TopTurningSpeed { get; } 
     public float OptimalTurnSpeed { get; }
     public float PropulsionMultiplier { get; }
     public float RudderPos { get; }
@@ -36,6 +35,12 @@ public interface IShip
     public bool IsPropelling { get; }
     public float CompassDirection { get; }
     public Rigidbody Rigidbody { get; }
-    public SphereCollider DetectionCollider { get; }
     public IDetectableEntity[] DetectedEntities { get; }
+    public HandlingProfile HandlingProfile { get; }
+    public float Mass { get; }
+    public float TopSpeed { get; }
+    public float Size { get; }
+    public SphereCollider DetectionCollider { get; }
+
+    public SphereCollider Collider { get; }
 }

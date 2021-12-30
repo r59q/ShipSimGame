@@ -5,10 +5,9 @@ using UnityEngine;
 public interface IShipFactory
 {
     Mesh CreateMesh();
-    float CreateMaxSpeed();
-    ICurve CreateAccelerationCurve();
-    ICurve CreateTurningSpeedCurve();
-    float CreateOptimalTurnSpeed();
+    HandlingProfile CreateHandlingProfile();
     Material CreateMaterial();
     float CreateDetectionRange();
+    float CreateMass();
+    float CreateSize();
 }
