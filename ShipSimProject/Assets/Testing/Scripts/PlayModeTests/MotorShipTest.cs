@@ -24,7 +24,7 @@ public class MotorShipTest
     [UnityTearDown]
     public IEnumerator TearDown()
     {
-        GameObject.Destroy(gm);
+        GameObject.Destroy(gm.gameObject);
         GameObject.Destroy(shipObject);
         shipObject = null;
         gm = null;

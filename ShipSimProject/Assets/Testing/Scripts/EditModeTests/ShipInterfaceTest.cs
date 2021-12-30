@@ -112,10 +112,6 @@ public class ShipInterfaceTest : MonoBehaviour
         #region Not implemented
         public float Speed => throw new System.NotImplementedException();
 
-        public ICurve AccelerationCurve => throw new System.NotImplementedException();
-
-        public ICurve TurningSpeedCurve => throw new System.NotImplementedException();
-
         public float TurningSpeed => throw new System.NotImplementedException();
 
         public float OptimalTurnSpeed => throw new System.NotImplementedException();

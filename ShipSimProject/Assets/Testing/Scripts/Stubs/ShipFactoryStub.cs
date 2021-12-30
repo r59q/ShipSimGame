@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class ShipFactoryStub : IShipFactory
 {
-    public ICurve CreateAccelerationCurve()
-    {
-        return new PotentialCurve(0,0,0);
-    }
-
     public float CreateDetectionRange()
     {
         return TestGM.LoadFromResources().testData.DetectionRange;
@@ -52,10 +47,5 @@ public class ShipFactoryStub : IShipFactory
     public float CreateSize()
     {
         return TestGM.LoadFromResources().testData.Size;
-    }
-
-    public ICurve CreateTurningSpeedCurve()
-    {
-        return new PotentialCurve(0, 0, 0);
     }
 }

@@ -125,13 +125,11 @@ public class ShipMovementTest
 
         shipInterface.StopPropulsion();
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
 
         Quaternion endRot = motorShip.transform.rotation;
 
-        Assert.That(Quaternion.Angle(startRot, endRot), Is.LessThan(0.0001));
-
-        Assert.AreEqual(endRot, startRot);
+        Assert.That(Quaternion.Angle(startRot, endRot), Is.LessThan(0.000000001)); // because comparing the floats may produce false-positives (or within margin of error results)
         yield return null;
     }
 

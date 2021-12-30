@@ -59,11 +59,6 @@ public class ShipFactoryTest
         }
         #region Not implemented
 
-        public ICurve CreateAccelerationCurve()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public float CreateDetectionRange()
         {
             throw new System.NotImplementedException();
@@ -81,11 +76,6 @@ public class ShipFactoryTest
         }
 
         public float CreateOptimalTurnSpeed()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public ICurve CreateTurningSpeedCurve()
         {
             throw new System.NotImplementedException();
         }
